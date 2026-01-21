@@ -1,137 +1,121 @@
 import streamlit as st
 import google.generativeai as genai
+import pypdf # This is the new tool we just added
 
-# --- IMPORT YOUR PERMANENT KNOWLEDGE BASE ---
+# --- IMPORT PERMANENT KNOWLEDGE ---
 try:
     from sss_knowledge import data as permanent_knowledge
 except ImportError:
     permanent_knowledge = ""
 
-# --- 1. PAGE CONFIGURATION ---
-st.set_page_config(
-    page_title="SSS Gingoog Virtual Assistant",
-    page_icon="🤖",
-    layout="centered"
-)
+# --- PAGE CONFIGURATION ---
+st.set_page_config(page_title="SSS Gingoog Virtual Assistant", page_icon="🤖", layout="centered")
 
-# --- 2. WATERMARK ---
+# --- WATERMARK ---
 st.markdown("""
 <style>
 .watermark {
-    position: fixed;
-    bottom: 40px; 
-    right: 20px;
-    z-index: 9999;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: bold;
-    pointer-events: none;
+    position: fixed; bottom: 40px; right: 20px; z-index: 9999;
+    color: rgba(255, 255, 255, 0.5); font-size: 14px; font-weight: bold; pointer-events: none;
 }
 </style>
 <div class="watermark">RPT / SSSGingoog</div>
 """, unsafe_allow_html=True)
 
-# --- 3. SIDEBAR (ADMIN PANEL RESTORED) ---
+# --- SIDEBAR & ADMIN PANEL ---
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
     
-    # CLEAR CONVERSATION BUTTON
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
         
     st.markdown("---")
     
-    # --- ADMIN ACCESS SECTION ---
+    # ADMIN LOGIN
     st.subheader("🔒 Admin Access")
     admin_pass = st.text_input("Enter Admin Key", type="password")
     
-    # Check if the password matches the one in Secrets
+    # Initialize session state for PDF text
+    if "pdf_knowledge" not in st.session_state:
+        st.session_state.pdf_knowledge = ""
+
     if "ADMIN_PASSWORD" in st.secrets and admin_pass == st.secrets["ADMIN_PASSWORD"]:
         st.success("Access Granted")
+        st.info("📝 **Upload New Circulars (PDF)**")
         
-        # LIVE KNOWLEDGE INJECTOR
-        st.info("📝 **Live Knowledge Update**")
-        st.caption("Paste new Circulars or updates here for immediate use. (Note: These reset if the app reboots. Update sss_knowledge.py for permanent storage.)")
+        # FILE UPLOADER WIDGET
+        uploaded_files = st.file_uploader("Upload PDF Files", type="pdf", accept_multiple_files=True)
         
-        if "live_knowledge" not in st.session_state:
-            st.session_state.live_knowledge = ""
+        if uploaded_files:
+            extracted_text = ""
+            for pdf in uploaded_files:
+                try:
+                    # Read the PDF
+                    reader = pypdf.PdfReader(pdf)
+                    text = ""
+                    for page in reader.pages:
+                        text += page.extract_text() + "\n"
+                    extracted_text += f"\n--- START OF FILE: {pdf.name} ---\n{text}\n--- END OF FILE ---\n"
+                except Exception as e:
+                    st.error(f"Error reading {pdf.name}: {e}")
             
-        # Text area for Admin to type new info
-        new_update = st.text_area("Add Temporary Info:", value=st.session_state.live_knowledge, height=150)
-        st.session_state.live_knowledge = new_update
-        
-    else:
-        if admin_pass: # Only show error if they typed something wrong
-            st.error("Incorrect Key")
-
-    st.markdown("---")
+            # Save the text to the brain
+            if extracted_text:
+                st.session_state.pdf_knowledge = extracted_text
+                st.success(f"✅ Successfully read {len(uploaded_files)} PDF file(s)!")
+                
     st.caption("© 2026 SSS Gingoog Branch")
 
-# --- 4. MAIN APP HEADER ---
+# --- MAIN APP ---
 st.title("SSS Gingoog Virtual Consultant")
 st.write("Your Digital Partner in Social Security.")
-
-# --- 5. PRIVACY NOTICE ---
 st.info("ℹ️ **Privacy Notice:** Do NOT enter your SSS Number, CRN, or personal details here.")
 
-# --- 6. API & MODEL SETUP ---
+# --- API SETUP ---
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("❌ Critical Error: GOOGLE_API_KEY is missing from Streamlit Secrets.")
+    st.error("❌ GOOGLE_API_KEY missing.")
     st.stop()
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-
 try:
     model = genai.GenerativeModel('gemini-flash-latest')
-except Exception as e:
-    st.error(f"Error loading model: {e}")
+except:
+    st.error("Model error. Check API Key.")
 
-# --- 7. CHAT HISTORY ---
+# --- CHAT LOGIC ---
 if "messages" not in st.session_state:
-    st.session_state.messages = []
-    st.session_state.messages.append({
-        "role": "assistant", 
-        "content": "Maayong adlaw! I am your SSS Virtual Assistant. Unsa ang akong matabang nimo karon? (How can I help you today?)"
-    })
+    st.session_state.messages = [{"role": "assistant", "content": "Maayong adlaw! Unsa ang akong matabang nimo karon?"}]
 
-# --- 8. DISPLAY CHAT ---
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
 
-# --- 9. HANDLE USER INPUT ---
 if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
     try:
-        # COMBINE PERMANENT KNOWLEDGE + LIVE ADMIN UPDATES
-        current_live_info = st.session_state.get("live_knowledge", "")
-        
-        full_knowledge_base = f"""
+        # COMBINE: Permanent + Admin PDF Uploads
+        full_knowledge = f"""
         PERMANENT DATABASE:
         {permanent_knowledge}
         
-        URGENT UPDATES (FROM ADMIN):
-        {current_live_info}
+        TEMPORARY PDF UPLOADS (FROM ADMIN):
+        {st.session_state.pdf_knowledge}
         """
 
-        # INJECT INTO PROMPT
         full_prompt = f"""
-        You are a helpful and professional SSS (Social Security System) Consultant for the Gingoog Branch.
-        
+        You are a helpful SSS Gingoog Consultant.
         USE THIS KNOWLEDGE BASE TO ANSWER:
-        {full_knowledge_base}
+        {full_knowledge}
         
         USER QUESTION: {prompt}
-        
-        Answer clearly and politely in mixed English/Visayan if appropriate.
+        Answer clearly in English/Visayan.
         """
         
-        with st.spinner("Checking SSS Guidelines..."):
+        with st.spinner("Checking SSS Files..."):
             response = model.generate_content(full_prompt)
             
         with st.chat_message("assistant"):
@@ -139,4 +123,4 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 
     except Exception as e:
-        st.error(f"⚠️ Connection Error: {str(e)}")
+        st.error(f"Error: {e}")
