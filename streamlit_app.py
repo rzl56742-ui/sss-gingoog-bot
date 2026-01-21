@@ -56,7 +56,6 @@ with st.sidebar:
         st.session_state.live_note = ""
 
     # ADMIN LOGIC
-    # Fallback password is 'admin123' if secrets are missing
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
     
     if admin_pass == stored_password:
@@ -107,8 +106,8 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# --- THE FIX: USE THE '2.0' MODEL FOUND IN YOUR SCANNER ---
-# This model is faster and usually has better limits than 'flash-latest'
+# --- MODEL SETUP ---
+# We use gemini-2.0-flash as it appeared in your scanner list
 try:
     model = genai.GenerativeModel('gemini-2.0-flash')
 except Exception as e:
@@ -127,61 +126,64 @@ for message in st.session_state.messages:
     with st.chat_message(message["role"]):
         st.markdown(message["content"])
 
-# --- 10. HANDLE USER QUESTIONS (STRICT PROMPT LOGIC) ---
+# --- 10. HANDLE USER QUESTIONS (WITH AUTO-RETRY) ---
 if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    try:
-        # --- THE STRICT SOURCE HIERARCHY ---
-        full_knowledge_base = f"""
-        *** DATA SOURCE 1: ADMIN UPLOADED FILES (HIGHEST PRIORITY) ***
-        (This contains the latest Citizen's Charter and Circulars. USE THIS FIRST.)
-        {st.session_state.pdf_knowledge}
-        
-        *** DATA SOURCE 2: PERMANENT DATABASE ***
-        {permanent_knowledge}
-        
-        *** DATA SOURCE 3: URGENT ADMIN NOTES ***
-        {st.session_state.live_note}
-        """
+    # Prepare the Prompt
+    full_knowledge_base = f"""
+    *** DATA SOURCE 1: ADMIN UPLOADED FILES (HIGHEST PRIORITY) ***
+    {st.session_state.pdf_knowledge}
+    
+    *** DATA SOURCE 2: PERMANENT DATABASE ***
+    {permanent_knowledge}
+    
+    *** DATA SOURCE 3: URGENT ADMIN NOTES ***
+    {st.session_state.live_note}
+    """
 
-        # STRICT INSTRUCTIONS FOR THE AI
-        final_prompt = f"""
-        You are the SSS Gingoog Virtual Assistant.
-        
-        *** YOUR STRICT INSTRUCTION MANUAL ***
-        1. **SEARCH SOURCE 1 (PDFs) FIRST:** Look for the answer in the Admin Uploaded Files (Citizen's Charter/Circulars).
-           - If found here, cite it: "According to the uploaded [File Name]..."
-           
-        2. **CROSS-REFERENCE:** If the user asks for a procedure or timeline, verify it against the Citizen's Charter in Source 1 if available.
-        
-        3. **OFFICIAL WEBSITE FALLBACK:** If the answer is NOT in Source 1 or Source 2, rely on your internal training specifically regarding **www.sss.gov.ph**.
-           - You must state: "Based on general guidelines from www.sss.gov.ph..."
-           
-        4. **CLARIFICATION:** If the sources conflict, trust Source 1 (PDFs) as the latest truth.
-        
-        5. **TONE:** Professional, Direct, and Helpful. Use English or Visayan/Taglish as appropriate.
-        
-        *** KNOWLEDGE BASE ***
-        {full_knowledge_base}
-        
-        *** USER QUESTION ***
-        {prompt}
-        """
-        
-        with st.spinner("Checking Citizen's Charter & SSS Website..."):
-            response = model.generate_content(final_prompt)
-            
+    final_prompt = f"""
+    You are the SSS Gingoog Virtual Assistant.
+    
+    *** INSTRUCTIONS ***
+    1. Search Uploaded PDFs FIRST.
+    2. Fallback to SSS.gov.ph guidelines if not found.
+    3. Be professional and clear.
+    
+    *** KNOWLEDGE BASE ***
+    {full_knowledge_base}
+    
+    *** USER QUESTION ***
+    {prompt}
+    """
+    
+    # --- AUTO-RETRY LOGIC (The Smart Part) ---
+    response_text = ""
+    retry_count = 0
+    max_retries = 3
+    
+    with st.spinner("Checking SSS References..."):
+        while retry_count < max_retries:
+            try:
+                # Try to get the answer
+                response = model.generate_content(final_prompt)
+                response_text = response.text
+                break # If successful, stop the loop!
+                
+            except Exception as e:
+                # If error is about Quota (429), wait and try again
+                if "429" in str(e):
+                    retry_count += 1
+                    time.sleep(4) # Wait 4 seconds before trying again
+                    if retry_count == max_retries:
+                        st.error("⚠️ System Busy: Too many requests. Please wait 1 minute.")
+                else:
+                    st.error(f"Error: {e}")
+                    break
+
+    # If we got an answer, show it
+    if response_text:
         with st.chat_message("assistant"):
-            st.markdown(response.text)
-        st.session_state.messages.append({"role": "assistant", "content": response.text})
-
-    except Exception as e:
-        # Graceful Error Handling
-        if "429" in str(e):
-             st.warning("🚦 Traffic is high. The system is cooling down for 60 seconds. Please try again shortly.")
-        elif "404" in str(e):
-             st.error("System Error: Model not found. Please verify the code version.")
-        else:
-             st.error(f"⚠️ Connection Error: {str(e)}")
+            st.markdown(response_text)
+        st.session_state.messages.append({"role": "assistant", "content": response_text})
