@@ -4,7 +4,11 @@ import pypdf
 import time
 
 # --- 1. CONFIGURATION ---
-st.set_page_config(page_title="SSS Gingoog Virtual Assistant", page_icon="🤖", layout="centered")
+st.set_page_config(
+    page_title="SSS Gingoog Virtual Assistant",
+    page_icon="🤖",
+    layout="centered"
+)
 
 # --- 2. FAIL-SAFE KNOWLEDGE IMPORT ---
 try:
@@ -28,7 +32,7 @@ with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
     
-    if st.button("🗑️ Clear Conversation"):
+    if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
     st.markdown("---")
@@ -68,38 +72,19 @@ st.title("SSS Gingoog Virtual Assistant")
 st.write("Your Digital Partner in Social Security.")
 st.info("ℹ️ **Privacy Notice:** Do NOT enter your SSS Number, CRN, or personal details here.")
 
+# --- 6. API SETUP ---
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("❌ Key Missing in Secrets.")
+    st.error("❌ Critical Error: GOOGLE_API_KEY is missing from Streamlit Secrets.")
     st.stop()
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# --- 6. THE "LITE" MODEL SWITCHER ---
-def get_response_with_fallback(prompt_input):
-    """
-    Attempts to use the Lite model first. If that fails, tries the Flash model.
-    """
-    # PRIORITY 1: The "Lite" model (Fast, usually empty traffic)
-    # Found in your scanner list: image_f49d71.png
-    primary_model = "gemini-2.0-flash-lite-preview-02-05"
-    
-    # PRIORITY 2: The standard fallback
-    backup_model = "gemini-flash-latest"
-
-    try:
-        model = genai.GenerativeModel(primary_model)
-        response = model.generate_content(prompt_input)
-        return response.text
-    except Exception as e1:
-        # If Lite fails, try Backup immediately
-        try:
-            time.sleep(1) # Brief pause
-            model = genai.GenerativeModel(backup_model)
-            response = model.generate_content(prompt_input)
-            return response.text
-        except Exception as e2:
-            # If BOTH fail, return the specific error to help us debug
-            return f"SYSTEM_ERROR: {str(e1)} || {str(e2)}"
+# We stick to the BEST model found in your scanner list
+# This works best with a FRESH Key
+try:
+    model = genai.GenerativeModel('gemini-2.0-flash')
+except Exception as e:
+    st.error(f"Model Error: {e}")
 
 # --- 7. CHAT LOGIC ---
 if "messages" not in st.session_state:
@@ -132,16 +117,15 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     
     with st.chat_message("assistant"):
         placeholder = st.empty()
-        placeholder.markdown("⏳ *Connecting...*")
+        placeholder.markdown("⏳ *Thinking...*")
         
-        # Execute with Fallback
-        result = get_response_with_fallback(full_prompt)
-        
-        # Check for our custom error tag
-        if "SYSTEM_ERROR" in result:
-            placeholder.error("⚠️ connection failed.")
-            with st.expander("Show Technical Details (For Admin)"):
-                st.code(result) # This will show us EXACTLY why it failed
-        else:
-            placeholder.markdown(result)
-            st.session_state.messages.append({"role": "assistant", "content": result})
+        try:
+            response = model.generate_content(full_prompt)
+            placeholder.markdown(response.text)
+            st.session_state.messages.append({"role": "assistant", "content": response.text})
+        except Exception as e:
+            # Simple, clear error if traffic is high
+            if "429" in str(e):
+                placeholder.error("⚠️ System Busy. Please wait 1 minute before asking again.")
+            else:
+                placeholder.error(f"Connection Error: {e}")
