@@ -1,37 +1,42 @@
 import streamlit as st
 import google.generativeai as genai
 
-st.title("🔍 Connection & Model Scanner")
+# Page Configuration
+st.set_page_config(page_title="SSS Gingoog Virtual Assistant", page_icon="🤖")
 
-# 1. Check if Key exists
+st.title("SSS Gingoog Virtual Consultant")
+st.write("Your Digital Partner in Social Security.")
+
+# 1. Setup the Google Connection
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("❌ Critical Error: API Key is missing from Secrets.")
+    st.error("Please add your GOOGLE_API_KEY to Streamlit Secrets.")
     st.stop()
 
-api_key = st.secrets["GOOGLE_API_KEY"]
-st.write(f"🔑 **Key Check:** The app sees a key starting with `{api_key[:4]}...`")
+genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# 2. Try to connect to Google
-try:
-    genai.configure(api_key=api_key)
-    st.info("📡 Contacting Google Servers...")
-    
-    # 3. Ask Google for the list of models
-    models = genai.list_models()
-    available_models = []
-    
-    for m in models:
-        # We only want models that can chat (generateContent)
-        if "generateContent" in m.supported_generation_methods:
-            available_models.append(m.name)
-            
-    if available_models:
-        st.success(f"✅ SUCCESS! We found {len(available_models)} working models.")
-        st.markdown("### 📋 Copy one of these exact names:")
-        st.code("\n".join(available_models))
-    else:
-        st.warning("⚠️ Connected to Google, but no Chat models were found. This usually means the API Key has no permissions.")
+# 2. Setup the Model (Using the NEW one found in your list)
+model = genai.GenerativeModel('gemini-2.0-flash')
 
-except Exception as e:
-    st.error(f"❌ Connection Failed completely. Error details:")
-    st.code(str(e))
+# 3. Initialize Chat History
+if "messages" not in st.session_state:
+    st.session_state.messages = []
+
+# 4. Display Chat History
+for message in st.session_state.messages:
+    with st.chat_message(message["role"]):
+        st.markdown(message["content"])
+
+# 5. Handle User Input
+if prompt := st.chat_input("Mangutana ko (Ask here)..."):
+    # Show user message
+    st.chat_message("user").markdown(prompt)
+    st.session_state.messages.append({"role": "user", "content": prompt})
+
+    # Generate and show response
+    try:
+        response = model.generate_content(prompt)
+        with st.chat_message("assistant"):
+            st.markdown(response.text)
+        st.session_state.messages.append({"role": "assistant", "content": response.text})
+    except Exception as e:
+        st.error(f"An error occurred: {e}")
