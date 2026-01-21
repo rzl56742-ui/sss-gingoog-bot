@@ -15,7 +15,7 @@ if "GOOGLE_API_KEY" not in st.secrets:
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 # 2. Setup the Model (Using the NEW one found in your list)
-model = genai.GenerativeModel('gemini-2.0-flash')
+model = genai.GenerativeModel('gemini-flash-latest')
 
 # 3. Initialize Chat History
 if "messages" not in st.session_state:
