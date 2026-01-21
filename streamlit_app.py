@@ -1,6 +1,7 @@
 import streamlit as st
 import google.generativeai as genai
 import pypdf
+import time
 
 # --- 1. SETUP & CONFIGURATION ---
 st.set_page_config(
@@ -55,7 +56,7 @@ with st.sidebar:
         st.session_state.live_note = ""
 
     # ADMIN LOGIC
-    # We add a fallback: if ADMIN_PASSWORD is missing, use "admin123" just so it works
+    # Fallback password is 'admin123' if secrets are missing
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
     
     if admin_pass == stored_password:
@@ -106,9 +107,10 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# --- THE CRITICAL FIX: USING THE NAME THAT EXISTS IN YOUR ACCOUNT ---
+# --- THE FIX: USE THE '2.0' MODEL FOUND IN YOUR SCANNER ---
+# This model is faster and usually has better limits than 'flash-latest'
 try:
-    model = genai.GenerativeModel('gemini-flash-latest')
+    model = genai.GenerativeModel('gemini-2.0-flash')
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -176,8 +178,10 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 
     except Exception as e:
-        # Improved Error Handling for Quota
+        # Graceful Error Handling
         if "429" in str(e):
-             st.error("⚠️ Traffic Limit Reached. Please wait 1 minute and try again.")
+             st.warning("🚦 Traffic is high. The system is cooling down for 60 seconds. Please try again shortly.")
+        elif "404" in str(e):
+             st.error("System Error: Model not found. Please verify the code version.")
         else:
              st.error(f"⚠️ Connection Error: {str(e)}")
