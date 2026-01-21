@@ -103,9 +103,10 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# USE THE VERIFIED MODEL
+# --- CHANGED MODEL HERE ---
+# We switched to 'gemini-1.5-flash' which is more stable than 'flash-latest'
 try:
-    model = genai.GenerativeModel('gemini-flash-latest')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -174,4 +175,8 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         st.session_state.messages.append({"role": "assistant", "content": response.text})
 
     except Exception as e:
-        st.error(f"⚠️ Connection Error: {str(e)}")
+        # Improved Error Handling for Quota
+        if "429" in str(e):
+             st.error("⚠️ Traffic Limit Reached. Please wait 1 minute and try again.")
+        else:
+             st.error(f"⚠️ Connection Error: {str(e)}")
