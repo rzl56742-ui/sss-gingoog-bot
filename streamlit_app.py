@@ -51,7 +51,7 @@ st.info("ℹ️ **Privacy Notice:** Do NOT enter your SSS Number, CRN, or person
 # Initialize API (Using Secrets)
 if "GOOGLE_API_KEY" in st.secrets:
     genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
-    model = genai.GenerativeModel('gemini-pro')
+    model = genai.GenerativeModel('gemini-1.5-flash')
 else:
     st.error("API Key not found. Please set it in Streamlit Secrets.")
 
