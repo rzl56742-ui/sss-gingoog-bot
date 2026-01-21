@@ -3,14 +3,10 @@ import google.generativeai as genai
 import pypdf
 import time
 
-# --- 1. SETUP & CONFIGURATION ---
-st.set_page_config(
-    page_title="SSS Gingoog Virtual Assistant",
-    page_icon="🤖",
-    layout="centered"
-)
+# --- 1. CONFIGURATION ---
+st.set_page_config(page_title="SSS Gingoog Virtual Assistant", page_icon="🤖", layout="centered")
 
-# --- 2. IMPORT PERMANENT KNOWLEDGE (FAIL-SAFE) ---
+# --- 2. FAIL-SAFE KNOWLEDGE IMPORT ---
 try:
     from sss_knowledge import data as permanent_knowledge
 except ImportError:
@@ -27,43 +23,41 @@ st.markdown("""
 <div class="watermark">RPT / SSSGingoog</div>
 """, unsafe_allow_html=True)
 
-# --- 4. SIDEBAR ---
+# --- 4. SIDEBAR & ADMIN ---
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
     
-    if st.button("🗑️ Clear Conversation", use_container_width=True):
+    if st.button("🗑️ Clear Conversation"):
         st.session_state.messages = []
         st.rerun()
-        
     st.markdown("---")
     
-    # --- ADMIN ACCESS ---
+    # Admin Panel
     st.subheader("🔒 Admin Access")
     admin_pass = st.text_input("Enter Admin Key", type="password")
     
-    # Data States
     if "pdf_knowledge" not in st.session_state: st.session_state.pdf_knowledge = ""
     if "live_note" not in st.session_state: st.session_state.live_note = ""
 
-    # Admin Logic
+    # Check Password
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
     if admin_pass == stored_password:
-        st.success("Access Granted")
+        st.success("Admin Logged In")
         st.info("📝 **Sticky Note**")
-        st.session_state.live_note = st.text_area("Urgent Updates:", value=st.session_state.live_note)
+        st.session_state.live_note = st.text_area("Urgent Updates:", st.session_state.live_note)
         
         st.info("📂 **Upload PDFs**")
-        uploaded_files = st.file_uploader("Upload Circulars/Charter", type="pdf", accept_multiple_files=True)
+        uploaded_files = st.file_uploader("Upload Circulars", type="pdf", accept_multiple_files=True)
         if uploaded_files:
-            text_acc = ""
+            acc_text = ""
             for pdf in uploaded_files:
                 try:
                     reader = pypdf.PdfReader(pdf)
-                    for page in reader.pages: text_acc += page.extract_text() + "\n"
+                    for page in reader.pages: acc_text += page.extract_text() + "\n"
                 except: pass
-            if text_acc:
-                st.session_state.pdf_knowledge = text_acc
+            if acc_text:
+                st.session_state.pdf_knowledge = acc_text
                 st.success("✅ PDFs Indexed!")
 
     st.markdown("---")
@@ -74,44 +68,38 @@ st.title("SSS Gingoog Virtual Assistant")
 st.write("Your Digital Partner in Social Security.")
 st.info("ℹ️ **Privacy Notice:** Do NOT enter your SSS Number, CRN, or personal details here.")
 
-# --- 6. INTELLIGENT MODEL SWITCHER (THE FIX) ---
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("❌ Key Missing.")
+    st.error("❌ Key Missing in Secrets.")
     st.stop()
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-def get_smart_response(prompt_text):
+# --- 6. THE "LITE" MODEL SWITCHER ---
+def get_response_with_fallback(prompt_input):
     """
-    Tries multiple models in sequence. If one is busy/broken, 
-    it automatically jumps to the next one.
+    Attempts to use the Lite model first. If that fails, tries the Flash model.
     """
-    # The "Relay Team" of models to try (Priority Order)
-    # These names are taken from your scanner results
-    model_team = [
-        "gemini-2.0-flash",       # 1. Smartest & Fastest
-        "gemini-flash-latest",    # 2. Reliable Backup
-        "gemini-2.0-flash-exp",   # 3. Experimental Backup
-        "gemini-pro"              # 4. Old Faithful
-    ]
+    # PRIORITY 1: The "Lite" model (Fast, usually empty traffic)
+    # Found in your scanner list: image_f49d71.png
+    primary_model = "gemini-2.0-flash-lite-preview-02-05"
     
-    last_error = ""
-    
-    for model_name in model_team:
+    # PRIORITY 2: The standard fallback
+    backup_model = "gemini-flash-latest"
+
+    try:
+        model = genai.GenerativeModel(primary_model)
+        response = model.generate_content(prompt_input)
+        return response.text
+    except Exception as e1:
+        # If Lite fails, try Backup immediately
         try:
-            # Try to load and run the current model
-            model = genai.GenerativeModel(model_name)
-            response = model.generate_content(prompt_text)
-            return response.text # Success! Return immediately.
-            
-        except Exception as e:
-            # If failed, log error and continue loop
-            last_error = str(e)
-            time.sleep(1) # Brief pause before switching
-            continue
-            
-    # If ALL models fail, then we show the error
-    raise Exception(f"All servers busy. Last error: {last_error}")
+            time.sleep(1) # Brief pause
+            model = genai.GenerativeModel(backup_model)
+            response = model.generate_content(prompt_input)
+            return response.text
+        except Exception as e2:
+            # If BOTH fail, return the specific error to help us debug
+            return f"SYSTEM_ERROR: {str(e1)} || {str(e2)}"
 
 # --- 7. CHAT LOGIC ---
 if "messages" not in st.session_state:
@@ -125,34 +113,35 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Prepare Context
+    # Build Prompt
     full_prompt = f"""
     You are the SSS Gingoog Virtual Assistant.
     
-    *** PRIORITY SOURCES ***
+    SOURCES:
     1. UPLOADED PDFS: {st.session_state.pdf_knowledge}
     2. PERMANENT DATA: {permanent_knowledge}
     3. ADMIN NOTES: {st.session_state.live_note}
     
-    *** INSTRUCTIONS ***
-    - Check Priority Sources first.
-    - If not found, use general SSS website knowledge (www.sss.gov.ph).
-    - Be professional and clear.
+    INSTRUCTIONS:
+    - Search Uploaded PDFs first.
+    - Fallback to SSS.gov.ph rules.
+    - Be professional.
     
-    *** QUESTION ***
-    {prompt}
+    QUESTION: {prompt}
     """
-
-    # Generate with Fallback System
+    
     with st.chat_message("assistant"):
         placeholder = st.empty()
-        placeholder.markdown("🔄 *Connecting to SSS Database...*")
+        placeholder.markdown("⏳ *Connecting...*")
         
-        try:
-            # Use the new smart function
-            response_text = get_smart_response(full_prompt)
-            placeholder.markdown(response_text)
-            st.session_state.messages.append({"role": "assistant", "content": response_text})
-            
-        except Exception as e:
-            placeholder.error("⚠️ Network Traffic is extremely high. Please wait 2 minutes.")
+        # Execute with Fallback
+        result = get_response_with_fallback(full_prompt)
+        
+        # Check for our custom error tag
+        if "SYSTEM_ERROR" in result:
+            placeholder.error("⚠️ connection failed.")
+            with st.expander("Show Technical Details (For Admin)"):
+                st.code(result) # This will show us EXACTLY why it failed
+        else:
+            placeholder.markdown(result)
+            st.session_state.messages.append({"role": "assistant", "content": result})
