@@ -1,6 +1,13 @@
 import streamlit as st
 import google.generativeai as genai
 
+# --- IMPORT YOUR KNOWLEDGE BASE ---
+# This looks for the sss_knowledge.py file you just created
+try:
+    from sss_knowledge import data as sss_knowledge_base
+except ImportError:
+    sss_knowledge_base = "No specific knowledge base found. Please use general SSS knowledge."
+
 # --- 1. PAGE CONFIGURATION ---
 st.set_page_config(
     page_title="SSS Gingoog Virtual Assistant",
@@ -8,8 +15,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# --- 2. WATERMARK (UPDATED) ---
-# I increased the z-index to 9999 and moved it up so it is not hidden
+# --- 2. WATERMARK ---
 st.markdown("""
 <style>
 .watermark {
@@ -17,7 +23,7 @@ st.markdown("""
     bottom: 40px; 
     right: 20px;
     z-index: 9999;
-    color: rgba(255, 255, 255, 0.5); /* Semi-transparent white */
+    color: rgba(255, 255, 255, 0.5);
     font-size: 14px;
     font-family: sans-serif;
     font-weight: bold;
@@ -27,14 +33,13 @@ st.markdown("""
 <div class="watermark">RPT / SSSGingoog</div>
 """, unsafe_allow_html=True)
 
-# --- 3. SIDEBAR (CONTROLS) ---
+# --- 3. SIDEBAR ---
 with st.sidebar:
     st.title("Settings")
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
     st.markdown("---")
-    # Updated to 2026
     st.caption("© 2026 SSS Gingoog Branch")
 
 # --- 4. MAIN APP HEADER ---
@@ -51,13 +56,12 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# USE THE WORKING MODEL
 try:
     model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
     st.error(f"Error loading model: {e}")
 
-# --- 7. CHAT HISTORY MANAGEMENT ---
+# --- 7. CHAT HISTORY ---
 if "messages" not in st.session_state:
     st.session_state.messages = []
     st.session_state.messages.append({
@@ -76,10 +80,20 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.session_state.messages.append({"role": "user", "content": prompt})
 
     try:
-        # Persona: Expert Consultant
-        full_prompt = f"You are a helpful and professional SSS (Social Security System) Consultant for the Gingoog Branch. Answer the following inquiry clearly and politely: {prompt}"
+        # --- HERE IS THE SECRET SAUCE ---
+        # We inject the knowledge base directly into the prompt
+        full_prompt = f"""
+        You are a helpful and professional SSS (Social Security System) Consultant for the Gingoog Branch.
         
-        with st.spinner("Thinking..."):
+        USE THIS KNOWLEDGE BASE TO ANSWER:
+        {sss_knowledge_base}
+        
+        USER QUESTION: {prompt}
+        
+        Answer clearly and politely in mixed English/Visayan if appropriate.
+        """
+        
+        with st.spinner("Checking SSS Guidelines..."):
             response = model.generate_content(full_prompt)
             
         with st.chat_message("assistant"):
