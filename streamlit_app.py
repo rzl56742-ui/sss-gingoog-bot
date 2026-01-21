@@ -27,46 +27,88 @@ st.markdown("""
 <div class="watermark">RPT / SSSGingoog</div>
 """, unsafe_allow_html=True)
 
-# --- 4. SIDEBAR & ADMIN ---
+# --- 4. SIDEBAR & ADMIN CONTROL ROOM ---
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
-    
-    # System Status Indicator
     st.success("🟢 System Online")
-    st.caption("Model: gemini-flash-latest")
     
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
     st.markdown("---")
     
-    # Admin Panel
+    # --- ADMIN ACCESS ---
     st.subheader("🔒 Admin Access")
     admin_pass = st.text_input("Enter Admin Key", type="password")
     
-    if "pdf_knowledge" not in st.session_state: st.session_state.pdf_knowledge = ""
+    # Initialize Session States
+    # We now use a DICTIONARY to store files individually: {'filename': 'text_content'}
+    if "vault_files" not in st.session_state: st.session_state.vault_files = {}
     if "live_note" not in st.session_state: st.session_state.live_note = ""
+    
+    # --- THE BRAIN: SUPERSESSION PROTOCOL ---
+    default_prompt = """You are the SSS Gingoog Virtual Assistant.
 
+*** CORE PROTOCOLS ***
+1. **ONLINE-FIRST MANDATE:** ALWAYS assume the member must file ONLINE (My.SSS/Mobile App). Only discuss OTC if the case is an exemption.
+2. **DIAGNOSTIC MODE:** Ask clarifying questions first if the inquiry is vague (e.g., "Are you Employed or Voluntary?").
+
+*** CONFLICT RESOLUTION & SUPERSESSION PROTOCOL (CRITICAL) ***
+The "Vault" contains multiple circulars/documents. You must determine which is active:
+1. **CHECK DATES:** If [Document A] is dated 2022 and [Document B] is dated 2024, and they discuss the same topic, **[Document B] PREVAILS.**
+2. **LOOK FOR "SUPERSEDES":** If a document explicitly says "This supersedes Circular X", treat Circular X as **OBSOLETE** and ignore its rules.
+3. **REPORTING:** If you find conflicting info, answer based on the NEWEST document and briefly mention: *"Based on the latest issuance [New Doc Name], which updates the previous policy..."*
+"""
+    if "system_instruction" not in st.session_state:
+        st.session_state.system_instruction = default_prompt
+
+    # ADMIN LOGIC
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
+    
     if admin_pass == stored_password:
-        st.success("Admin Logged In")
+        st.success("Access Granted")
+        
+        # 1. CUSTOMIZE BRAIN
+        with st.expander("🧠 **Customize Brain**"):
+            st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=200)
+
+        # 2. STICKY NOTE
         st.info("📝 **Sticky Note**")
         st.session_state.live_note = st.text_area("Updates:", st.session_state.live_note)
         
-        st.info("📂 **Upload PDFs**")
-        uploaded_files = st.file_uploader("Upload Circulars", type="pdf", accept_multiple_files=True)
+        # 3. THE VAULT (SMART UPLOAD)
+        st.info("📂 **Upload to Vault**")
+        uploaded_files = st.file_uploader("Add PDFs", type="pdf", accept_multiple_files=True)
+        
         if uploaded_files:
-            acc_text = ""
             for pdf in uploaded_files:
-                try:
-                    reader = pypdf.PdfReader(pdf)
-                    for page in reader.pages: acc_text += page.extract_text() + "\n"
-                except: pass
-            if acc_text:
-                st.session_state.pdf_knowledge = acc_text
-                st.success("✅ PDFs Indexed!")
-    
+                if pdf.name not in st.session_state.vault_files:
+                    try:
+                        reader = pypdf.PdfReader(pdf)
+                        text = ""
+                        for page in reader.pages: text += page.extract_text() + "\n"
+                        # Store in Dictionary
+                        st.session_state.vault_files[pdf.name] = text
+                    except: pass
+            if uploaded_files:
+                st.success("✅ Files Indexed!")
+
+        # 4. VAULT MANAGEMENT (DELETE OBSOLETE FILES)
+        if st.session_state.vault_files:
+            st.warning("📚 **Manage Vault Library:**")
+            st.caption("Delete files that are clearly obsolete to help the AI.")
+            
+            # Create a list of keys to avoid runtime error during deletion
+            file_list = list(st.session_state.vault_files.keys())
+            
+            for fname in file_list:
+                col1, col2 = st.columns([0.8, 0.2])
+                col1.text(f"📄 {fname}")
+                if col2.button("❌", key=f"del_{fname}"):
+                    del st.session_state.vault_files[fname]
+                    st.rerun()
+
     st.markdown("---")
     st.caption("© 2026 SSS Gingoog Branch")
 
@@ -82,10 +124,8 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# SWITCHING TO THE STABLE MODEL (From your Scanner List)
-# This is less likely to be 'Busy' than the 2.0 version
 try:
-    model = genai.GenerativeModel('gemini-flash-latest')
+    model = genai.GenerativeModel('gemini-flash-latest') # Using stable model
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -101,40 +141,40 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Prepare Context
+    # CONSTRUCT THE VAULT CONTENT DYNAMICALLY
+    # We label each file clearly so the AI can compare them
+    vault_content = ""
+    for fname, content in st.session_state.vault_files.items():
+        vault_content += f"\n\n*** [DOCUMENT START: {fname}] ***\n{content}\n*** [DOCUMENT END] ***"
+
     full_prompt = f"""
-    You are the SSS Gingoog Virtual Assistant.
+    {st.session_state.system_instruction}
     
-    SOURCES:
-    1. UPLOADS: {st.session_state.pdf_knowledge}
-    2. PERMANENT DATA: {permanent_knowledge}
-    3. NOTES: {st.session_state.live_note}
+    *** THE VAULT (PRIORITY SOURCES) ***
+    {vault_content if vault_content else "No files in Vault yet."}
     
-    INSTRUCTIONS:
-    - Check Uploads/Notes first.
-    - Fallback to SSS.gov.ph.
-    - Be professional.
+    *** PERMANENT KNOWLEDGE ***
+    {permanent_knowledge}
     
-    QUESTION: {prompt}
+    *** URGENT NOTES ***
+    {st.session_state.live_note}
+    
+    *** USER QUESTION ***
+    {prompt}
     """
     
     with st.chat_message("assistant"):
         placeholder = st.empty()
-        placeholder.markdown("⏳ *Thinking...*")
+        placeholder.markdown("⏳ *Analyzing Vault for latest policies...*")
         
         try:
-            # We add a small safety pause to prevent double-firing
             time.sleep(0.5)
             response = model.generate_content(full_prompt)
             placeholder.markdown(response.text)
             st.session_state.messages.append({"role": "assistant", "content": response.text})
             
         except Exception as e:
-            # Detailed Error Handling
-            err_msg = str(e)
-            if "429" in err_msg:
-                placeholder.error("⚠️ Traffic Limit. Please wait 1 minute. (Tip: Create a Key in a NEW Project to fix this permanently)")
-            elif "404" in err_msg:
-                placeholder.error("⚠️ Model Not Found. Please verify API Key permissions.")
+            if "429" in str(e):
+                placeholder.error("⚠️ Traffic Limit. Please wait 1 minute. (Admin: Consider New Project Key)")
             else:
-                placeholder.error(f"Connection Error: {err_msg}")
+                placeholder.error(f"Connection Error: {str(e)}")
