@@ -16,25 +16,18 @@ try:
 except ImportError:
     permanent_knowledge = ""
 
-# --- 3. WATERMARK (RPT / SSSGingoog) ---
+# --- 3. WATERMARK ---
 st.markdown("""
 <style>
 .watermark {
-    position: fixed;
-    bottom: 40px; 
-    right: 20px;
-    z-index: 9999;
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    font-family: sans-serif;
-    font-weight: bold;
-    pointer-events: none;
+    position: fixed; bottom: 40px; right: 20px; z-index: 9999;
+    color: rgba(255, 255, 255, 0.5); font-size: 14px; font-weight: bold; pointer-events: none;
 }
 </style>
 <div class="watermark">RPT / SSSGingoog</div>
 """, unsafe_allow_html=True)
 
-# --- 4. SIDEBAR (ADMIN & SETTINGS) ---
+# --- 4. SIDEBAR ---
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
@@ -45,145 +38,121 @@ with st.sidebar:
         
     st.markdown("---")
     
-    # --- ADMIN LOGIN SECTION ---
+    # --- ADMIN ACCESS ---
     st.subheader("🔒 Admin Access")
     admin_pass = st.text_input("Enter Admin Key", type="password")
     
-    # Initialize Session States
-    if "pdf_knowledge" not in st.session_state:
-        st.session_state.pdf_knowledge = ""
-    if "live_note" not in st.session_state:
-        st.session_state.live_note = ""
+    # Data States
+    if "pdf_knowledge" not in st.session_state: st.session_state.pdf_knowledge = ""
+    if "live_note" not in st.session_state: st.session_state.live_note = ""
 
-    # ADMIN LOGIC
+    # Admin Logic
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
-    
     if admin_pass == stored_password:
-        st.success("Admin Authenticated")
+        st.success("Access Granted")
+        st.info("📝 **Sticky Note**")
+        st.session_state.live_note = st.text_area("Urgent Updates:", value=st.session_state.live_note)
         
-        # A. LIVE TEXT NOTES
-        st.info("📝 **Quick Updates (Sticky Note)**")
-        st.session_state.live_note = st.text_area(
-            "Type urgent updates here:", 
-            value=st.session_state.live_note
-        )
-
-        # B. PDF UPLOADER
-        st.info("📂 **Upload Citizen's Charter / Circulars**")
-        uploaded_files = st.file_uploader("Upload PDF Files", type="pdf", accept_multiple_files=True)
-        
+        st.info("📂 **Upload PDFs**")
+        uploaded_files = st.file_uploader("Upload Circulars/Charter", type="pdf", accept_multiple_files=True)
         if uploaded_files:
-            pdf_text_accumulator = ""
+            text_acc = ""
             for pdf in uploaded_files:
                 try:
                     reader = pypdf.PdfReader(pdf)
-                    text = ""
-                    for page in reader.pages:
-                        text += page.extract_text() + "\n"
-                    pdf_text_accumulator += f"\n[SOURCE: PDF - {pdf.name}]\n{text}\n"
-                except Exception as e:
-                    st.error(f"Error reading {pdf.name}: {e}")
-            
-            # Save extracted text
-            if pdf_text_accumulator:
-                st.session_state.pdf_knowledge = pdf_text_accumulator
-                st.success(f"✅ Indexed {len(uploaded_files)} PDF documents!")
+                    for page in reader.pages: text_acc += page.extract_text() + "\n"
+                except: pass
+            if text_acc:
+                st.session_state.pdf_knowledge = text_acc
+                st.success("✅ PDFs Indexed!")
 
     st.markdown("---")
     st.caption("© 2026 SSS Gingoog Branch")
 
-# --- 5. MAIN APP INTERFACE ---
+# --- 5. MAIN APP ---
 st.title("SSS Gingoog Virtual Assistant") 
 st.write("Your Digital Partner in Social Security.")
-
-# --- 6. PRIVACY NOTICE ---
 st.info("ℹ️ **Privacy Notice:** Do NOT enter your SSS Number, CRN, or personal details here.")
 
-# --- 7. API CONNECTION CHECK ---
+# --- 6. INTELLIGENT MODEL SWITCHER (THE FIX) ---
 if "GOOGLE_API_KEY" not in st.secrets:
-    st.error("❌ Critical Error: GOOGLE_API_KEY is missing from Streamlit Secrets.")
+    st.error("❌ Key Missing.")
     st.stop()
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# --- MODEL SETUP ---
-# We use gemini-2.0-flash as it appeared in your scanner list
-try:
-    model = genai.GenerativeModel('gemini-2.0-flash')
-except Exception as e:
-    st.error(f"Model Error: {e}")
+def get_smart_response(prompt_text):
+    """
+    Tries multiple models in sequence. If one is busy/broken, 
+    it automatically jumps to the next one.
+    """
+    # The "Relay Team" of models to try (Priority Order)
+    # These names are taken from your scanner results
+    model_team = [
+        "gemini-2.0-flash",       # 1. Smartest & Fastest
+        "gemini-flash-latest",    # 2. Reliable Backup
+        "gemini-2.0-flash-exp",   # 3. Experimental Backup
+        "gemini-pro"              # 4. Old Faithful
+    ]
+    
+    last_error = ""
+    
+    for model_name in model_team:
+        try:
+            # Try to load and run the current model
+            model = genai.GenerativeModel(model_name)
+            response = model.generate_content(prompt_text)
+            return response.text # Success! Return immediately.
+            
+        except Exception as e:
+            # If failed, log error and continue loop
+            last_error = str(e)
+            time.sleep(1) # Brief pause before switching
+            continue
+            
+    # If ALL models fail, then we show the error
+    raise Exception(f"All servers busy. Last error: {last_error}")
 
-# --- 8. CHAT HISTORY ---
+# --- 7. CHAT LOGIC ---
 if "messages" not in st.session_state:
-    st.session_state.messages = []
-    st.session_state.messages.append({
-        "role": "assistant", 
-        "content": "Maayong adlaw! I am your SSS Gingoog Virtual Assistant. Unsa ang akong matabang nimo karon? (How can I help you today?)"
-    })
+    st.session_state.messages = [{"role": "assistant", "content": "Maayong adlaw! I am your SSS Gingoog Virtual Assistant. Unsa ang akong matabang nimo karon?"}]
 
-# --- 9. DISPLAY CHAT ---
-for message in st.session_state.messages:
-    with st.chat_message(message["role"]):
-        st.markdown(message["content"])
+for msg in st.session_state.messages:
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
 
-# --- 10. HANDLE USER QUESTIONS (WITH AUTO-RETRY) ---
 if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Prepare the Prompt
-    full_knowledge_base = f"""
-    *** DATA SOURCE 1: ADMIN UPLOADED FILES (HIGHEST PRIORITY) ***
-    {st.session_state.pdf_knowledge}
-    
-    *** DATA SOURCE 2: PERMANENT DATABASE ***
-    {permanent_knowledge}
-    
-    *** DATA SOURCE 3: URGENT ADMIN NOTES ***
-    {st.session_state.live_note}
-    """
-
-    final_prompt = f"""
+    # Prepare Context
+    full_prompt = f"""
     You are the SSS Gingoog Virtual Assistant.
     
+    *** PRIORITY SOURCES ***
+    1. UPLOADED PDFS: {st.session_state.pdf_knowledge}
+    2. PERMANENT DATA: {permanent_knowledge}
+    3. ADMIN NOTES: {st.session_state.live_note}
+    
     *** INSTRUCTIONS ***
-    1. Search Uploaded PDFs FIRST.
-    2. Fallback to SSS.gov.ph guidelines if not found.
-    3. Be professional and clear.
+    - Check Priority Sources first.
+    - If not found, use general SSS website knowledge (www.sss.gov.ph).
+    - Be professional and clear.
     
-    *** KNOWLEDGE BASE ***
-    {full_knowledge_base}
-    
-    *** USER QUESTION ***
+    *** QUESTION ***
     {prompt}
     """
-    
-    # --- AUTO-RETRY LOGIC (The Smart Part) ---
-    response_text = ""
-    retry_count = 0
-    max_retries = 3
-    
-    with st.spinner("Checking SSS References..."):
-        while retry_count < max_retries:
-            try:
-                # Try to get the answer
-                response = model.generate_content(final_prompt)
-                response_text = response.text
-                break # If successful, stop the loop!
-                
-            except Exception as e:
-                # If error is about Quota (429), wait and try again
-                if "429" in str(e):
-                    retry_count += 1
-                    time.sleep(4) # Wait 4 seconds before trying again
-                    if retry_count == max_retries:
-                        st.error("⚠️ System Busy: Too many requests. Please wait 1 minute.")
-                else:
-                    st.error(f"Error: {e}")
-                    break
 
-    # If we got an answer, show it
-    if response_text:
-        with st.chat_message("assistant"):
-            st.markdown(response_text)
-        st.session_state.messages.append({"role": "assistant", "content": response_text})
+    # Generate with Fallback System
+    with st.chat_message("assistant"):
+        placeholder = st.empty()
+        placeholder.markdown("🔄 *Connecting to SSS Database...*")
+        
+        try:
+            # Use the new smart function
+            response_text = get_smart_response(full_prompt)
+            placeholder.markdown(response_text)
+            st.session_state.messages.append({"role": "assistant", "content": response_text})
+            
+        except Exception as e:
+            placeholder.error("⚠️ Network Traffic is extremely high. Please wait 2 minutes.")
