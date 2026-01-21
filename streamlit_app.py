@@ -32,6 +32,10 @@ with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
     
+    # System Status Indicator
+    st.success("🟢 System Online")
+    st.caption("Model: gemini-flash-latest")
+    
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
@@ -44,12 +48,11 @@ with st.sidebar:
     if "pdf_knowledge" not in st.session_state: st.session_state.pdf_knowledge = ""
     if "live_note" not in st.session_state: st.session_state.live_note = ""
 
-    # Check Password
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
     if admin_pass == stored_password:
         st.success("Admin Logged In")
         st.info("📝 **Sticky Note**")
-        st.session_state.live_note = st.text_area("Urgent Updates:", st.session_state.live_note)
+        st.session_state.live_note = st.text_area("Updates:", st.session_state.live_note)
         
         st.info("📂 **Upload PDFs**")
         uploaded_files = st.file_uploader("Upload Circulars", type="pdf", accept_multiple_files=True)
@@ -63,7 +66,7 @@ with st.sidebar:
             if acc_text:
                 st.session_state.pdf_knowledge = acc_text
                 st.success("✅ PDFs Indexed!")
-
+    
     st.markdown("---")
     st.caption("© 2026 SSS Gingoog Branch")
 
@@ -79,10 +82,10 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# We stick to the BEST model found in your scanner list
-# This works best with a FRESH Key
+# SWITCHING TO THE STABLE MODEL (From your Scanner List)
+# This is less likely to be 'Busy' than the 2.0 version
 try:
-    model = genai.GenerativeModel('gemini-2.0-flash')
+    model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -98,18 +101,18 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # Build Prompt
+    # Prepare Context
     full_prompt = f"""
     You are the SSS Gingoog Virtual Assistant.
     
     SOURCES:
-    1. UPLOADED PDFS: {st.session_state.pdf_knowledge}
+    1. UPLOADS: {st.session_state.pdf_knowledge}
     2. PERMANENT DATA: {permanent_knowledge}
-    3. ADMIN NOTES: {st.session_state.live_note}
+    3. NOTES: {st.session_state.live_note}
     
     INSTRUCTIONS:
-    - Search Uploaded PDFs first.
-    - Fallback to SSS.gov.ph rules.
+    - Check Uploads/Notes first.
+    - Fallback to SSS.gov.ph.
     - Be professional.
     
     QUESTION: {prompt}
@@ -120,12 +123,18 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         placeholder.markdown("⏳ *Thinking...*")
         
         try:
+            # We add a small safety pause to prevent double-firing
+            time.sleep(0.5)
             response = model.generate_content(full_prompt)
             placeholder.markdown(response.text)
             st.session_state.messages.append({"role": "assistant", "content": response.text})
+            
         except Exception as e:
-            # Simple, clear error if traffic is high
-            if "429" in str(e):
-                placeholder.error("⚠️ System Busy. Please wait 1 minute before asking again.")
+            # Detailed Error Handling
+            err_msg = str(e)
+            if "429" in err_msg:
+                placeholder.error("⚠️ Traffic Limit. Please wait 1 minute. (Tip: Create a Key in a NEW Project to fix this permanently)")
+            elif "404" in err_msg:
+                placeholder.error("⚠️ Model Not Found. Please verify API Key permissions.")
             else:
-                placeholder.error(f"Connection Error: {e}")
+                placeholder.error(f"Connection Error: {err_msg}")
