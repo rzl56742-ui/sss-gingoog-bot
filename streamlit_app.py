@@ -43,22 +43,42 @@ with st.sidebar:
     admin_pass = st.text_input("Enter Admin Key", type="password")
     
     # Initialize Session States
-    # We now use a DICTIONARY to store files individually: {'filename': 'text_content'}
     if "vault_files" not in st.session_state: st.session_state.vault_files = {}
     if "live_note" not in st.session_state: st.session_state.live_note = ""
     
-    # --- THE BRAIN: SUPERSESSION PROTOCOL ---
+    # --- THE STRICT BRAIN PROTOCOL ---
+    # This is the instruction manual you asked for.
     default_prompt = """You are the SSS Gingoog Virtual Assistant.
 
-*** CORE PROTOCOLS ***
-1. **ONLINE-FIRST MANDATE:** ALWAYS assume the member must file ONLINE (My.SSS/Mobile App). Only discuss OTC if the case is an exemption.
-2. **DIAGNOSTIC MODE:** Ask clarifying questions first if the inquiry is vague (e.g., "Are you Employed or Voluntary?").
+*** YOUR PRIME DIRECTIVES (STRICTLY FOLLOW) ***
 
-*** CONFLICT RESOLUTION & SUPERSESSION PROTOCOL (CRITICAL) ***
-The "Vault" contains multiple circulars/documents. You must determine which is active:
-1. **CHECK DATES:** If [Document A] is dated 2022 and [Document B] is dated 2024, and they discuss the same topic, **[Document B] PREVAILS.**
-2. **LOOK FOR "SUPERSEDES":** If a document explicitly says "This supersedes Circular X", treat Circular X as **OBSOLETE** and ignore its rules.
-3. **REPORTING:** If you find conflicting info, answer based on the NEWEST document and briefly mention: *"Based on the latest issuance [New Doc Name], which updates the previous policy..."*
+1. **PHASE 1: DIAGNOSIS (CLARIFY FIRST)**
+   - Do not guess. If the user asks a vague question (e.g., "How to apply for loan?"), YOU MUST ASK:
+     "To guide you correctly, are you an Employed, Voluntary, or OFW member?"
+   - If they mention a claim, ask: "Is this for Sickness, Maternity, or Retirement?"
+
+2. **PHASE 2: DIGITAL-FIRST MANDATE**
+   - Check if the service is available on My.SSS or Mobile App.
+   - **IF YES:** Provide the ONLINE procedure immediately. Do NOT mention Over-the-Counter (OTC) yet.
+   - **IF NO:** Only discuss OTC if the service is IMPOSSIBLE online.
+
+3. **PHASE 3: EXEMPTION HANDLING**
+   - Only offer OTC/Branch Walk-in if:
+     a) The user explicitly says they have a technical error/account lock.
+     b) The procedure requires physical biometrics (e.g., UMID capture).
+     c) It is a specialized claim (e.g., Death claim disputes).
+
+4. **PHASE 4: SOURCE OF TRUTH & SUPERSESSION**
+   - **HIERARCHY:** 1. Uploaded PDFs (The Vault) -> 2. Permanent Data -> 3. www.sss.gov.ph (General Rules).
+   - **SUPERSESSION:** If PDF A (2022) and PDF B (2025) conflict, **OBEY PDF B (2025)**.
+   - **CITATION:** Always mention your source: "According to Circular [Number]..." or "Based on guidelines from www.sss.gov.ph..."
+
+5. **PHASE 5: ZERO HALLUCINATION (FALLBACK)**
+   - If the answer is NOT in the Vault and NOT in standard SSS rules:
+     **DO NOT INVENT AN ANSWER.**
+   - Instead, say: "I cannot find a specific reference for this unique case. Please visit the SSS Gingoog Branch and bring your relevant documents so our officer can assess your record personally."
+
+*** TONE: Professional, Helpful, Advocate-Educator. ***
 """
     if "system_instruction" not in st.session_state:
         st.session_state.system_instruction = default_prompt
@@ -71,7 +91,7 @@ The "Vault" contains multiple circulars/documents. You must determine which is a
         
         # 1. CUSTOMIZE BRAIN
         with st.expander("🧠 **Customize Brain**"):
-            st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=200)
+            st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=350)
 
         # 2. STICKY NOTE
         st.info("📝 **Sticky Note**")
@@ -88,20 +108,15 @@ The "Vault" contains multiple circulars/documents. You must determine which is a
                         reader = pypdf.PdfReader(pdf)
                         text = ""
                         for page in reader.pages: text += page.extract_text() + "\n"
-                        # Store in Dictionary
                         st.session_state.vault_files[pdf.name] = text
                     except: pass
             if uploaded_files:
                 st.success("✅ Files Indexed!")
 
-        # 4. VAULT MANAGEMENT (DELETE OBSOLETE FILES)
+        # 4. VAULT MANAGEMENT
         if st.session_state.vault_files:
             st.warning("📚 **Manage Vault Library:**")
-            st.caption("Delete files that are clearly obsolete to help the AI.")
-            
-            # Create a list of keys to avoid runtime error during deletion
             file_list = list(st.session_state.vault_files.keys())
-            
             for fname in file_list:
                 col1, col2 = st.columns([0.8, 0.2])
                 col1.text(f"📄 {fname}")
@@ -125,7 +140,7 @@ if "GOOGLE_API_KEY" not in st.secrets:
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
 try:
-    model = genai.GenerativeModel('gemini-flash-latest') # Using stable model
+    model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -141,23 +156,25 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # CONSTRUCT THE VAULT CONTENT DYNAMICALLY
-    # We label each file clearly so the AI can compare them
+    # CONSTRUCT THE VAULT CONTENT
     vault_content = ""
     for fname, content in st.session_state.vault_files.items():
-        vault_content += f"\n\n*** [DOCUMENT START: {fname}] ***\n{content}\n*** [DOCUMENT END] ***"
+        vault_content += f"\n\n*** [DOCUMENT: {fname}] ***\n{content}\n*** [END DOCUMENT] ***"
 
     full_prompt = f"""
     {st.session_state.system_instruction}
     
-    *** THE VAULT (PRIORITY SOURCES) ***
+    *** THE VAULT (PRIORITY 1) ***
     {vault_content if vault_content else "No files in Vault yet."}
     
-    *** PERMANENT KNOWLEDGE ***
+    *** PERMANENT DATA (PRIORITY 2) ***
     {permanent_knowledge}
     
-    *** URGENT NOTES ***
+    *** URGENT NOTES (PRIORITY 3) ***
     {st.session_state.live_note}
+    
+    *** GENERAL KNOWLEDGE FALLBACK ***
+    Use www.sss.gov.ph rules if not found above.
     
     *** USER QUESTION ***
     {prompt}
@@ -165,7 +182,7 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     
     with st.chat_message("assistant"):
         placeholder = st.empty()
-        placeholder.markdown("⏳ *Analyzing Vault for latest policies...*")
+        placeholder.markdown("⏳ *Consulting protocols...*")
         
         try:
             time.sleep(0.5)
@@ -175,6 +192,6 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
             
         except Exception as e:
             if "429" in str(e):
-                placeholder.error("⚠️ Traffic Limit. Please wait 1 minute. (Admin: Consider New Project Key)")
+                placeholder.error("⚠️ System Busy. Please wait 1 minute.")
             else:
                 placeholder.error(f"Connection Error: {str(e)}")
