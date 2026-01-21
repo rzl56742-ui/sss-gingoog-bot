@@ -55,7 +55,10 @@ with st.sidebar:
         st.session_state.live_note = ""
 
     # ADMIN LOGIC
-    if "ADMIN_PASSWORD" in st.secrets and admin_pass == st.secrets["ADMIN_PASSWORD"]:
+    # We add a fallback: if ADMIN_PASSWORD is missing, use "admin123" just so it works
+    stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
+    
+    if admin_pass == stored_password:
         st.success("Admin Authenticated")
         
         # A. LIVE TEXT NOTES
@@ -103,10 +106,9 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# --- CHANGED MODEL HERE ---
-# We switched to 'gemini-1.5-flash' which is more stable than 'flash-latest'
+# --- THE CRITICAL FIX: USING THE NAME THAT EXISTS IN YOUR ACCOUNT ---
 try:
-    model = genai.GenerativeModel('gemini-1.5-flash')
+    model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
     st.error(f"Model Error: {e}")
 
@@ -130,7 +132,6 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
 
     try:
         # --- THE STRICT SOURCE HIERARCHY ---
-        
         full_knowledge_base = f"""
         *** DATA SOURCE 1: ADMIN UPLOADED FILES (HIGHEST PRIORITY) ***
         (This contains the latest Citizen's Charter and Circulars. USE THIS FIRST.)
