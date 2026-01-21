@@ -16,7 +16,7 @@ try:
 except ImportError:
     permanent_knowledge = ""
 
-# --- 3. WATERMARK ---
+# --- 3. WATERMARK (Branding) ---
 st.markdown("""
 <style>
 .watermark {
@@ -31,8 +31,11 @@ st.markdown("""
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
-    st.success("🟢 System Online")
     
+    # Connection Status
+    st.success("🟢 System Online")
+    st.caption("Mode: Strict Digital-First")
+
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
@@ -46,39 +49,33 @@ with st.sidebar:
     if "vault_files" not in st.session_state: st.session_state.vault_files = {}
     if "live_note" not in st.session_state: st.session_state.live_note = ""
     
-    # --- THE STRICT BRAIN PROTOCOL ---
-    # This is the instruction manual you asked for.
+    # --- THE "DIAMOND" SYSTEM PROMPT (Strict Rules) ---
     default_prompt = """You are the SSS Gingoog Virtual Assistant.
 
-*** YOUR PRIME DIRECTIVES (STRICTLY FOLLOW) ***
+*** YOUR STRICT OPERATING PROTOCOLS ***
 
-1. **PHASE 1: DIAGNOSIS (CLARIFY FIRST)**
-   - Do not guess. If the user asks a vague question (e.g., "How to apply for loan?"), YOU MUST ASK:
-     "To guide you correctly, are you an Employed, Voluntary, or OFW member?"
-   - If they mention a claim, ask: "Is this for Sickness, Maternity, or Retirement?"
+1. **PHASE 1: THE TRIAGE (ASK BEFORE ANSWERING)**
+   - If the user asks a broad question (e.g., "How to apply for a loan?"), YOU MUST ASK CLARIFYING QUESTIONS FIRST.
+   - Example: "To guide you correctly, are you an Employed, Voluntary, or OFW member?"
+   - Do NOT dump generic information without knowing the member type.
 
-2. **PHASE 2: DIGITAL-FIRST MANDATE**
-   - Check if the service is available on My.SSS or Mobile App.
-   - **IF YES:** Provide the ONLINE procedure immediately. Do NOT mention Over-the-Counter (OTC) yet.
-   - **IF NO:** Only discuss OTC if the service is IMPOSSIBLE online.
+2. **PHASE 2: DIGITAL-FIRST MANDATE (CRITICAL)**
+   - **DEFAULT ACTION:** You must ALWAYS provide the Online/Mobile App procedure FIRST.
+   - **PROHIBITION:** Do NOT mention Over-the-Counter (OTC) or Drop-box options unless the user explicitly mentions a problem.
+   - *Exception:* If the service is NOT available online (e.g. UMID Biometrics, Funeral Claim for non-members), then and ONLY then can you suggest Branch filing.
 
 3. **PHASE 3: EXEMPTION HANDLING**
-   - Only offer OTC/Branch Walk-in if:
-     a) The user explicitly says they have a technical error/account lock.
-     b) The procedure requires physical biometrics (e.g., UMID capture).
-     c) It is a specialized claim (e.g., Death claim disputes).
+   - If the user says "I cannot log in" or "My account is locked," immediately pivot to the Account Recovery / Branch Appointment protocol.
 
 4. **PHASE 4: SOURCE OF TRUTH & SUPERSESSION**
-   - **HIERARCHY:** 1. Uploaded PDFs (The Vault) -> 2. Permanent Data -> 3. www.sss.gov.ph (General Rules).
-   - **SUPERSESSION:** If PDF A (2022) and PDF B (2025) conflict, **OBEY PDF B (2025)**.
-   - **CITATION:** Always mention your source: "According to Circular [Number]..." or "Based on guidelines from www.sss.gov.ph..."
+   - **Search Order:** 1. Uploaded PDFs (Vault) -> 2. Permanent Database -> 3. www.sss.gov.ph (General Rules).
+   - **Supersession Rule:** If [PDF A] is dated 2023 and [PDF B] is dated 2025, the 2025 document is the ONLY valid source. Ignore the old one.
 
-5. **PHASE 5: ZERO HALLUCINATION (FALLBACK)**
-   - If the answer is NOT in the Vault and NOT in standard SSS rules:
-     **DO NOT INVENT AN ANSWER.**
-   - Instead, say: "I cannot find a specific reference for this unique case. Please visit the SSS Gingoog Branch and bring your relevant documents so our officer can assess your record personally."
+5. **PHASE 5: ZERO HALLUCINATION**
+   - If the answer is not in the Vault or SSS Website rules:
+     "I cannot find a specific reference for this unique case. Please visit the SSS Gingoog Branch with your documents for a specialized assessment."
 
-*** TONE: Professional, Helpful, Advocate-Educator. ***
+*** TONE: Professional, Direct, and Helpful. ***
 """
     if "system_instruction" not in st.session_state:
         st.session_state.system_instruction = default_prompt
@@ -87,18 +84,18 @@ with st.sidebar:
     stored_password = st.secrets.get("ADMIN_PASSWORD", "admin123")
     
     if admin_pass == stored_password:
-        st.success("Access Granted")
+        st.success("Admin Logged In")
         
-        # 1. CUSTOMIZE BRAIN
-        with st.expander("🧠 **Customize Brain**"):
+        # 1. BRAIN SURGERY (Edit the Prompt Live)
+        with st.expander("🧠 **Customize Brain Instructions**", expanded=True):
             st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=350)
 
         # 2. STICKY NOTE
         st.info("📝 **Sticky Note**")
         st.session_state.live_note = st.text_area("Updates:", st.session_state.live_note)
         
-        # 3. THE VAULT (SMART UPLOAD)
-        st.info("📂 **Upload to Vault**")
+        # 3. THE VAULT (Upload)
+        st.info("📂 **Upload Circulars/Charter**")
         uploaded_files = st.file_uploader("Add PDFs", type="pdf", accept_multiple_files=True)
         
         if uploaded_files:
@@ -113,9 +110,9 @@ with st.sidebar:
             if uploaded_files:
                 st.success("✅ Files Indexed!")
 
-        # 4. VAULT MANAGEMENT
+        # 4. VAULT MANAGER (Delete Old Files)
         if st.session_state.vault_files:
-            st.warning("📚 **Manage Vault Library:**")
+            st.warning("📚 **Vault Contents:**")
             file_list = list(st.session_state.vault_files.keys())
             for fname in file_list:
                 col1, col2 = st.columns([0.8, 0.2])
@@ -139,6 +136,7 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
+# We use the Stable Model 'gemini-flash-latest' to match your scanner results
 try:
     model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
@@ -159,22 +157,22 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     # CONSTRUCT THE VAULT CONTENT
     vault_content = ""
     for fname, content in st.session_state.vault_files.items():
-        vault_content += f"\n\n*** [DOCUMENT: {fname}] ***\n{content}\n*** [END DOCUMENT] ***"
+        vault_content += f"\n\n*** [DOCUMENT START: {fname}] ***\n{content}\n*** [DOCUMENT END] ***"
 
     full_prompt = f"""
     {st.session_state.system_instruction}
     
-    *** THE VAULT (PRIORITY 1) ***
+    *** THE VAULT (PRIORITY 1 - UPLOADED FILES) ***
     {vault_content if vault_content else "No files in Vault yet."}
     
     *** PERMANENT DATA (PRIORITY 2) ***
     {permanent_knowledge}
     
-    *** URGENT NOTES (PRIORITY 3) ***
+    *** URGENT ADMIN NOTES (PRIORITY 3) ***
     {st.session_state.live_note}
     
-    *** GENERAL KNOWLEDGE FALLBACK ***
-    Use www.sss.gov.ph rules if not found above.
+    *** EXTERNAL SOURCE (PRIORITY 4) ***
+    www.sss.gov.ph (General Rules)
     
     *** USER QUESTION ***
     {prompt}
@@ -185,6 +183,7 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         placeholder.markdown("⏳ *Consulting protocols...*")
         
         try:
+            # Short safety pause to prevent rapid-fire errors
             time.sleep(0.5)
             response = model.generate_content(full_prompt)
             placeholder.markdown(response.text)
@@ -192,6 +191,6 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
             
         except Exception as e:
             if "429" in str(e):
-                placeholder.error("⚠️ System Busy. Please wait 1 minute.")
+                placeholder.error("⚠️ System Busy. Please wait 1 minute. (Admin: Create a New Project Key to fix this permanently)")
             else:
                 placeholder.error(f"Connection Error: {str(e)}")
