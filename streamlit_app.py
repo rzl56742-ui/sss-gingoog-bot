@@ -62,7 +62,7 @@ with st.sidebar:
    - Supersession: Newer documents override older ones.
 
 4. **PHASE 4: ZERO HALLUCINATION**
-   - If answer is unknown, direct to SSS Gingoog Branch.
+   - If answer is unknown, direct to official SSS website wwww.sss.gov.ph and SSS Gingoog Branch.
 """
     if "system_instruction" not in st.session_state:
         st.session_state.system_instruction = default_prompt
