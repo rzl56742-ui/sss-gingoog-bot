@@ -16,7 +16,7 @@ try:
 except ImportError:
     permanent_knowledge = ""
 
-# --- 3. WATERMARK (Branding) ---
+# --- 3. WATERMARK ---
 st.markdown("""
 <style>
 .watermark {
@@ -31,11 +31,8 @@ st.markdown("""
 with st.sidebar:
     st.image("https://www.sss.gov.ph/sss/images/logo.png", width=100)
     st.title("Settings")
-    
-    # Connection Status
     st.success("🟢 System Online")
-    st.caption("Mode: Strict Digital-First")
-
+    
     if st.button("🗑️ Clear Conversation", use_container_width=True):
         st.session_state.messages = []
         st.rerun()
@@ -49,33 +46,23 @@ with st.sidebar:
     if "vault_files" not in st.session_state: st.session_state.vault_files = {}
     if "live_note" not in st.session_state: st.session_state.live_note = ""
     
-    # --- THE "DIAMOND" SYSTEM PROMPT (Strict Rules) ---
+    # --- SYSTEM PROMPT (STRICT) ---
     default_prompt = """You are the SSS Gingoog Virtual Assistant.
 
 *** YOUR STRICT OPERATING PROTOCOLS ***
+1. **PHASE 1: THE TRIAGE**
+   - If the user asks a broad question, ASK CLARIFYING QUESTIONS FIRST (e.g. "Are you Employed or Voluntary?").
 
-1. **PHASE 1: THE TRIAGE (ASK BEFORE ANSWERING)**
-   - If the user asks a broad question (e.g., "How to apply for a loan?"), YOU MUST ASK CLARIFYING QUESTIONS FIRST.
-   - Example: "To guide you correctly, are you an Employed, Voluntary, or OFW member?"
-   - Do NOT dump generic information without knowing the member type.
+2. **PHASE 2: DIGITAL-FIRST MANDATE**
+   - DEFAULT: Provide Online/Mobile App procedure FIRST.
+   - PROHIBITION: Do NOT mention OTC unless the service is IMPOSSIBLE online.
 
-2. **PHASE 2: DIGITAL-FIRST MANDATE (CRITICAL)**
-   - **DEFAULT ACTION:** You must ALWAYS provide the Online/Mobile App procedure FIRST.
-   - **PROHIBITION:** Do NOT mention Over-the-Counter (OTC) or Drop-box options unless the user explicitly mentions a problem.
-   - *Exception:* If the service is NOT available online (e.g. UMID Biometrics, Funeral Claim for non-members), then and ONLY then can you suggest Branch filing.
+3. **PHASE 3: SOURCE OF TRUTH**
+   - Search Order: 1. Permanent Knowledge (Vault) -> 2. SSS Website.
+   - Supersession: Newer documents override older ones.
 
-3. **PHASE 3: EXEMPTION HANDLING**
-   - If the user says "I cannot log in" or "My account is locked," immediately pivot to the Account Recovery / Branch Appointment protocol.
-
-4. **PHASE 4: SOURCE OF TRUTH & SUPERSESSION**
-   - **Search Order:** 1. Uploaded PDFs (Vault) -> 2. Permanent Database -> 3. www.sss.gov.ph (General Rules).
-   - **Supersession Rule:** If [PDF A] is dated 2023 and [PDF B] is dated 2025, the 2025 document is the ONLY valid source. Ignore the old one.
-
-5. **PHASE 5: ZERO HALLUCINATION**
-   - If the answer is not in the Vault or SSS Website rules:
-     "I cannot find a specific reference for this unique case. Please visit the SSS Gingoog Branch with your documents for a specialized assessment."
-
-*** TONE: Professional, Direct, and Helpful. ***
+4. **PHASE 4: ZERO HALLUCINATION**
+   - If answer is unknown, direct to SSS Gingoog Branch.
 """
     if "system_instruction" not in st.session_state:
         st.session_state.system_instruction = default_prompt
@@ -86,40 +73,30 @@ with st.sidebar:
     if admin_pass == stored_password:
         st.success("Admin Logged In")
         
-        # 1. BRAIN SURGERY (Edit the Prompt Live)
-        with st.expander("🧠 **Customize Brain Instructions**", expanded=True):
-            st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=350)
+        # 1. BRAIN SURGERY
+        with st.expander("🧠 **Customize Brain**"):
+            st.session_state.system_instruction = st.text_area("System Rules:", st.session_state.system_instruction, height=200)
 
-        # 2. STICKY NOTE
-        st.info("📝 **Sticky Note**")
-        st.session_state.live_note = st.text_area("Updates:", st.session_state.live_note)
-        
-        # 3. THE VAULT (Upload)
-        st.info("📂 **Upload Circulars/Charter**")
-        uploaded_files = st.file_uploader("Add PDFs", type="pdf", accept_multiple_files=True)
+        # 2. PERMANENT KNOWLEDGE GENERATOR (THE FIX)
+        st.info("📂 **Add to Permanent Database**")
+        st.caption("Upload PDFs here to convert them into permanent text code.")
+        uploaded_files = st.file_uploader("Upload Circulars/Charter", type="pdf", accept_multiple_files=True)
         
         if uploaded_files:
+            generated_text_block = ""
             for pdf in uploaded_files:
-                if pdf.name not in st.session_state.vault_files:
-                    try:
-                        reader = pypdf.PdfReader(pdf)
-                        text = ""
-                        for page in reader.pages: text += page.extract_text() + "\n"
-                        st.session_state.vault_files[pdf.name] = text
-                    except: pass
-            if uploaded_files:
-                st.success("✅ Files Indexed!")
-
-        # 4. VAULT MANAGER (Delete Old Files)
-        if st.session_state.vault_files:
-            st.warning("📚 **Vault Contents:**")
-            file_list = list(st.session_state.vault_files.keys())
-            for fname in file_list:
-                col1, col2 = st.columns([0.8, 0.2])
-                col1.text(f"📄 {fname}")
-                if col2.button("❌", key=f"del_{fname}"):
-                    del st.session_state.vault_files[fname]
-                    st.rerun()
+                try:
+                    reader = pypdf.PdfReader(pdf)
+                    text = ""
+                    for page in reader.pages: text += page.extract_text() + "\n"
+                    # Create a clean block for the knowledge file
+                    generated_text_block += f"\n\n[DOCUMENT: {pdf.name}]\n{text}\n"
+                except: pass
+            
+            if generated_text_block:
+                st.success("✅ Conversion Complete!")
+                st.warning("👉 **ACTION REQUIRED: Copy the text below and paste it into 'sss_knowledge.py' on GitHub to make it 100% PERMANENT.**")
+                st.code(generated_text_block, language="text")
 
     st.markdown("---")
     st.caption("© 2026 SSS Gingoog Branch")
@@ -136,7 +113,6 @@ if "GOOGLE_API_KEY" not in st.secrets:
 
 genai.configure(api_key=st.secrets["GOOGLE_API_KEY"])
 
-# We use the Stable Model 'gemini-flash-latest' to match your scanner results
 try:
     model = genai.GenerativeModel('gemini-flash-latest')
 except Exception as e:
@@ -154,25 +130,18 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
     st.chat_message("user").markdown(prompt)
     st.session_state.messages.append({"role": "user", "content": prompt})
 
-    # CONSTRUCT THE VAULT CONTENT
-    vault_content = ""
-    for fname, content in st.session_state.vault_files.items():
-        vault_content += f"\n\n*** [DOCUMENT START: {fname}] ***\n{content}\n*** [DOCUMENT END] ***"
-
+    # COMBINE SOURCES
     full_prompt = f"""
     {st.session_state.system_instruction}
     
-    *** THE VAULT (PRIORITY 1 - UPLOADED FILES) ***
-    {vault_content if vault_content else "No files in Vault yet."}
-    
-    *** PERMANENT DATA (PRIORITY 2) ***
+    *** PERMANENT KNOWLEDGE VAULT (PRIORITY 1) ***
     {permanent_knowledge}
     
-    *** URGENT ADMIN NOTES (PRIORITY 3) ***
+    *** URGENT NOTES (PRIORITY 2) ***
     {st.session_state.live_note}
     
-    *** EXTERNAL SOURCE (PRIORITY 4) ***
-    www.sss.gov.ph (General Rules)
+    *** EXTERNAL SOURCE (PRIORITY 3) ***
+    www.sss.gov.ph
     
     *** USER QUESTION ***
     {prompt}
@@ -183,7 +152,6 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
         placeholder.markdown("⏳ *Consulting protocols...*")
         
         try:
-            # Short safety pause to prevent rapid-fire errors
             time.sleep(0.5)
             response = model.generate_content(full_prompt)
             placeholder.markdown(response.text)
@@ -191,6 +159,6 @@ if prompt := st.chat_input("Mangutana ko (Ask here)..."):
             
         except Exception as e:
             if "429" in str(e):
-                placeholder.error("⚠️ System Busy. Please wait 1 minute. (Admin: Create a New Project Key to fix this permanently)")
+                placeholder.error("⚠️ System Busy. Please wait 1 minute. (Admin: Create a New Project Key)")
             else:
                 placeholder.error(f"Connection Error: {str(e)}")
