@@ -1243,6 +1243,80 @@ SSC Petitions: 10 years from settlement or denial.
 V. REPEALING CLAUSE
 Repeals Circular No. 2022-039 (Online Filing), Circular No. 3-P, Circular No. 28-T, and related policies in 2022-013, 23-P, and 31-V.
 
+ANNEX 1: LIST OF DOCUMENTARY REQUIREMENTS
+(Per SSC Resolution No. 339-s.2022)
+
+I. BASIC DOCUMENTS
+
+Disability Claim Application (DisCA) Form (if OTC).
+
+Photo and Signature Form (if OTC initial claim).
+
+Medical Certificate: Issued by Attending Physician (valid for 6 months). Must include PRC No., Clinic Address, Contact Info, History, and Diagnosis.
+
+II. SUPPORTING MEDICAL DOCUMENTS (By Illness)
+
+Amputation: Record of Operation (if operated).
+
+Cataract: Record of Operation + Visual Acuity (taken 4 months after surgery).
+
+Stroke (CVA): Hospital Abstract/CT Scan/MRI + Medical Cert (neurologic status) issued within 6 months.
+
+COPD: Chest X-ray (taken within 1 month) + Pulmonary Function Test.
+
+Heart Attack (CAD): Consultation/Hospital Abstract + ECG/2D Echo (within 6 months).
+
+Diabetes Mellitus: Serial FBS results (last 2 years) + Hospital Abstract.
+
+Fracture: X-ray result + Consultation/Abstract/Operation Record.
+
+Hearing Loss: Audiogram (within 6 months).
+
+Kidney Disease: Lab results + Abstract/Dialysis Certificate.
+
+Cancer (Malignancy): Histopathological/CT/MRI + Abstract/Operation Record.
+
+Mental Illness: Complete Psychiatric Evaluation + Hospital Abstract.
+
+Parkinson's: Medical Cert by Neurologist (within 6 months).
+
+PTB (Far Advanced): Chest X-ray (within 1 month).
+
+PTB (Minimal): Chest X-ray (within 1 month) AND Old X-ray (taken at least 2 years prior).
+
+PTB (Moderate): Chest X-ray (within 1 month) AND Old X-ray (taken at least 6 months prior).
+
+Removal of Organ: Record of Operation + Histopath/Abstract.
+
+Note: Foreign documents must be English translated. CTC not required.
+
+ANNEX 2: ONLINE FILING GUIDELINES (My.SSS)
+Policies:
+
+Pre-requisites: Registered My.SSS + Enrolled Disbursement Account (DAEM) or SSS Pay Card.
+
+Process:
+
+System validates eligibility.
+
+Upload Medical Certificate (valid for 6 months) and other docs.
+
+PEI: If required, member must report within 20 days of notification. Failure = Rejection.
+
+Re-filing: Rejected claims can be re-filed as new transactions.
+
+Exceptions (Must File OTC):
+
+Incapacitated/Under Guardianship/Incarcerated.
+
+Portability Law/Bilateral Agreements.
+
+Adjustments/Re-adjudication.
+
+Unclaimed benefit of deceased member.
+
+
+
 
 
 [DOCUMENT: CI2022-020b (1).pdf]
