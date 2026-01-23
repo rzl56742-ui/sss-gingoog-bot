@@ -1523,367 +1523,133 @@ COMPARISON: PRESCRIPTIVE PERIODS FOR RE-ADJUDICATION(Request to review/adjust a 
 
 Here is the accurate transcription of Circular No. 2022-013, regarding the updated requirements for Sickness and Disability benefits.Republic of the PhilippinesSOCIAL SECURITY SYSTEMEast Ave., Diliman, Quezon CityTel. Nos. (632) 920-6401- (632) 920-6446E-mail: member_relations@sss.gov.ph | Web site: http://www.sss.gov.phCIRCULAR NO. 2022-013TO: ALL SSS MEMBERS, CLAIMANTS, PENSIONERS AND EMPLOYERSSUBJECT: UPDATED LIST OF DOCUMENTARY REQUIREMENTS FOR SICKNESS AND DISABILITY BENEFITS IN LINE WITH BUSINESS PROCESS RE-ENGINEERINGPursuant to Social Security Commission (SSC) Resolution No. 339-s.2022 dated 18 May 2022 in support of the digitalization of SSS benefit processes and in compliance with the zero-contact policy under Republic Act (RA) 11032 or the Ease of Doing Business and Efficient Government Service Delivery Act of 2018, the List of Documentary Requirements for Sickness and Disability Benefits, SS and EC, are hereby issued.I. SICKNESS BENEFITA. Basic DocumentsSS Medical Certificate; orAttending physician's Medical Certificate with the following information:a. Full Name,b. PRC Number,c. Clinic Address,d. Contact information (such as but not limited to landline/mobile number),e. History of Present Illness and Complete Diagnosis, andf. Recommended number of days convalescence including recuperationNote: Attending physician's information is not to be verified in case physician is practicing abroad.B. Supporting Medical DocumentsCertified true copy of laboratory/diagnostic results, if anyNote: For medical documents electronically issued with or without signature of issuing officials, Official Receipt of procedure done shall be submitted.Certified true copy of records of confinementa. Hospital/Medical Abstractb. Discharge Summary.C. Additional Supporting DocumentsFor EC (Employees' Compensation), above Basic and Supporting documents PLUS applicable documents:a. SSS Form B-309 (Accident/Sickness Report)b. Pre-employment Physical Examination (PE) Reportc. Employment Historyd. Complete Job Descriptione. Certified true copy of Police Report (if applicable)f. Certified true copy of logbook entry.For Self-Employed (SE), Voluntary Member (VM), above Basic and Supporting Documents PLUS:a. Certified true copy of Police Report (if applicable)b. Certificate of Livelihood issued by the Barangay (For SE member).Newly Separated - above Basic and Supporting documents PLUS:a. Certification of Separation/Affidavit of Undertakingb. Certificate of No Advance Payment.II. DISABILITY CLAIMA. Basic DocumentsDisability Claim Application (DisCA) FormMember's/Claimant's Photo and Signature FormNote: For initial claims only and claims filed Over the Counter.SS Medical Certificate or Attending Physician's personal Medical Certificate issued within six (6) months from date of filing with the following information:a. Full Name;b. PRC Number;c. Clinic Address;d. Contact information (such as but not limited to landline/mobile number); ande. History of Present Illness and Complete Diagnosis.Note: Attending physician's information is not to be verified in case physician is practicing abroad.B. Supporting Medical Documents (Checklist)Illness / ConditionRequirements1. Amputation*a. Record of Operation (if operated) indicating the level of amputation and specific body part involved.2. Cataract Operationa. Record of Operation*; andb. Recent visual acuity issued by Ophthalmologist.3. Cerebrovascular Accident (CVA)*a. Hospital Abstract/Discharge Summary or CT scan/MRI result or Record of operation (if operated) clearly indicating onset of illness; andb. Medical Certificate indicating present neurologic condition/status signed by the attending physician within six (6) months from date of filing of claim.4. Coronary Artery Disease/Heart Attack*a. Record of Consultation/Hospital Abstract/Discharge Summary/Record of Operation (if operated); andb. ECG/2D Echo result (if any).***5. Diabetes Mellitusa. Recent and serial FBS results taken during the last two (2) years before date of filing***b. Hospital Abstract/Discharge Summary (if confined)*6. Fracture**a. Record of consultation;b. Hospital Abstract/Discharge Summary;c. Record of Operation (if operated); ord. Official X-ray result.7. Hearing Loss*a. Audiogram result***8. Kidney Diseases*a. Laboratory results;b. Hospital Abstract (if confined); orc. Certificate of dialysis treatment (if any).9. Malignancy (Cancer)*a. Hospital Abstract/Discharge Summary/Record of Operation (if operated);b. Histopathologic result/CT Scan/MRI Result (if any).*10. Mental Illnessa. Complete Psychiatric Evaluation Report*; andb. Hospital Abstract/Discharge Summary (if confined).11. Parkinson's Diseasea. Medical Certificate indicating present neurologic condition/status signed by a duly certified neurologist within six (6) months from date of filing of claim.12. PTB, Far Advanceda. Recent Chest X-ray plate with official result*13. PTB, Minimala. Chest X-ray plate with official result* (taken recently AND at least 2 years before date of filing)14. PTB, Moderatea. Chest X-ray plate with official result* (taken recently AND at least six (6) months before date of filing15. Pulmonary Diseases (COPD)***a. Recent Chest X-ray plate with official result; andb. Pulmonary Function Test result (if any).16. Removal of Organ**a. Hospital Abstract/Discharge Summary/Record of Operation; andb. Histopathological result.Legend:* Certified true copy** Certified true copy of ANY of the following*** Taken within the last six (6) months beforeNotes:For medical documents electronically issued with or without signature of issuing officials, Official Receipt of procedure done shall be submitted.For medical documents issued abroad:a. Must be in English translationb. Certified true copy not requiredMedical Specialist may require additional medical records/documents to be submitted.This Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published circular with the Office of the National Administrative Register.Please be guided accordingly.01 JUN 2022Date
 
+Here is the accurate transcription of Circular No. 2025-008, which details the issuance of the new MySSS Card (replacing the UMID card).
 
-[DOCUMENT: CI2022-020b (1).pdf]
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Avenue, Diliman, Quezon City Trunkline Number: (+632) 8709 7198 Email: usssaptayo@sss.gov.ph | Website: www.sss.gov.ph
 
+CIRCULAR NO. 2025-008
 
+TO: ALL SSS MEMBERS, PRIOR REGISTRANTS, PENSIONERS, INDIVIDUAL CLAIMANTS AND REPRESENTATIVE PAYEES SUBJECT: ISSUANCE OF MYSSS CARD
 
+I. PURPOSE
+Pursuant to SSC Resolution No. 180-s.2024 dated 08 April 2024 approving the MySSS Card as the new SSS Pay Card and SSC Resolution No. 379-s.2025 dated 06 August 2025 approving the implementation of the SSS Pay Card Program, the Circular on the Issuance of MySSS Card is hereby issued.
 
+II. SCOPE
+This Circular shall cover the guidelines for the issuance of MySSS Card, which shall be applicable to the following: A. Prior registrants and SSS members; B. Pensioners with SS numbers; and C. Individual claimants and representative payees with SS numbers.
 
-[DOCUMENT: CI2022-021b (2).pdf]
+III. ABBREVIATIONS AND DEFINITION OF TERMS
+A. Abbreviations
 
+AGDB: Authorized Government Depository Bank
 
+ATM: Automated Teller Machine
 
+CVS: Central Verification System
 
+DAEM: Disbursement Account Enrollment Module
 
-[DOCUMENT: CI2022-031.pdf]
+EMV: Europay, Mastercard, and Visa
 
+PFI: Participating Financial Institution
 
+PhilSys: Philippine Identification System
 
+UMID: Unified Multipurpose Identification
 
+B. Terms
 
-[DOCUMENT: CI2022-039.pdf]
+AGDB: Bank where National Government Agencies/GOCCs are allowed to deposit government funds.
 
+National ID System: Formerly known as Philippine Identification System (PhilSys). It shall provide a unified identification system for all citizens and resident aliens in the Philippines.
 
+PFI (Participating Financial Institution): PESONet participating bank allowed by the SSS for the processing and issuance of MySSS Card where the benefits, loans and refunds of members shall be credited.
 
+Prior registrants: Individuals who have been issued SSS numbers but have no posted contributions yet (e.g., job seekers).
 
+SSS digitized ID: SSS-issued ID card embedded with a 2D barcode containing the cardholder's basic personal information and fingerprint data.
 
+SSS UMID: SSS-issued ID card that has passed through the biometric uniqueness check. It may be:
 
-[DOCUMENT: CI2023-001 (1).pdf]
+Generic UMID card: Purely identification, no ATM.
 
+UMID Pay Card: EMV-compliant SSS ID card issued through a PFI partner; automatically becomes the default disbursement account.
 
+IV. POLICIES
+A. PURPOSE OF MYSSS CARD
 
+The MySSS Card is a valid government-issued functional ID card, effectively discontinuing the issuance of generic UMID Cards and UMID Pay Cards.
 
-[DOCUMENT: CI2023-006.pdf]
+The MySSS Card shall function as the default disbursement account for the applicant's SSS benefits, loans and refunds.
 
+B. ELIGIBILITY REQUIREMENTS The following shall be the eligibility requirements for members, prior registrants, pensioners, individual claimants, or representative payees applying for the MySSS Card:
 
+The SS number must be tagged as permanent in SSS records.
 
+The applicant must have a registered account in the My.SSS Member Portal.
 
+The applicant must have a local mailing and/or home address, mobile number, and email address duly recorded in the SSS database. (Applicants residing abroad without a local address may qualify provided their selected PFI offers the service).
 
+The applicant must be registered with the National ID System.
 
+C. UPDATING OF RECORDS
 
+Applicants shall ensure that their personal information and contact details with the SSS are updated and correct prior to application.
 
-[DOCUMENT: CI2023-007.pdf]
+In case of discrepancies between SSS and National ID System records, the applicant shall update the information with the corresponding agency whose records are not current.
 
+D. MYSSS CARD APPLICATION AND ISSUANCE
 
+Applications for MySSS Card shall be filed online directly with the SSS or through the PFI:
 
+a. If applying through the SSS:
 
+i. Log in to My.SSS Member Portal to: (1) Select a PFI; (2) Provide consent for National ID System authentication; (3) Confirm agreement to terms.
 
+ii. Proceed to comply with required verification procedures of the PFI.
 
+b. If applying through the selected PFI:
 
+i. Access PFI's website/app or branch to: (1) Open an account; (2) Confirm all consents/agreements.
 
+The MySSS Card shall be produced and released by the selected PFIs.
 
+Depending on PFI policy, applicants may be charged the cost of the card. Failure to pay fees results in cancellation.
 
+Applicants residing abroad may designate an authorized representative to receive/claim the card, subject to PFI policy.
 
-[DOCUMENT: CI2023-003.pdf]
+Applicants shall be notified by SSS/PFI regarding status (successful, rejected, cancelled) and delivery/release.
 
+Applications rejected by the PFI (ineligible for account opening) are automatically cancelled in SSS records.
 
+E. MYSSS CARD AS DEFAULT DISBURSEMENT ACCOUNT
 
+The MySSS Card account shall automatically become the default disbursement account. Proceeds (benefits, pension, loans) shall be credited/redirected here.
 
+To use a different disbursement account, the member must terminate their existing MySSS Card account (in person or online via PFI). Upon termination, the account is tagged as inactive in SSS records.
 
+F. REPLACEMENT OF MYSSS CARD
 
+In case of loss/damage, request replacement subject to PFI policies. Surrender of previous card may be required.
 
+Transition Rule:
 
+If replacing a UMID Pay Card through the same PFI: Surrender is required.
 
-[DOCUMENT: CI2023-013.pdf]
+If replacing a UMID Pay Card through a different PFI: The old UMID Pay Card need not be surrendered and remains valid for identification purposes (similar to SSS Digitized ID and Generic UMID).
 
+G. RECOVERY OF FUNDS The SSS shall recall or recover any undue benefit, loan and other proceeds disbursed to payees from the MySSS Card accounts through the concerned PFIs.
 
+V. REPEALING CLAUSE
+Repeals Circular No. 2021-011 (Resumption of UMID) and Circular No. 2020-009 (Suspension of UMID).
 
+VI. EFFECTIVITY CLAUSE
+This Circular shall take effect immediately following its publication.
 
+SEP 25 2025 Date
 
+Here is the "UMID vs. MySSS Card" Transition Guide for your SSS Gingoog Branch.Lean Six Sigma Insight: This guide acts as a "Standard Operating Procedure" (SOP) update for your Public Assistance and Complaints Desk (PACD). It addresses the "Voice of the Customer" (VOC) by preemptively answering the most confusing questions about the new card system, reducing inquiry time at the counter.TRANSITION GUIDE: FROM UMID TO MySSS CARDReference: Circular No. 2025-008 (Effective September 2025)1. THE BIG CHANGE: AT A GLANCEFEATUREOLD SYSTEM (UMID)NEW SYSTEM (MySSS Card)StatusDISCONTINUED. SSS has stopped issuing Generic UMID and UMID Pay Cards.ACTIVE. The new standard government-issued functional ID.Primary FunctionIdentification (Generic) or ID + ATM (Pay Card).ID + Default Disbursement Account. Benefits, loans, and refunds are automatically credited here.Application ModePhysical filing / Biometric capture at SSS Branch.Fully Online. File via My.SSS Portal or directly through the Bank (PFI) app/branch.Key RequirementSSS Biometrics.National ID System Registration is mandatory.CostFree (initial).May have a fee, depending on the chosen Bank's (PFI) policy.2. MEMBER FAQs (Scripting for Staff)Q: "Is my old UMID card still valid?"A: Yes, for identification.If you have a Generic UMID, it remains a valid ID.If you have a UMID Pay Card and you switch to a MySSS Card with a different bank, you KEEP your old UMID Pay Card. It remains valid for ID purposes (similar to the digitized ID).Exception: If you get a replacement MySSS Card from the same bank, you may need to surrender the old card.Q: "I don't have a National ID yet. Can I apply?"A: No. You must be registered with the National ID System first. We use their data to authenticate your identity online.Q: "How do I apply for the MySSS Card?"A: You have two options:Via SSS Website: Log in to your My.SSS Portal $\rightarrow$ Select a Bank (PFI) $\rightarrow$ Give Consent $\rightarrow$ Complete Bank verification.Via Bank (PFI): Go to the participating bank's website, app, or branch directly to open the account and link it.Q: "Will my pension/loan automatically go there?"A: Yes. Once issued, the MySSS Card automatically becomes your default disbursement account. All future payouts (benefits, loans, refunds) will go there.3. PROCESS FLOW FOR STAFF (The "Happy Path")Check Eligibility:Is SS Number permanent?Is member registered in My.SSS?Does member have a National ID?Direct to Channel:If eligible: Instruct member to apply ONLINE (no need to queue at biometric station).If no My.SSS account: Assist with Web Registration first.Manage Expectations:Inform them that the Bank (PFI) will produce and release the card, not the SSS branch.Advise them to check if their chosen bank charges a card fee.
 
 
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2023-014 (1).pdf]
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2024-006.pdf]
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI 2024-007.pdf]
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI 2024-008.pdf]
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI 2024-009.pdf]
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI 2024-010.pdf]
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2024-011.pdf]
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-001 (Internal) (2).pdf]
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-002 (Internal).pdf]
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-003 (Internal).pdf]
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI 2025-004.pdf]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-005.pdf]
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-006 (1).pdf]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-007 (1).pdf]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-[DOCUMENT: CI2025-008 (3).pdf]
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-
-
-
-[DOCUMENT: CI2025-009 (2).pdf]
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-
-
-
-[DOCUMENT: CI2025-011.pdf]
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
-T H I S  D O C U M E N T  I S  U N C O N T R O L L E D
-W H E N  P R I N T E D  A N D / O R  D O W N L O A D E D
 
 """
