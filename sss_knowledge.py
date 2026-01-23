@@ -1650,6 +1650,514 @@ SEP 25 2025 Date
 
 Here is the "UMID vs. MySSS Card" Transition Guide for your SSS Gingoog Branch.Lean Six Sigma Insight: This guide acts as a "Standard Operating Procedure" (SOP) update for your Public Assistance and Complaints Desk (PACD). It addresses the "Voice of the Customer" (VOC) by preemptively answering the most confusing questions about the new card system, reducing inquiry time at the counter.TRANSITION GUIDE: FROM UMID TO MySSS CARDReference: Circular No. 2025-008 (Effective September 2025)1. THE BIG CHANGE: AT A GLANCEFEATUREOLD SYSTEM (UMID)NEW SYSTEM (MySSS Card)StatusDISCONTINUED. SSS has stopped issuing Generic UMID and UMID Pay Cards.ACTIVE. The new standard government-issued functional ID.Primary FunctionIdentification (Generic) or ID + ATM (Pay Card).ID + Default Disbursement Account. Benefits, loans, and refunds are automatically credited here.Application ModePhysical filing / Biometric capture at SSS Branch.Fully Online. File via My.SSS Portal or directly through the Bank (PFI) app/branch.Key RequirementSSS Biometrics.National ID System Registration is mandatory.CostFree (initial).May have a fee, depending on the chosen Bank's (PFI) policy.2. MEMBER FAQs (Scripting for Staff)Q: "Is my old UMID card still valid?"A: Yes, for identification.If you have a Generic UMID, it remains a valid ID.If you have a UMID Pay Card and you switch to a MySSS Card with a different bank, you KEEP your old UMID Pay Card. It remains valid for ID purposes (similar to the digitized ID).Exception: If you get a replacement MySSS Card from the same bank, you may need to surrender the old card.Q: "I don't have a National ID yet. Can I apply?"A: No. You must be registered with the National ID System first. We use their data to authenticate your identity online.Q: "How do I apply for the MySSS Card?"A: You have two options:Via SSS Website: Log in to your My.SSS Portal $\rightarrow$ Select a Bank (PFI) $\rightarrow$ Give Consent $\rightarrow$ Complete Bank verification.Via Bank (PFI): Go to the participating bank's website, app, or branch directly to open the account and link it.Q: "Will my pension/loan automatically go there?"A: Yes. Once issued, the MySSS Card automatically becomes your default disbursement account. All future payouts (benefits, loans, refunds) will go there.3. PROCESS FLOW FOR STAFF (The "Happy Path")Check Eligibility:Is SS Number permanent?Is member registered in My.SSS?Does member have a National ID?Direct to Channel:If eligible: Instruct member to apply ONLINE (no need to queue at biometric station).If no My.SSS account: Assist with Web Registration first.Manage Expectations:Inform them that the Bank (PFI) will produce and release the card, not the SSS branch.Advise them to check if their chosen bank charges a card fee.
 
+CIRCULAR NO. 2025-007
+
+TO: ALL SSS RETIREE AND SURVIVING SPOUSE PENSIONERS SUBJECT: PENSION LOAN PROGRAM FOR SSS RETIREE AND SURVIVING SPOUSE PENSIONERS
+
+I. PURPOSE
+Pursuant to the following SSC Resolutions, the Circular on the Pension Loan Program for SSS Retiree and Surviving Spouse Pensioners is hereby issued: A. SSC Resolution No. 321-s. 2025 dated 18 June 2025 B. SSC Resolution No. 36-s. 2024 dated 31 January 2024 C. SSC Resolution No. 212-s. 2022 dated 06 April 2022
+
+II. SCOPE
+This Circular shall cover the following:
+
+A. SSS RETIREE-PENSIONERS All eligible SSS retiree-pensioners, except the following:
+
+Those whose retirement claims were settled under the Special Pension System;
+
+Those who are under the care and custody of a representative payee;
+
+Those who are receiving their monthly pension through checks; and
+
+Those with pending request for re-adjudication or adjustment of pension.
+
+B. SSS SURVIVING SPOUSE PENSIONERS All eligible SSS surviving spouse pensioners, except the following:
+
+Those whose death benefit claims were settled under the Special Pension System;
+
+Those who are under the care and custody of a representative payee;
+
+Those whose dependent child/ren, if any, is/are under the care and custody of a representative payee other than the surviving spouse pensioner;
+
+Those who are receiving their monthly pension through checks; and
+
+Those with pending request for re-adjudication or adjustment of pension.
+
+III. ABBREVIATIONS AND DEFINITION OF TERMS
+A. Abbreviations
+
+CLI: Credit Life Insurance
+
+DAEM: Disbursement Account Enrolment Module
+
+EIR: Effective Interest Rate
+
+NTHP: Net Take Home Pension
+
+PL: Pension Loan
+
+SSC: Social Security Commission
+
+B. Terms
+
+Aggregate Monthly Pension: The Basic Monthly Pension and Php1,000 additional benefit.
+
+NTHP: Net amount of Aggregate Monthly Pension after deduction of monthly PL amortization.
+
+Representative Payee: The guardian of a beneficiary/pensioner who receives the pension in their behalf.
+
+Sole Payee: The only surviving spouse pensioner and representative payee of dependent child/ren, if any.
+
+Special Pension System: The Pension Payment System used to process settlement of various cases of benefit claims.
+
+IV. POLICIES/GUIDELINES
+A. ELIGIBILITY
+
+1. SSS RETIREE-PENSIONERS
+
+a. Must be registered in the SSS website with updated contact information and enrolled disbursement account;
+
+b. Must be eighty-five (85) years of age or below at the end of the month of the loan term.
+
+Sample Illustration:
+
+Max Age 84 yrs & 4 mos = 6 month term
+
+Max Age 83 yrs & 10 mos = 12 month term
+
+Max Age 82 yrs & 10 mos = 24 month term
+
+c. Must have no deductions from their monthly pension;
+
+d. Must have no existing advance pension under the SSS Calamity Loan Package;
+
+e. Must be receiving their monthly pension for at least one (1) month and the status of pension is "Active". (If retiree availed 18 months advance pension, they must be receiving monthly pension for at least 1 month);
+
+f. Must not have been disqualified due to fraud committed against the SSS.
+
+2. SSS SURVIVING SPOUSE PENSIONERS
+
+a. Must have an SS number and is registered in the SSS website, with updated contact information and enrolled disbursement account. (If not an SSS member, must secure SS number as surviving spouse pensioner);
+
+b. Must be at least eighteen (18) years of age at the time of filing but not more than eighty-five (85) years of age at the end of the month of the loan term.
+
+Sample Illustration:
+
+Max Age 84 yrs & 4 mos = 6 month term
+
+Max Age 83 yrs & 10 mos = 12 month term
+
+c. Must have no deductions from their monthly pension;
+
+d. Must have no existing advance pension under the SSS Calamity Loan Package;
+
+e. Must be receiving their monthly pension for at least one (1) month and the status of pension is "Active";
+
+f. Must be sole payee to the death benefit; and
+
+g. Must not have been disqualified due to fraud committed against the SSS.
+
+B. LOANABLE AMOUNT AND LOAN TERM
+
+1. SSS RETIREE-PENSIONER
+
+a. The loanable amount shall be the Aggregate Monthly Pension, multiplied by 3, 6, 9 or 12 months, but not to exceed the maximum limit of Php300,000.00.
+
+Option 1: 3 x Pension (6 mos term)
+
+Option 2: 6 x Pension (12 mos term)
+
+Option 3: 9 x Pension (12 mos term)
+
+Option 4: 12 x Pension (24 mos term)
+
+Note: Dependent's pension not included.
+
+b. The loanable amount and loan term shall take into consideration the NTHP, which must be at least 40% of the Aggregate Monthly Pension.
+
+2. SSS SURVIVING SPOUSE PENSIONERS
+
+a. The loanable amount shall be 50% of the surviving spouse pensioner's Aggregate Monthly Pension, multiplied by 3, 6, 9 or 12 months, but not to exceed the maximum limit of Php150,000.00.
+
+Option 1: 3 x (50% Pension) (6 mos term)
+
+Option 2: 6 x (50% Pension) (12 mos term)
+
+Option 3: 9 x (50% Pension) (12 mos term)
+
+Option 4: 12 x (50% Pension) (12 mos term)
+
+Note: Dependent's pension not included.
+
+b. The NTHP must be at least 40% of the Aggregate Monthly Pension.
+
+C. MONTHLY AMORTIZATION
+
+Deducted from the Aggregate Monthly Pension.
+
+The 1st monthly amortization shall become due on the 2nd month after the loan was granted. (e.g., Granted January -> Amortization starts March).
+
+D. INTEREST RATE AND SERVICE FEES
+
+Interest: 10% per annum (diminishing principal balance). Any remaining balance after loan term continues to incur 10% interest until fully paid.
+
+Service Fee: 2% of loan amount (deducted from proceeds).
+
+Pro-rated Interest: 10% per annum from date of granting up to end of month prior to first amortization (deducted from proceeds).
+
+Example: Loan Php20,000 granted Sept 15, 2025. 1st Amort Nov 2025. Pro-rated Interest (Sept 16-Oct 31) = Php252.05.
+
+Effective Interest Rate (EIR):
+
+24 months: 13.46%
+
+12 months: 15.82%
+
+6 months: 19.44%
+
+E. CREDIT LIFE INSURANCE (CLI)
+
+PL covered by CLI with SSS as sole beneficiary. Premium borne by borrower (one-time deduction).
+
+In event of death, PL balance considered fully paid.
+
+Insurer pays SSS the balance. Balances not covered (e.g., fraud, death after loan term, cancelled pension due to disqualification) are deducted from benefits.
+
+F. FILING OF PL
+
+Over-the-counter (Branch/Service Office) or Online (My.SSS).
+
+Borrowers notified via email/SMS.
+
+G. DISBURSEMENT Credited to existing pensioner disbursement account or DAEM account.
+
+H. FEES AND CHARGES OF DISBURSING BANK Transaction fees borne by borrower (deducted from proceeds).
+
+I. LOAN RENEWAL Allowed only after full payment of current loan.
+
+J. NO CANCELLATION POLICY No cancellation of approved PL unless justified.
+
+K. OTHER CONDITIONS
+
+Dual pensioners (Retiree + Surviving Spouse) can avail of two (2) PLs.
+
+Penalty: 1% per month for unpaid balance.
+
+Cancellation of Pension: PL becomes due and demandable within 15 working days if pension is cancelled due to:
+
+Re-employment/Self-employment (Retiree).
+
+Remarriage/Cohabitation (Surviving Spouse).
+
+Payment Order of Priority: (1) Penalty, (2) Interest, (3) Principal.
+
+Effect of Cancellation on Dual Pensioners:
+
+Retiree Pension Cancelled (Re-employment): PL deducted from Death Pension.
+
+Surviving Spouse Pension Cancelled (Remarriage): PL deducted from Retirement Pension.
+
+Both Cancelled: Collected OTC or referred to Legal.
+
+ACOP Suspension: Amortization deducted upon resumption (no penalty). Unpaid principal after term incurs 10% interest.
+
+Re-adjudication/Adjustment: Causes termination of PL. Balance deducted from re-adjudicated benefit.
+
+Refund: Overpayments refunded to borrower/beneficiaries.
+
+V. REPEALING CLAUSE
+Circular No. 2022-011 is repealed.
+
+Here is the accurate transcription of Circular No. 2025-006 regarding the SSS Calamity Loan Program.Republic of the PhilippinesSOCIAL SECURITY SYSTEMEast Avenue, Diliman Quezon CityTrunkline Number: (+632) 8709 7198Email: usssaptayo@sss.gov.ph | Website: www.sss.gov.phCIRCULAR NO. 2025-006TO: ALL SSS MEMBERS AND EMPLOYERSSUBJECT: GUIDELINES OF THE SSS CALAMITY LOAN PROGRAMI. PURPOSEPursuant to Social Security Commission (SSC) Resolution Nos. 178-s.2025 and 373-s.2025 dated 03 April 2025 and 28 July 2025, respectively, on the provision of assistance during calamities within or outside the Philippines affecting SSS members, the Circular on the Guidelines of the SSS Calamity Loan Program is hereby issued.II. SCOPEThis Circular shall cover all employed members, including kasambahay/household employees, SE members, VM, including NWS, and land-based OFW members who are residing or working in areas declared under SOC (State of Calamity) at the time of the calamity event, due to any of, but not limited to, the following natural disasters:A. TyphoonB. Storm SurgeC. HurricaneD. TornadoE. Volcanic EruptionF. EarthquakeG. TsunamiH. El Niño and La Niña PhenomenaCalamities not caused by natural disasters or geologic processes may be included as bases for recommending the opening of CLP, subject to SSC approval.III. ABBREVIATIONS AND DEFINITION OF TERMSA. AbbreviationsCLP: Calamity Loan ProgramCLRN: Calamity Loan Reference NumberEALP: Educational Assistance Loan ProgramNWS: Non-Working SpouseSLERP: Salary Loan Early Renewal ProgramSOC: State of Calamity.B. TermsAreas Declared Under SOC: Specific geographic locations officially declared under SOC due to direct impact of the calamity.CLP: A type of Short-term Member Loan Program granted to eligible members who are residing or working in areas declared under SOC.CLRN: A unique 12-alphanumeric identifier provided to SSS members as one of the eligibility requirements for the loan program.IV. POLICIES/GUIDELINESA. AVAILMENT PERIOD AND AREAS DECLARED UNDER SOCThe availment period of the CLP shall be up to thirty (30) calendar days from the date it is announced in a widely circulated newspaper and through official SSS communication channels. The announcement shall also specify the areas declared under a SOC.B. ELIGIBILITY REQUIREMENTSContributions: At least thirty-six (36) monthly contributions, six (6) of which should be posted within the last twelve (12) months prior to filing.SE/VM/OFW: Must have at least 6 posted contributions under current coverage prior to application.Employer Status: The employer of the employed member must be updated in the payment of contributions and loan remittances.Member Conditions:a. Resident of a declared calamity area OR Employee of an employer located in a declared calamity area.b. Have not been granted any final benefit (e.g., permanent total disability, retirement).c. Be of legal age and under sixty-five (65) years of age.d. Have no past due Calamity and Salary Loan, including SLERP, EALP, or other short-term loans.e. Have no outstanding Restructured Loan.f. Have not been disqualified due to fraud.g. Have updated contact information.h. Have an active disbursement account enrolled through DAEM.C. UPDATING OF MEMBER'S HOME ADDRESSThe member's home or work address as of the date of calamity shall serve as the basis for eligibility. Changes made after the calamity date shall not be considered, except where justified. In such cases, a CLRN shall be issued by designated branches to allow the correct address to be used.D. FILING OF APPLICATIONOnline through My.SSS account or SSS mobile application.E. CALAMITY LOAN AMOUNTEquivalent to the average of the member's twelve (12) latest posted MSCs, rounded to the next higher MSC, or the amount applied for, whichever is lower.Example: If average MSC is between 20,250 and 20,749, the loan amount is 20,500. Max loan for MSC over 34,750 is Php 35,000.00.Net Amount: Approved amount less service fee, pro-rated interest, and outstanding balance of previous Calamity Loan.F. INTEREST, SERVICE FEE, AND PENALTYInterest Rates:Initial: 7% per annum (diminishing principal balance).Renewal (No penalty condonation in past 5 yrs): 7% per annum.Renewal (With penalty condonation in past 5 yrs): 10% per annum.Pro-rated Interest: Deducted in advance from loan proceeds (from grant date to end of month prior to 1st amortization).Service Fee: 1% of loan amount.Penalty: 1% per month for amortizations remitted after due date.Post-Maturity: If unpaid after loan term, applicable interest rate + 1% monthly penalty applies until fully paid.G. REPAYMENT TERMPayable in twenty-four (24) equal monthly amortizations.Starts on the second month following approval.Deadline: Last day of the month following the applicable month. (e.g., March payment due April 30).Payment via PRN at SSS Branch or accredited agents.H. APPLICATION OF PAYMENTSPriority: 1. Penalty, 2. Interest, 3. Principal.I. DEFAULTConsidered in default when total unpaid obligation is equivalent to more than six (6) monthly amortizations or has remaining balance after loan term. Full balance becomes due and demandable.J. DEDUCTION FROM BENEFITSSSS is authorized to deduct outstanding balance (principal + interest + penalties) from any benefit due to the member (e.g., final claims for retirement/death).K. RELEASE OF PROCEEDSCredited to active UMID-ATM Card or PESONet participating bank account enrolled in DAEM.L. CALAMITY LOAN RENEWALAllowed after six (6) months from date of loan approval, provided:Existing loan is not past due.Last three (3) amortizations were paid within due dates.Balance of existing loan deducted from new loan proceeds.Fully Paid Loans: Can renew immediately if paid on time; if late, renewal allowed after 3 months from full payment.Minimum Proceeds: Must be $\ge$ Php 1,000.00 (or $\ge$ Php 100.00 for kasambahay).M. RESPONSIBILITIES OF THE MEMBEREmployed: Authorize employer to deduct amortization.SE/VM/OFW: Pay via PRN within due date.All: Attest that address is in SOC area. Update contact info. Reconcile unposted payments before applying.N. RESPONSIBILITIES OF THE EMPLOYERCertify loan application (attest employment and net take home pay capacity).Deduct and remit amortizations.In case of separation: Deduct total loan balance from benefits/compensation; Report separation to SSS.O. OTHER CONDITIONSCancellation: Only allowed if outstanding balance is paid in full.Recovery: SSS shall recall erroneously disbursed loans (error, duplication, unauthorized credit). Member temporarily disqualified from loans until returned.VI. EFFECTIVITY CLAUSEThis Circular shall take effect immediately following its publication.AUG 01 2025Date
+
+
+Here is the accurate transcription of Circular No. 2025-005, regarding the SSS Pension Reform Program.Republic of the PhilippinesSOCIAL SECURITY SYSTEMEast Avenue, Diliman Quezon CityTrunkline Number: (+632) 8709 7198Email: usssaptayo@sss.gov.ph | Website: www.sss.gov.phCIRCULAR NO. 2025-005TO: ALL SSS PENSIONERSSUBJECT: SSS PENSION REFORM PROGRAMI. PURPOSEPursuant to Section 4 of Republic Act No. 11199 or the Social Security Act of 2018, the Social Security Commission (SSC), under its Resolution No. 340-s.2025 dated 11 July 2025, approved the scheduled implementation of the SSS Pension Reform Program, which aims to provide stronger financial protection for SSS pensioners by ensuring that the value of their benefits can keep pace with the rising cost of living amidst longer life expectancy, thereby helping uphold their dignity and well-being.II. PROGRAM GUIDELINESA percentage-based increase in monthly pension shall be implemented over a three-year period, as shown below:Type of Pensioner202520262027Retirement / Disability10%10%10%Survivorship (Death)5%5%5%The pension increase shall take effect on the 1st of September of each implementation year. It shall cover pensioners as of the cut-off date of 31st of August of the respective year based on the date of retirement, disability, or survivorship (death).The percentage increase shall apply to the monthly pension, which consists of the regular pension plus the Php 1,000 benefit allowance. The dependents' pension shall also be adjusted accordingly.The amount of the pension increase may be paid as a differential to certain covered pensioners, such as those with:a. In-process, pending, or re-adjudicated benefit claims;b. Advance pension releases; orc. Suspended pensions awaiting resumption.III. EFFECTIVITY CLAUSEThis Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.Please be guided accordingly.28 JUL 2025Date
+
+Here is the accurate transcription of Circular No. 2025-004 regarding the SSS Salary Loan Program.Republic of the PhilippinesSOCIAL SECURITY SYSTEMEast Avenue, Diliman Quezon CityTrunkline Number: (+632) 8709 7198Email: usssaptayo@sss.gov.ph | Website: www.sss.gov.phCIRCULAR NO. 2025-004TO: ALL SSS MEMBERS AND EMPLOYERSSUBJECT: GUIDELINES OF THE SSS SALARY LOAN PROGRAMI. PURPOSEPursuant to Social Security Commission (SSC) Resolution No. 179-s.2025 dated 03 April 2025 and SSC Resolution No. 301-s.2025 dated 04 June 2025, the Circular is hereby issued to provide the guidelines for the implementation of the SSS Salary Loan Program.II. SCOPEThis Circular shall apply to all employed members, including kasambahay/household employees, self-employed (SE) members, voluntary members (VM), including non-working spouse (NWS), and land-based Overseas Filipino Workers (OFW) members.III. DEFINITION OF TERMSThe following definition of terms shall be used within the context of this Circular:A. Loan Term: Refers to the specified period within which a loan must be repaid.B. Past-due Account: Refers to the loan account that has arrears or unpaid amount after the loan term.C. Updated Employer Contribution & Loan Remittances: Shall mean that the employer has paid and submitted to SSS all the required monthly reports of their employees' contributions and loan amortizations for the last two (2) months prior to the month of filing of loan application.IV. GUIDELINESA. ELIGIBILITY REQUIREMENTSTo qualify for the SSS Salary Loan Program, the following conditions must be satisfied:a. Number of posted contributionsa.1. For a one-month loan: The member must have thirty-six (36) posted monthly contributions, six (6) of which should be within the last twelve (12) months prior to the month of filing of application.a.2. For a two-month loan: The member must have seventy-two (72) posted monthly contributions, six (6) of which should be within the last twelve (12) months prior to the month of filing of application.a.3. In addition: SE members, VM (including NWS), or land-based OFW members must have at least six (6) posted monthly contributions under their current coverage/membership type prior to the month of loan application.b. Employer Status: The employer of the employed member must be updated in the payment of contributions and loan remittances.c. The member must:c.1. Have not been granted any final benefit (e.g., permanent total disability, retirement), provided that if a final benefit has previously been granted, the same has already been canceled prior to the loan application due to re-employment, resumption of self-employment, or recovery from total disability;c.2. Be of legal age and under sixty-five (65) years of age at the time of application for loan;c.3. Have no past due Salary Loan including Salary Loan Early Renewal Program (SLERP), Educational Assistance Loan Program (EALP), or other short-term or long-term member loans as may be determined by the SSS;c.4. Have not been disqualified due to fraud committed against the SSS;c.5. Have an updated contact information in the SSS database; andc.6. Have an active disbursement account enrolled through the Disbursement Account Enrollment Module (DAEM) in the My.SSS portal.B. FILING OF SALARY LOAN APPLICATIONA member shall file the loan application online through the SSS Website by accessing their My.SSS account or through the MySSS mobile application.C. SALARY LOAN AMOUNTOne-Month Loan: Equivalent to the average of the member's twelve (12) latest posted Monthly Salary Credits (MSCs), under the Regular Social Security (SS) Program, rounded to the next higher MSC, or amount applied for, whichever is lower.Two-Month Loan: Equivalent to twice the average of the member's twelve (12) latest posted MSCs under the Regular SS Program, rounded to the next higher MSC, or amount applied for, whichever is lower.Sample Illustration (Partial Table):Range 19,750 - 20,249.99: Regular SS 20,000Range 29,750 - 30,249.99: Regular SS 20,000 + MPF 10,000 = Total 30,000Over 34,750: Regular SS 20,000 + MPF 15,000 = Total 35,000Net Amount: The approved loan amount less applicable service fee, pro-rated interest, and outstanding balance of previous short-term member loans, if any.D. INTEREST, SERVICE FEE, AND PENALTYInterest Rates:Initial: 8% interest per annum (based on diminishing principal balance).Renewal (No penalty condonation in past 5 yrs): 8% interest per annum.Renewal (With penalty condonation in past 5 yrs): 10% interest per annum.Note: Interest rates are subject to adjustment based on market conditions.Pro-rated Interest: Deducted in advance from the Salary Loan proceeds (from granting date to end of month prior to first amortization).Example: Loan Php 20,000 granted April 15, 2025. 1st Amort June 2025. Pro-rated Interest (April 16-May 31) at 8% is Php 201.64.Service Fee: 1% of the loan amount (deducted from proceeds).Penalty: 1% per month computed for every day of delay for amortizations remitted after due date.Post-Maturity: If unpaid after loan term, 10% annual interest and 1% monthly penalty applies until fully paid.E. SALARY LOAN REPAYMENT TERM AND SCHEDULE OF PAYMENTTerm: Payable in twenty-four (24) equal monthly amortizations.Start: Amortization starts on the second month following the month of approval.Deadline: On or before the last day of the month following the applicable month.Example: March 2025 applicable month is due April 30, 2025.Holidays: If deadline falls on a weekend/holiday, payment may be made on the next working day.Mode: Payment via Payment Reference Number (PRN) at SSS Branch or accredited agents.F. APPLICATION OF SALARY LOAN PAYMENTSPriority of Payment Application:PenaltyInterestPrincipal.G. DEFAULTA loan is in default when the total unpaid obligation (principal + interest + penalties) is equivalent to more than six (6) monthly amortizations or has remaining unpaid balance after the loan term. The full balance becomes due and demandable.H. DEDUCTION OF UNPAID SALARY LOAN FROM BENEFITSSSS is authorized to deduct the outstanding balance (principal + interest + penalties) from whatever SSS benefit is due to the member (e.g., permanent total disability, retirement, death).I. RELEASE OF SALARY LOAN PROCEEDSProceeds are released through:Active UMID-ATM Card; orActive single account in any PESONet participating bank enrolled in DAEM.J. SALARY LOAN RENEWALRenewal allowed after six (6) months from date of loan approval, provided:Existing loan is not past due.Last three (3) monthly amortizations were paid within due dates.Balance of existing loan deducted from new loan proceeds.Fully Paid Loans: Can renew immediately if paid on time; if late payments occurred in last 3 months, renewal allowed after three (3) months from full payment date.Minimum Proceeds: Must be $\ge$ Php 2,000.00 (or $\ge$ Php 100.00 for kasambahay).K. RESPONSIBILITIES OF THE MEMBEREmployed:Attest current employer.Authorize employer to deduct amortization.Allow deduction of full balance from benefits in case of separation.SE/VM/OFW: Pay via PRN within due date.All:Reconcile unposted payments before application.Update contact info.Authorize new employer to deduct amortization in case of re-employment.L. RESPONSIBILITIES OF THE EMPLOYERCertify loan application (attest employment and net take home pay capacity).Collect and remit amortizations.Separation: Deduct total loan balance from employee's final pay and remit to SSS. Report separation and unpaid balance via Loan Collection List (LCL).M. OTHER CONDITIONSNo Cancellation: Salary Loan cannot be cancelled. Early termination requires full payment of outstanding balance.Recovery: SSS reserves the right to recall loans disbursed due to error, duplication, or unauthorized credit. Member is temporarily disqualified from loans until erroneously disbursed amount is returned.V. REPEALING CLAUSERepeals Circular No. 2022-015, Circular No. 2019-014, and other previous issuances inconsistent with this Circular.VI. EFFECTIVITY CLAUSEThis Circular shall take effect on 16 June 2025 following its publication.13 JUN 2025Date
+
+Here is the accurate transcription of Circular No. 2025-001, regarding Employer Liability for Damages.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Ave., Diliman, Quezon City Tel. Number (632) 8709-7198 E-mail: usssaptayo@sss.gov.ph | Website: http://www.sss.gov.ph
+
+CIRCULAR NO. 2025-001
+
+TO: ALL SSS EMPLOYEE MEMBERS, CLAIMANTS, BENEFICIARIES, AND EMPLOYERS SUBJECT: GUIDELINES ON EMPLOYER LIABILITY FOR DAMAGES IN THE PAYMENT OF SOCIAL SECURITY (SS) BENEFITS DUE TO NON-COMPLIANCE WITH EMPLOYER OBLIGATIONS
+
+I. PURPOSE
+Pursuant to Social Security Commission (SSC) Resolution No. 142-s.2023 dated 29 March 2023, implementing Section 22 (b) and Section 24 (a) and (b) of the Social Security Act of 2018, or Republic Act No. 11199, on the liability of employers for damages in the payment of Social Security (SS) benefits to employees, beneficiaries or claimants due to non-compliance with employer obligations to the SSS, this Guidelines is hereby issued.
+
+II. SCOPE
+This Guidelines shall cover all SS benefit claims under employer liability filed by the employees/beneficiaries/claimants.
+
+III. POLICIES
+A. Cases of Employer Liability for Damages
+
+The employer shall be liable for damages in the payment of benefits if the following obligations were not complied with prior to the employee's date of contingency (sickness, maternity, unemployment, retirement, permanent partial/total disability or death), as determined by the SSS:
+
+a. Reported to the SSS the employee for compulsory coverage;
+
+b. Reported to the SSS the true date of employment of the employee; or
+
+c. Remitted to the SSS the correct amount of contributions due on behalf of the employee as required under the law.
+
+The amount of damages shall be equivalent to the cash benefit that an employee would have been entitled to if the above-mentioned obligations were complied with by the employer. However, if the contingency of the employee occurred within thirty (30) days from the date of employment, the employer shall be relieved of the liability to pay for damages, provided that the corresponding SS contribution prior to contingency had been paid.
+
+B. Computation of Employer Liability for Damages
+
+For non-reporting of employees for coverage, the employer liability for damages shall be computed based on the actual date of employment, as follows:
+
+a. Sickness/Maternity/Unemployment/Permanent Partial Disability/Funeral benefits and Retirement/ Permanent Total Disability/Death lump-sum benefits: Full amount of benefit for the compensable period.
+
+b. Retirement/Permanent Total Disability/Death pension benefits: Full amount of accumulated pension due as of the date of settlement of the claim or the five (5) year guaranteed pension, whichever is higher, including dependents' pension, additional monthly benefit allowance, supplemental benefit (for disability) and 13th month pension.
+
+For misrepresentation of employment date or non-remittance of any contribution due, the employer liability for damages shall be computed as follows:
+
+a. Sickness/Maternity/Unemployment/Permanent Partial Disability/Funeral benefits and Retirement/Permanent Total Disability/Death lump-sum benefits: Difference between the amount of benefit to which the employee, beneficiary/ies, or claimant/s is/are entitled to had the proper contributions been remitted to the SSS and the amount payable on the basis of contributions actually remitted.
+
+b. Retirement/Permanent Total Disability/Death pension benefits: Difference between the full amount of accumulated pension due, as mentioned in Section III.B.1b, and the amount payable on the basis of contributions actually remitted.
+
+For two (2) or more employers who are liable for the payment of benefits of the same employee, the liability of each employer shall be computed proportionately based on the actual period of employment and the corresponding contributions due.
+
+C. Payment of Benefit Claims
+
+The SSS shall determine if a benefit claim is subject to processing under employer liability for damages and shall inform the employee, beneficiary/ies, or claimant/s of the corresponding procedures for the granting of the benefit.
+
+The employee, beneficiary/ies, or claimant/s shall comply with the submission of the required documents as proof of employment showing:
+
+a. the name of the employer;
+
+b. covered employment period;
+
+c. monthly salary; and
+
+d. other information as determined by the SSS. The submitted documents shall be subject to authentication/verification by the SSS to establish existence of employer-employee relationship.
+
+Upon evaluation that the submitted documents and the employment reports on file are in order, the SSS shall send a billing letter/collection letter to the employer for the payment of unremitted contributions, including penalties, and damages.
+
+The computation of employer liability for damages and preparation of billing letter/collection letter shall be within five (5) working days upon receipt of investigation/fact of employment report from Accounts Management Section (AMS)/Large Accounts Department (LAD).
+
+The employer shall pay to the SSS the total collectible amount in full or through any settlement scheme as may be approved by the SSC.
+
+The filing and processing of the benefit claim application of the employee, beneficiary/ies, or claimant/s shall proceed upon posting of the minimum required contributions, as paid by the employer. This shall be without prejudice to the collection of the outstanding balance of the unremitted contributions, penalties, and damages. Once collected, the benefit shall be subject to re-adjudication.
+
+Note: If there were no payment/s made by the employer despite diligent efforts to collect the same, the SSS shall receive the benefit claim application of the employee, beneficiary/ies, or claimant/s for processing and payment after one (1) year from the actual date of receipt of billing letter by the employer.
+
+The employee, beneficiary/ies, or claimant/s shall receive a notification on the status of the investigation/fact of employment, information on the corresponding procedures for the granting of benefit, and/or status of the benefit claim application filed.
+
+The SSS shall institute the necessary legal action against the employer for failure or refusal to pay the total collectible amount.
+
+D. Applicable Date of Coverage for Purposes of Benefit Payments The applicable date of coverage of employed members for purposes of benefit payments shall be determined as follows:
+
+The date of coverage of an employee shall be on the day of his/her employment, which shall be presumed to be the applicable month of the first contribution remittance to the SSS, unless proven otherwise.
+
+Employees who were previously reported for coverage to the SSS but have no posted contributions upon effectivity of this Guidelines shall not be eligible for any benefit claim. The provision on date of coverage as stated in Section III.D.1 shall apply.
+
+IV. EFFECTIVITY
+This Circular shall take effect fifteen (15) days following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.
+
+Please be guided accordingly.
+
+09 JAN 2025 Date
+
+
+Here is the accurate transcription of Circular No. 2024-011, regarding the payment of benefits with overlapping compensable periods.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Ave., Diliman, Quezon City Tel. Number (632) 8709-7198 E-mail: usssaptayo@sss.gov.ph | Website: http://www.sss.gov.ph
+
+CIRCULAR NO. 2024-011
+
+TO: ALL SSS MEMBERS, PENSIONERS, BENEFICIARIES, AND EMPLOYERS SUBJECT: GUIDELINES ON THE PAYMENT OF SOCIAL SECURITY (SS) BENEFITS IN CASE OF CONCURRENCE OF TWO (2) OR MORE COMPENSABLE CONTINGENCIES
+
+I. PURPOSE
+Pursuant to Social Security Commission Resolution No. 401-s.2023 dated 20 September 2023, approving the guidelines on the payment of SS benefits in case of concurrence of two (2) or more compensable contingencies, and in accordance with Republic Act No. 11199 (RA 11199), or the Social Security Act of 2018, the guidelines are hereby issued.
+
+II. SCOPE
+The Guidelines shall apply to all SSS members with cases of two (2) or more contingencies occurring on or after 05 March 2019 with overlapping compensable periods.
+
+III. DEFINITION OF TERMS
+For the purposes of this Guidelines, the following terms shall mean and be understood as follows:
+
+A. Average Daily Salary Credit (ADSC): Result obtained by dividing the sum of the six (6) highest Monthly Salary Credits (MSCs) in the 12-month period immediately preceding the semester of contingency by 180.
+
+B. Compensable period: Period in which a member or his/her beneficiary is entitled to receive benefit for a specific contingency.
+
+C. Contingency: Retirement, death, disability, injury or sickness, maternity, and unemployment or involuntary separation of the member.
+
+D. Daily Maternity Allowance (DMA): Benefit for maternity equivalent to 100 percent of the ADSC.
+
+E. Daily Permanent Partial Disability Pension Benefit (DPB): Computed by dividing the total monthly pension benefit for permanent partial disability (PPD), consisting of basic monthly pension plus additional 1,000 monthly benefit allowance and supplemental disability allowance, by 30 calendar days.
+
+F. Daily Sickness Allowance (DSA): Benefit for sickness equivalent to 90 percent of the ADSC.
+
+G. Daily Unemployment Benefit (DUB): Computed by dividing the unemployment or involuntary separation benefit by 60 calendar days if the compensable period is for two (2) months and by 30 calendar days if for one (1) month.
+
+H. Final benefits: Benefits for long-term contingencies of retirement, death, and permanent total disability (PTD).
+
+I. Monthly Salary Credit: The compensation base for contributions and benefits.
+
+J. Overlapping period: Occurs when the compensable periods of two (2) or more contingencies overlap, whether full or partial.
+
+K. Short-term benefits: Benefits for short-term contingencies of sickness, maternity, unemployment or involuntary separation, and PPD.
+
+IV. POLICIES
+A. Payment of Benefits with Overlapping Periods Except as otherwise provided under Item IV.B of this Guidelines, the payment of benefits with overlapping periods shall be as follows:
+
+The amount of benefit shall be paid based on the compensable period as evaluated and approved by the SSS.
+
+In case a short-term benefit has overlapping periods with other short-term benefit/s, the following rules shall apply:
+
+a. Only the benefit with the highest amount shall be paid for the said period, as determined by the SSS based on the comparison of computed values of DMA, DSA, DUB, and DPB, whichever is applicable.
+
+b. If the benefit amount of the succeeding claim is higher than the settled benefit, the succeeding claim shall be processed and paid subject to the deduction of the benefit corresponding to the period of overlap.
+
+c. If the benefit amount of the succeeding claim is lower than the settled benefit, the benefit corresponding to the overlapping period shall not be paid. However, the benefit for the portion that is not included in the overlapping period shall be processed and paid.
+
+In case a short-term benefit has overlapping periods with a final benefit, it shall be paid up to the month prior to the contingency date of the final benefit. If the short-term benefit was settled prior to the final benefit claim, the amount corresponding to the overlap shall be deducted from the final benefit.
+
+Any overpayment of benefits due to overlapping periods shall be recovered from the member, pensioner, or beneficiary. The amount of overpayment that has not been recovered shall be deducted from the future benefits of the member, pensioner, or beneficiary.
+
+B. Exception Cases The following exception cases of benefits shall be paid without deduction, regardless of overlapping periods with any other contingency or the indicated contingency/ies:
+
+Maternity benefit that has overlapping period/s with PTD, PPD, and/or death benefit;
+
+Sickness benefit that has overlapping period with a PPD benefit but the sickness/injury is not related to the specific disability;
+
+Lump sum benefit for retirement, death, PTD, or PPD;
+
+Funeral benefit; and
+
+Sickness/Maternity benefit, as advanced by the employer, that has overlapping period with death benefit.
+
+C. Applicability
+
+This Guidelines shall apply to all settled/in-process/submitted benefit claims for short-term contingencies occurring on or after 05 March 2019 (effectivity date of RA 11199), with cases of overlapping periods resulting in overpayment/underpayment as determined by the SSS.
+
+For benefit claims submitted starting 01 April 2025, payment shall be in accordance with this Guidelines.
+
+V. EFFECTIVITY CLAUSE
+This Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.
+
+For the information of all concerned.
+
+19 DEC 2024 Date
+
+
+Here is the accurate transcription of Circular No. 2023-014, regarding Fraud in Benefit and Loan Transactions.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Avenue, Diliman, Quezon City Trunkline Number: (632) 8709-7198 E-mail: member_relations@sss.gov.ph | Web site: http://www.sss.gov.ph
+
+CIRCULAR NO. 2023-014
+
+TO: ALL MEMBERS, BENEFICIARIES, CLAIMANTS AND EMPLOYERS SUBJECT: GUIDELINES ON PREVENTIVE AND PUNITIVE ACTIONS AGAINST FRAUD IN BENEFIT AND LOAN TRANSACTIONS
+
+Pursuant to Social Security Commission (SSC) Resolution No. 273-s.2023 dated 30 June 2023, approving the implementation of preventive and punitive actions against fraud in benefit and loan transactions to secure the viability of the SSS Fund and ensure the integrity of payments for the purpose, and the zero-tolerance policy of the SSS on any type of fraud in all SSS transactions, in accordance with the provisions of Republic Act No. (RA) 11199 or the Social Security Act of 2018, RA No. 11032 or the Ease of Doing Business and Efficient Government Service Delivery Act of 2018, RA No. 10173 or the Data Privacy Act of 2012, RA No. 10175 or the Cybercrime Prevention Act of 2012, and other applicable laws, the following guidelines are hereby issued:
+
+I. Scope
+This Guidelines shall apply to all fraudulent benefit and loan transactions submitted online by members, beneficiaries, claimants and employers through the My.SSS portal, as detected by and/or reported to the SSS. It shall also be applicable to said transactions filed over the counter in SSS branches or offices due to exceptions in online submission.
+
+Considering the adverse impact on disbursements affecting the overall financial status and operations of the SSS, fraudulent benefit and loan transactions shall be handled accordingly for its prevention and with punitive actions.
+
+The preventive and punitive actions under this Guidelines shall be without prejudice to other criminal and/or civil actions that may be filed against any person or entity involved in the commission of fraud under applicable laws, rules and regulations.
+
+Pursuant to Section 5 (a) of RA No. 11199, any member, beneficiary, claimant or employer may appeal the findings of fraud in any benefit or loan transaction, including the preventive and punitive actions, before the SSC, subject to its Rules of Procedure.
+
+II. Fraudulent benefit and loan transaction cases
+A fraudulent benefit or loan transaction shall be deemed as any attempt or incident of intentional use of deceit, trick, modus, scheme or dishonest means to secure unfair advantage or unlawful gain from the SSS, whether for oneself or another, as follows:
+
+Filing of a benefit transaction for a non-existent contingency;
+
+Forgery, falsification, tampering or alteration of document/s;
+
+Misrepresentation or concealment of facts or information;
+
+Use and submission of any falsified or spurious document or information;
+
+Disclosing to any person or entity the log-in credentials in the My.SSS portal, including personal and/or confidential information, resulting to acts of fraud; and
+
+Other analogous cases as may be determined by the SSS.
+
+III. Responsibilities of members, beneficiaries, claimants and employers
+Members, beneficiaries, claimants and employers shall, at all times, keep their log-in credentials in the My.SSS portal secured and strictly confidential. Otherwise, they shall be solely responsible for any loss, liability or damages, including the consequences under this Guidelines. The SSS shall not be liable for any fraudulent act arising from access to or use of My.SSS portal by any person or entity with whom the log-in credentials and other personal or confidential information were shared.
+
+When submitting benefit and loan transactions, they shall provide:
+
+a. Certification with undertaking that the information and documents provided are true, correct and accurate;
+
+b. Consent for the SSS to use personal information, including disbursement account details, for verification, investigation, fund recovery and other legal purposes; and
+
+c. Other certifications or requirements as may be determined by the SSS.
+
+Those suspected and/or found to have committed fraud shall continue to pay their mandated contributions and any existing loan obligation. Said payment transactions are not covered under this Guidelines.
+
+IV. Preventive actions against fraud
+Any submitted benefit transaction suspected as fraudulent based on initial evaluation shall be immediately rejected and subject to verification processes to confirm the contingency and authenticity of documents.
+
+Any settled benefit or loan transaction suspected as fraudulent shall also be subject to verification.
+
+During verification, online submission through My.SSS portal shall be temporarily restricted or disabled.
+
+Benefit transactions shall only be submitted over the counter.
+
+Loan applications shall NOT be accepted (whether online or OTC) until further notice.
+
+Exception: Affected employers may still submit sickness and maternity notifications online.
+
+Other My.SSS features (viewing records, generating PRN) remain accessible.
+
+Submission of transactions for affected employed members subject to verification shall also be restricted/disabled for their employers.
+
+Affected parties shall be notified and required to personally proceed to the SSS branch for:
+
+a. Proper identification;
+
+b. Interview;
+
+c. Presentation of original/certified documents; and
+
+d. Other undertakings.
+
+Full access to My.SSS shall be restored once transactions are verified to be in order.
+
+Transactions with preliminary findings of fraud shall be endorsed for formal investigation. The rejection status and restricted access shall remain until further notice.
+
+V. Punitive actions against fraud
+Legal Action: All confirmed fraud cases shall be reported to law enforcement authorities for possible prosecution under Section 28 of RA No. 11199.
+
+Disqualification: Those who committed fraud shall be disqualified from the following SSS programs for a period of five (5) years per fraud case (reckoned from submission date):
+
+a. Application for any loan program;
+
+b. Availment of other voluntary programs and privileges; and
+
+c. Online submission of any benefit claim through My.SSS.
+
+Note: Over-the-counter filing during this period may require more stringent verification.
+
+Accomplices: An employer or person who assisted in the fraud (and is an SSS member) shall also be subject to the punitive actions.
+
+If involved in five (5) or more transactions, the disqualification period shall be a minimum of ten (10) years, plus one (1) year for every transaction in excess of five.
+
+Appeal: Members found guilty may file a written reconsideration to the SSS Fraud Oversight Committee (FOC) within fifteen (15) calendar days from receipt of notice. If sustained, an appeal may be filed with the SSC within another 15 days.
+
+VI. Stoppage or recovery of funds
+If no reconsideration is filed or fraud is sustained:
+
+Stoppage: Immediate processing of stoppage or recovery of funds disbursed through PESONet or banks (DBP/LBP).
+
+Demand Letter: A demand letter shall be sent to return the full amount within fifteen (15) calendar days.
+
+Deduction: If funds are not returned, the full amount (or remaining balance) shall be deducted from future benefits, loans, or other proceeds of the member/employer. This is without prejudice to criminal/civil actions.
+
+This Circular shall take effect immediately following its publication in a newspaper of general circulation.
+
+28 DEC 2023 Date
+
+
+CIRCULAR NO. 2023-013FOR: ALL SSS PENSIONERSSUBJECT: REVISED GUIDELINES ON THE ANNUAL CONFIRMATION OF PENSIONERS (ACOP) PROGRAMPursuant to Social Security Commission (SSC) Resolution No. 367-s.2023 dated 30 August 2023, approving the enhancement of policies on the Annual Confirmation of Pensioners (ACOP) Program to ensure uniform implementation and provide further clarification, the following guidelines are hereby issued:A. ScopeThe Annual Confirmation of Pensioners (ACOP) Program refers to the reporting of pensioners to the SSS on a yearly basis to ensure the continuous payment of their monthly pensions, subject to their continuing eligibility to the said benefit in accordance with Republic Act No. 11199 or the Social Security Act of 2018.The following pensioners shall be required to comply with the ACOP Program:a. Retirement pensioners residing in the Philippines who are 80 years old and above starting March 2024;b. Retirement pensioners residing abroad;c. Total disability pensioners;d. Death/Survivor pensioners; ande. Dependent children under guardianship.Retirement pensioners residing in the Philippines who are below 80 years old may be required to comply with the ACOP Program under certain circumstances as determined and upon notification by the SSS.The action to be undertaken by the SSS regarding a pensioner's account as a result of ACOP Program implementation and in accordance with these Guidelines shall be as follows:a. Continue the pension benefit;b. Suspend the pension benefit;c. Cancel the pension benefit; ord. Resume the suspended or cancelled pension benefit.B. Schedule of ComplianceExisting pensioners who are required to comply with the ACOP Program shall report to the SSS on the following schedule:Retirement & Total Disability: Month of birth of the pensioner.Death/Survivor: Month of birth of the deceased member.Dependent children under guardianship: Month of birth of the member/deceased member.Initial ACOP compliance shall be on the above-mentioned schedule after one (1) year from the approval of his/her benefit claim application.Early ACOP compliance shall be allowed up to two (2) months prior to the schedule.C. Manner of Compliance and RequirementsThe pensioner shall comply through any of the following manners (Requirements listed in Annex A):a. With personal appearance or visual confirmation:i. Over the counter at SSS branch;ii. Video conferencing (e.g., MS Teams).b. Without personal appearance or visual confirmation:i. Mail;ii. E-mail;iii. Filed through guardian or authorized representative.c. Others as determined by SSS (e.g., bank certification).If identity cannot be established or requirements are lacking, compliance shall be rejected.The following information shall be required/updated during compliance: Home address, Mailing address, E-mail address, and Mobile number.Pensioner shall provide PhilSys Card Number (PCN) and present PhilID if available.Surviving spouse and dependent children (18+) must provide their SS Number. If none, they must apply for one via SSS website.D. Other Verification ProcessesHome visits may be conducted for pensioners complying without personal appearance, specifically:Pensioners 80+ years old;Total disability pensioners;Pensioners under guardianship.SSS branches may conduct further interviews, validations, and fact-checks based on evaluation or reported information.Pensioners shall be subject to data matching with PSA (Civil Registry) and PhilSys databases.E. Suspension or Cancellation of Pension BenefitNon-compliance results in automatic suspension one (1) month immediately after the schedule.Causes for Suspension:Death reported (no claim filed yet);Pensioner not around/unknown at address during visit;Fraud findings;Data match with civil registry indicating potential non-eligibility.Causes for Cancellation:Death;Re-marriage/Cohabitation of surviving spouse;Recovery from total disability or incapacitation (dependent);Re-employment (Retiree <65 y/o or Total Disability pensioner);Gainful employment/marriage of dependent child (18+).Continued non-compliance for two (2) years from suspension results in automatic cancellation.Dependent child's pension is automatically cancelled upon reaching 21st birthday (unless incapacitated).Overpayments shall be recalled from the bank account.F. Resumption of Suspended or Cancelled Pension BenefitResumed starting the month of suspension/cancellation if eligibility is proven.Payment resumes within one (1) month from date of compliance/reporting.Unpaid/recalled pension due to resumption shall be credited to the disbursement account.G. Notification to PensionersPensioners shall be informed of actions (Suspension, ACOP schedule) via e-mail and/or My.SSS inbox.Reminders provided through media and SSS channels.EffectivityThis Circular supersedes Circulars 2018-026, 2020-005, 2020-005-b, and 2021-010. It takes effect immediately following publication.21 DEC 2023Date(Signed)ROLANDO LEDESMA MACASAETPresident and CEOANNEX A: ACOP REQUIREMENTS CHEAT SHEETMANNERRETIREE / DEATH PENSIONERTOTAL DISABILITYDEPENDENT (GUARDIAN)Personal Appearance• ACOP Form (Reply)• ID• ACOP Form (Reply)• ID• Medical docs (if needed)• ACOP Form (Reply)• Guardian ID• Dependent IDRepresentative• ACOP Form• IDs (Pensioner & Rep)• Photo holding Newspaper (headline date within 3 days of submission)Same as Retiree + Medical DocsN/AE-mail / Mail• ACOP Form• IDs• Photo holding Newspaper (headline date same as submission/mailing)Same as Retiree + Medical Docs• ACOP Form• IDs (Guardian & Dep)• Photo holding NewspaperVideo ConferenceRequest appointment via My.SSS. Interview via MS Teams.SameSame
+
+
 
 
 """
