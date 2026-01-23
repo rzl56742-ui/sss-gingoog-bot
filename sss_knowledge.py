@@ -1503,6 +1503,23 @@ Please be guided accordingly.
 
 19 APR 2022 Date
 
+CIRCULAR NO. 23-P
+
+TO: ALL SSS MEMBERS AND BENEFICIARIES SUBJECT: TEN-YEAR PRESCRIPTIVE PERIOD FOR FILING OF REQUEST FOR RE-ADJUDICATION OF SETTLED RETIREMENT, DEATH AND DISABILITY CLAIMS AND PETITIONS ASSAILING SAID SETTLED CLAIMS EFFECTIVE MARCH 1, 2006
+
+To eliminate problems in the validation of documents since the retention period of claim records is limited to ten (10) years in consonance with Article 1144 of the Civil Code of the Philippines, which states that:
+
+"ART. 1144. The following actions must be brought within ten years from the time the right of action accrues: ... (3) Upon an obligation created by law; ..."
+
+All requests for readjudication of retirement, death and disability benefits with the Social Security System shall be filed within ten (10) years from the date of the initial settlement of the claim. Likewise, petitions with the Social Security Commission assailing said settled claims shall be filed within the same period.
+
+This Circular shall take effect on 1 March 2006.
+
+For your information and guidance.
+
+24 November 2005 Date
+
+COMPARISON: PRESCRIPTIVE PERIODS FOR RE-ADJUDICATION(Request to review/adjust a previously settled claim)BENEFIT TYPEPRESCRIPTIVE PERIODAUTHORITY / REFERENCERETIREMENT10 YEARS from date of initial settlementCircular No. 23-P(Based on Art. 1144, Civil Code)DEATH10 YEARS from date of initial settlementCircular No. 23-P(Based on Art. 1144, Civil Code)DISABILITY1 YEAR from date of initial settlementCircular No. 2025-009(Section H.2.a)CRITICAL EXCEPTIONS (When the 1-Year Disability Rule does NOT apply)Even for Disability claims, the 1-year limit is waived for errors not attributable to the member.The 1-Year Limit does NOT apply if the re-adjudication is due to:SSS Errors: Unposted contributions, encoding errors (e.g., wrong Date of Birth), or incorrect contingency date used by the processor.Change of Status: Change of representative payee, emancipation of a minor, or resumption of pension after ACOP compliance.INITIAL CLAIMS (First-time Filing) vs. RE-ADJUDICATIONDon't confuse "Filing" with "Re-adjudication".Initial Filing (All Benefits): Generally 10 Years from the contingency (occurrence) date.Re-adjudication (Correction):Retirement/Death/Funeral: 10 Years.Disability: 1 Year.
 
 
 
