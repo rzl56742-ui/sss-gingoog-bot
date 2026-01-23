@@ -1405,6 +1405,105 @@ Summary of "Show-Stoppers" (Reject at PACD)
 ❌ Claimant applying for Funeral Benefit > 10 years after death. Reject (Prescribed).
 
 
+Here is the accurate transcription of Circular No. 2022-009, formatted for use as a policy reference.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Ave., Diliman, Quezon City Tel. Nos. (632) 920-6401 (632) 920-6446 E-mail: member_relations@sss.gov.ph | Web site: http://www.sss.gov.ph
+
+CIRCULAR NO. 2022-009
+
+TO: ALL DEPENDENT LEGAL SPOUSE SSS MEMBER-CLAIMANTS SUBJECT: ONLINE FILING OF SOCIAL SECURITY (SS) AND EMPLOYEES' COMPENSATION (EC) DEATH BENEFIT CLAIM THROUGH THE MY.SSS PORTAL
+
+Pursuant to Social Security Commission (SSC) Resolution No. 39-s.2022 dated 26 January 2022, and Section 13 of the Social Security Act of 2018 or Republic Act No. 11199 and to comply with the Ease of Doing Business and Efficient Government Services Delivery Act of 2018 or Republic Act No. 11032 through streamlining, simplification and automation of benefit processes, the following guidelines for the online filing of SS and EC death benefit claim through the My.SSS portal are hereby issued:
+
+A. Coverage
+All qualified dependent legal spouses of deceased SSS members who have not re-married, cohabited or entered in "live-in" relationships before or after the members' death shall file their death benefit claim online through the My.SSS portal, subject to the guidelines under this Circular.
+
+B. Definition of Terms
+Cohabitation: Refers to a relationship where a man and a woman live together as husband and wife without the benefit of marriage.
+
+The remarriage, cohabitation or "live-in" relationship contemplated herein refers to a union between a male and a female recognized under existing family laws.
+
+Mere sexual or dating relationship from either opposite or same sex is thus excluded from the coverage.
+
+C. Pre-Requisites for Online Filing
+Claimant must have an SS Number and registered in the SSS Website to be able to apply for death benefit claim through the My.SSS portal.
+
+Claimant must have a UMID card enrolled as ATM or an approved disbursement account in the Disbursement Account Enrollment Module (DAEM) in the My.SSS portal.
+
+D. Policies on the Online Filing of Death Benefit Claim
+The claimant shall provide the active/retained SS Number of the deceased SSS member upon online filing of death benefit claim through the claimant's account in the My.SSS portal.
+
+The claimant shall upload the documentary requirement/s for SS and/or EC death benefit claim, as applicable, to proceed with the online filing through the My.SSS portal.
+
+The claimant shall confirm online the deletion of all posted contribution/s applicable after the month of death of the SSS member and that he/she understands that the SSS shall determine the handling thereof based on applicable policies.
+
+The claimant shall execute an online certification with undertaking that he/she is a dependent legal spouse of the deceased SSS member and has not re-married, cohabited or entered in a "live-in" relationship before or after the members' death.
+
+The claimant may be required to upload supporting document/s and/or execute an online certification with undertaking to proceed with the online filing of death benefit claim through the My.SSS portal, or may receive notification to file at any SSS Branch Office (BO)/Foreign Representative Office (FRO) for the following conditions/cases:
+
+a. With dependent child/children;
+
+b. Date of death does not match the contingency date of settled funeral benefit claim;
+
+c. With in-process/settled death benefit claim;
+
+d. EC death benefit claim is due to illness/sickness requiring medical evaluation;
+
+e. Invalid membership coverage (i.e., Voluntary Member as initial coverage); and/or
+
+f. Other conditions/cases as may be determined by the SSS.
+
+The claimant shall be required to certify that the information provided in his/her online filing of death benefit claim through My.SSS portal are true, correct and accurate. The claimant, including any person/s involved, shall be held liable under all circumstances for any false information, misrepresentation and fraud in accordance with Section 28 of Republic Act No. 11199 and other applicable laws.
+
+Death benefit claims filed online through the My.SSS portal or at any SSS BO/FRO shall be subject to the following validation/review and processing prior to approval for payment:
+
+a. Evaluation of uploaded documentary requirement/s;
+
+b. Determination of primary beneficiary/ies;
+
+c. Verification of fact of death;
+
+d. Deduction of overlapping/overpaid benefits; and
+
+e. Other controls as may be determined by the SSS.
+
+The processing time shall start upon the acknowledgement of the online submission of claimant's death benefit claim through the My.SSS portal with complete requirements.
+
+The following e-mail and My.SSS notifications shall be sent to claimants regarding their death benefit claims submitted online through the My.SSS portal:
+
+a. Acknowledgement of successful submission;
+
+b. Approval/Rejection of claim; and/or
+
+c. Other notification/s as deemed necessary by the SSS.
+
+The death benefit shall be credited to the claimant's UMID card enrolled as ATM or the preferred disbursement account in DAEM in the My.SSS portal, in accordance with applicable policies.
+
+Death benefit claims with any of the following conditions/cases shall be filed at any SSS BO/FRO:
+
+a. Deceased SSS member has outstanding loan balance under the Stock Investment Loan Program (SILP)/Privatization Loan Program/Educational Loan/Vocational Technology Program;
+
+b. Claimant is incapacitated, under guardianship or confined in an applicable institution such as penitentiary, correctional institution or rehabilitation center;
+
+c. Application of Portability Law or Bilateral Social Security Agreements;
+
+d. Non-availability or late registration of death certificate issued by Local Civil Registrar (LCR) or Philippine Statistics Authority (PSA); and
+
+e. With adjustment or for re-adjudication of claim.
+
+E. Implementation
+Mandatory online filing of all qualified dependent legal spouses of deceased SSS members, subject to these guidelines, shall be implemented six (6) months after the effectivity of this Circular.
+
+All other existing Circulars, implementing rules and guidelines not contrary to or inconsistent with the provisions hereof shall remain valid and in effect.
+
+This Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.
+
+Please be guided accordingly.
+
+19 APR 2022 Date
+
+
 
 
 [DOCUMENT: CI2022-020b (1).pdf]
