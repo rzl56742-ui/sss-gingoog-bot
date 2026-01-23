@@ -1069,6 +1069,181 @@ I hereby undertake to inform/notify the SSS on the fact of my re-employment/re-e
 
 I am executing this affidavit to attest to the truth and veracity of the foregoing statements and to support my claim/application for retirement benefits.
 
+Here is the accurate transcription of Circular No. 2025-009, including the Annexes for Documentary Requirements and Online Filing Guidelines.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Avenue, Diliman, Quezon City Trunkline Number: (+632) 8709 7198 Email: usssaptayo@sss.gov.ph | Website: www.sss.gov.ph
+
+CIRCULAR NO. 2025-009
+
+TO: ALL SSS MEMBERS, REPRESENTATIVE PAYEES, AND DISABILITY PENSIONERS SUBJECT: CONSOLIDATED GUIDELINES ON THE SOCIAL SECURITY DISABILITY BENEFIT PROGRAM
+
+I. PURPOSE
+Pursuant to the following issuances on the consolidated guidelines on the SS disability benefit program, this Circular is hereby issued: A. Sections 4 (a) (1), 8, 12, 12-A, 13-A and 15 of RA No. 11199 (Social Security Act of 2018) dated 07 February 2019 B. RA No. 11032 (Ease of Doing Business and Efficient Government Service Delivery Act of 2018) dated 28 May 2018 C. SSC Resolution No. 613-s.2024 dated 18 December 2024 D. SSC Resolution No. 339-s.2022 dated 18 May 2022 E. SSC Resolution No. 750-s.2022 dated 25 November 2022
+
+II. SCOPE
+The Circular shall cover all SS disability benefit claims filed by members, representative payees, and the applicable transactions of SS disability pensioners.
+
+III. DEFINITION OF TERMS
+A. Abbreviations
+
+ACOP: Annual Confirmation of Pensioners
+
+DPC: Deemed paid contributions
+
+MEC: Medical Evaluation Center
+
+PEI: Physical Examination and Interview
+
+PPD: Permanent Partial Disability
+
+PTD: Permanent Total Disability
+
+SE: Self-Employed
+
+VM: Voluntary Member
+
+B. Terms
+
+DPC: Contributions deemed paid for the months during which a member received PPD pension that is based on the last contribution prior to disability.
+
+Degree of disability: An assessment that determines how disabled an individual is from the medical perspective.
+
+Disability: Any restriction or loss of a member's ability, due to a mental or physical impairment, to perform activities or interactions in a manner considered normal for a human being.
+
+PPD: Partial and permanent loss or loss of use of any body part due to injury, illness, or medical condition which does not totally prevent the member from engaging in gainful occupation.
+
+PTD: An irreversible illness, injury, or medical condition that completely and permanently prevents a member from engaging in any gainful occupation.
+
+Pre-existing disability: A permanent medical condition existing prior to the effectivity of SSS coverage.
+
+Qualified member: A member with at least one (1) posted contribution prior to the semester of disability.
+
+Recovered from PTD: A partial or total recovery from illness or injury, which was the basis for granting of a PTD benefit.
+
+Representative Payee: Member's legal spouse or parent who has custody of or is living with the beneficiary who is a minor or person incapable of administering their own affairs; or any relative/person approved by the SSC.
+
+Semester of disability: A period of two (2) consecutive calendar quarters ending in the quarter when the disability occurred.
+
+IV. POLICIES
+A. FILING OF DISABILITY BENEFIT CLAIM
+
+Disability benefit claims shall be filed either:
+
+Online through the member's My.SSS portal; or
+
+Over-the-Counter (OTC) at any MEC/SSS Branch Office.
+
+A PEI may be conducted, as determined by the SSS.
+
+If the claim is filed by a representative payee, the member shall undergo a mandatory PEI by SSS through its domiciliary services.
+
+Sickness and disability benefit claims may be filed simultaneously, provided the contingencies are not related. If related, the member shall first file either sickness or disability, and upon settlement, proceed with the other.
+
+Members aged 60 to 64:
+
+May file PPD or PTD claim if they have not yet filed for retirement benefit.
+
+Upon reaching age 65, only a PTD claim may be filed provided the disability occurred before the 65th birthday.
+
+If disability occurred at age 65 or later, the member shall be entitled to compulsory retirement benefit.
+
+Waiting Periods for Specific Illnesses:
+
+Pulmonary tuberculosis (minimal): 2 years from onset.
+
+Pulmonary tuberculosis (moderate): 6 months from onset.
+
+Bell's palsy: 2 years from onset.
+
+Diabetes mellitus (no complications): 2 years from onset.
+
+Mental illness: 2 years from onset.
+
+Psoriasis: 2 years from date of diagnosis.
+
+Fracture: 4 months from date of accident/injury.
+
+Stroke: 4 months from onset.
+
+Cataract extraction: 4 months from operation.
+
+Major surgical procedures: 4 months from operation.
+
+A qualified female member who has undergone surgical removal of reproductive organ/s due to medical condition/s may file a disability claim at any age, provided she is not yet entitled to compulsory retirement.
+
+Change of Representative Payee: Pensioner is not required to submit new medical documents or undergo another PEI.
+
+Death before settlement: Benefit paid to legal heirs. If no claim was filed prior to death, beneficiaries are entitled to death benefits only.
+
+B. PRE-EXISTING DISABILITY
+
+Members permanently disabled prior to SSS coverage are not entitled to the benefit for said disability.
+
+If disability started prior to coverage but progression/permanency occurred during coverage, they are entitled.
+
+C. DISABILITY ASSESSMENT
+
+Based on the Manual on Medical Benefits.
+
+Contingency date determined by SSS after medical evaluation.
+
+D. PAYMENT FOR MEMBERS PREVIOUSLY GRANTED BENEFITS
+
+Related/Progressing Disabilities: Degrees are additive up to 100% (PTD).
+
+PPD to PPD: Previous degree deducted from current.
+
+PPD to PTD: Previous amount NOT deducted.
+
+Unrelated Disabilities: Percentage degree is NOT additive; previous degree NOT deducted.
+
+E. DEEMED PAID CONTRIBUTIONS (DPC)
+
+Contributions are deemed paid during months a member receives PPD pension.
+
+DPCs are posted only after full settlement of PPD pension.
+
+DPCs are considered for qualifying conditions and pension computation. However, if inclusion results in lower PTD benefit, computation without DPC prevails.
+
+F. EFFECT OF EMPLOYMENT/RECOVERY
+
+PPD Pensioner: Continues to receive pension even if employed or recovered.
+
+PTD Pensioner:
+
+Resumed Employment/Recovered: Pension SUSPENDED. SSS membership reinstated for coverage.
+
+Government Employment: Continues to receive pension (if not recovered).
+
+Overpayment: Shall be recovered by SSS.
+
+Lump-Sum PTD Recipients:
+
+Resumption < 1 year: Retain membership. Benefit re-evaluated (may change to PPD).
+
+Resumption > 1 year: Considered NEW member (new SS number). Previous contributions covered by Lump Sum are no longer considered.
+
+G. DEATH OF DISABILITY PENSIONER
+
+Primary beneficiaries as of the date of death are entitled to the monthly pension.
+
+Suspended PTD (ACOP failure): If pensioner died before compliance, accrued pension from suspension to death is paid to heirs, provided they were not re-employed and disability was total.
+
+H. PRESCRIPTIVE PERIOD
+
+Initial Claims: 10 years from occurrence of disability.
+
+Adjustment/Re-adjudication: 1 year from initial settlement.
+
+Exceptions (No limit): Errors not attributable to member (unposted contribs, encoding errors) or Change of Payee/Emancipation/ACOP resumption.
+
+SSC Petitions: 10 years from settlement or denial.
+
+V. REPEALING CLAUSE
+Repeals Circular No. 2022-039 (Online Filing), Circular No. 3-P, Circular No. 28-T, and related policies in 2022-013, 23-P, and 31-V.
+
+
 
 [DOCUMENT: CI2022-020b (1).pdf]
 
