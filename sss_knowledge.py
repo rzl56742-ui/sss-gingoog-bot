@@ -568,6 +568,132 @@ For Additional document for illegitimate child/children
 (1) Original Copy And (1) Photo CopyRemarks:
 Birth certiﬁcate duly signed by the father as informant 
 
+CIRCULAR NO. 2021-021
+
+TO: ALL SSS MEMBERS AND EMPLOYERS SUBJECT: ENHANCED ONLINE FILING OF RETIREMENT BENEFIT CLAIM THROUGH THE MY.SSS PORTAL
+
+Pursuant to Social Security Commission (SSC) Resolution No. 660-s.2021 dated 15 December 2021, and to comply with the Ease of Doing Business and Efficient Government Services Delivery Act of 2018 or Republic Act 11032, through streamlining, simplification and automation of benefit processes, the following guidelines for the enhanced online filing of retirement benefit claim through the My.SSS portal are hereby issued:
+
+A. Coverage
+All qualified employee-members, self-employed (SE), voluntary members (VMs) and land-based Overseas Filipino Worker (OFW) members shall file their retirement benefit claim online through the My.SSS portal, subject to the guidelines under this Circular.
+
+B. Pre-requisites for Online Filing
+Member must be registered in the SSS Website to be able to apply for retirement benefit claim online through the My.SSS portal.
+
+Member must have a UMID card enrolled as ATM or an approved disbursement account in the Disbursement Account Enrolment Module (DAEM) in the My.SSS portal.
+
+C. Policies on Online Filing of Retirement Benefit Claim
+For employee-members who are sixty (60) to sixty-four (64) years old as of date of retirement, the following conditions shall apply:
+
+a. If with contribution/s within twelve (12) months prior to the month of retirement, a request for online certification shall be sent to the employer. The latest employer per SSS record shall certify the employee-member's date of separation from employment through the employer's account in the My.SSS portal; and
+
+b. If with no contribution/s within 12 months prior to the month of retirement, a Certificate of Separation shall not be required.
+
+SE members who are sixty (60) to sixty-four (64) years old as of date of retirement and with posted contribution/s applicable after the month of cessation of business/self-employment, per SSS record, shall have the following options before proceeding with online filing of retirement benefit claim through the My.SSS portal:
+
+a. To encode the correct date of cessation of business/self-employment;
+
+b. To refile the retirement benefit claim online on or after the applicable month of the last posted SE contribution; or
+
+c. To execute an online certification with undertaking that only contribution/s applicable up to the month of cessation of business/self-employment shall be considered in his/her retirement benefit claim and he/she understands that the SSS shall determine the handling of contribution/s not considered based on applicable policies.
+
+Note: The SE member's reason for the said online certification shall only be because the posted contribution/s applicable after the month of cessation of business/self-employment was/were paid prior to cessation of business/self-employment but applicable for month/s after the cessation of business/self-employment (i.e., advance payment).
+
+For SE members who are sixty (60) to sixty-four (64) years old as of date of retirement, execution of an online certification with undertaking of his/her date of cessation of business/self-employment shall be required upon online submission of retirement benefit claim through the My.SSS portal, in lieu of uploading and submission of documents as proof.
+
+VM and land-based OFW members who are sixty (60) to sixty-four (64) years old as of date of retirement and with posted contribution/s applicable on and/or after the month of online filing of retirement benefit claim through the My.SSS portal (i.e., advance payment), per SSS record, shall have the following options before proceeding with the said online filing:
+
+a. To refile the retirement benefit claim online after the applicable month of the last posted VM or land-based OFW contribution; or
+
+b. To confirm the deletion of the said contribution/s and that he/she understands that the SSS shall determine the handling thereof based on applicable policies.
+
+Members may receive an on-screen notification to refile the retirement benefit claim online through the My.SSS portal on or after a specific month when his/her paid contributions for at least 120 months are prior to the semester of retirement, in order to qualify for pension benefit.
+
+Members may be required to upload supporting document/s and/or execute an online certification with undertaking to proceed with the online filing of retirement benefit claim through the My.SSS portal, or may receive notification to file at any SSS Branch Office (BO)/Foreign Representative Office (FRO), for the following conditions/cases:
+
+a. With dependent child/children;
+
+b. Racehorse Jockey;
+
+c. Underground or Surface Mineworker;
+
+d. Disapproval/Expiration of the request for online employer certification, as applicable in the case of employee-member; and/or
+
+e. Other conditions/cases as may be determined by the SSS.
+
+Members who are at least 60 years old and have paid less than 120 monthly contributions shall have the following options before proceeding with online filing of retirement benefit claim through the My.SSS portal:
+
+a. To cancel the online filing and continue paying contributions to qualify for pension benefits; or
+
+b. To proceed with the online filing for application of lump sum benefit and confirm his/her understanding that no other benefit is due thereafter except for funeral benefit.
+
+The member shall be required to certify that the information provided in his/her online filing of retirement benefit claim through My.SSS Portal are true, correct and accurate. The member, including any person/s involved, shall be held liable under all circumstances for any false information, misrepresentation and fraud in accordance with Section 28 of Republic Act No. 11199 and other applicable laws.
+
+Retirement benefit claims filed online through the My.SSS portal, including uploaded supporting documents and online certification with undertaking, shall be subject to further validation/review and processing prior to approval for payment.
+
+The processing time shall start upon the acknowledgement of the online submission of employee-member's retirement benefit claim through the My.SSS portal with complete requirements, including the approved online certification by employer for employee-member as applicable.
+
+The following e-mail notifications shall be sent to members regarding their retirement benefit claims submitted online through the My.SSS portal:
+
+a. Acknowledgement of successful submission;
+
+b. Approval/Disapproval/Expiration of the request for online employer certification, as applicable in the case of employee-member;
+
+c. Approval/Rejection of claim; and/or
+
+d. Other notification/s as deemed necessary by the SSS.
+
+The retirement benefit shall be credited to the member's UMID card enrolled as ATM or the preferred disbursement account in DAEM in the My.SSS portal, in accordance with applicable policies.
+
+Retirement benefit claims with any of the following conditions/cases shall be filed at any SSS BO/FRO:
+
+a. With outstanding Stock Investment Loan Program (SILP) / Privatization Loan / Vocational Technology Loan / Educational Loan balance;
+
+b. Dependent child/children under guardianship;
+
+c. Member is incapacitated, under guardianship, or confined in an applicable institution such as penitentiary, correctional institution or rehabilitation center;
+
+d. Application of Portability Law or Bilateral Social Security Agreements;
+
+e. With adjustment or for re-adjudication of claim; and
+
+f. Unclaimed benefit of deceased member.
+
+D. Policies on Online Certification of Employer
+The certifying employer must be:
+
+a. With active status and registered in the My.SSS portal; and
+
+b. The latest employer of separated employee-member per SSS record.
+
+The following e-mail notifications shall be sent to the certifying employer:
+
+a. Request for employer's online certification of the date of separation from employment;
+
+b. Acknowledgement of action taken by employer on the request; and/or
+
+c. Expiration of request for employer's online certification.
+
+Retirement benefit claims of employee-members without the required online certification of employer shall automatically expire after ten (10) calendar days from the date of successful online submission. The member shall re-file the retirement benefit claim through the My.SSS portal.
+
+E. Implementation
+The existing policy on mandatory online filing of retirement benefit claims through the My.SSS portal of all employee-members, VM and land-based OFW members, and SE members whose age at the time of retirement is at least sixty-five (65) years old, shall remain valid subject to the guidelines under this Circular.
+
+In the case of SE members who are sixty (60) to sixty-four (64) years old, mandatory online filing shall be implemented six (6) months after the effectivity of this Circular.
+
+This supersedes Circular No. 2020-018 dated 22 July 2020 on the Online Filing of Retirement Benefit Claim Through the SSS Website.
+
+All other existing Circulars, implementing rules and guidelines not contrary to or inconsistent with the provisions hereof shall remain valid and in effect.
+
+This Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.
+
+Please be guided accordingly.
+
+28 DEC 2021 Date
+
+CHEAT SHEET: Enhanced Online Retirement Claim (My.SSS)Reference: Circular No. 2021-0211. THE "MUST-HAVES" (Prerequisites)Before queuing, ensure the member has:Active My.SSS Account: Registration is mandatory.Enrolled Disbursement Account: UMID-ATM or approved bank account in DAEM (Disbursement Account Enrolment Module).2. TRIAGE: ONLINE VS. OVER-THE-COUNTERMost claims are ONLINE. Only specific cases are allowed at the counter.FILING METHODWHO / CONDITIONONLINE (My.SSS)• ALL Employees, Self-Employed (SE), Voluntary (VM), & Land-based OFWs.• Members 60-64 years old (subject to specific rules below).MANUAL (Counter)• Loans: Outstanding Stock Investment (SILP), Privatization, Vocational Tech, or Educational Loans.• Guardianship: Dependent children under guardianship.• Incapacitated/Incarcerated: Member is in prison, rehab, or under guardianship.• Portability/Bilateral: Applying under Portability Law or International Agreements.• Deceased: Unclaimed benefit of a deceased member.• Adjustments: Re-adjudication of claims.3. SCENARIO GUIDE: MEMBERS AGED 60-64These members are not yet 65 (mandatory technical retirement), so strict conditions apply.A. EMPLOYED MEMBERS (60-64)Check: Did they have contributions in the last 12 months?YES: System sends request to Employer for Online Certification. Member cannot proceed until Employer certifies.NO: No separation cert required. Proceed to submit.B. SELF-EMPLOYED (SE) (60-64)Issue: Member has contributions posted after their declared cessation of business.Options for Member:Correct the Date: Encode correct cessation date.Wait: Refile online after the applicable month of the last posted contribution.Undertaking: Certify that future contributions are "advance payments" and will not be included in the claim calculation.C. VM & LAND-BASED OFW (60-64)Issue: Member has "advance payments" (contributions applicable on/after filing month).Options for Member:Wait: Refile after the month of the last contribution.Confirm Deletion: Confirm that advance contributions will be deleted/handled per SSS policy.4. CRITICAL WARNINGS (Advisory Scripting)"Less than 120 Contributions" AlertIf member has < 120 months: The system will warn them.Option A (Pension Goal): Cancel filing. Continue paying as VM to reach 120 months for Pension.Option B (Lump Sum): Proceed. Member receives Lump Sum only. WARNING: No future pension; only funeral benefit remains.Employer Certification TimerRule: If the employer does not certify within 10 calendar days, the claim EXPIRES automatically.Action: Member must contact employer to act fast, or member must re-file online after expiration.
+
+
 [DOCUMENT: CI2022-020b (1).pdf]
 
 
