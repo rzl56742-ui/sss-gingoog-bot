@@ -693,6 +693,382 @@ Please be guided accordingly.
 
 CHEAT SHEET: Enhanced Online Retirement Claim (My.SSS)Reference: Circular No. 2021-0211. THE "MUST-HAVES" (Prerequisites)Before queuing, ensure the member has:Active My.SSS Account: Registration is mandatory.Enrolled Disbursement Account: UMID-ATM or approved bank account in DAEM (Disbursement Account Enrolment Module).2. TRIAGE: ONLINE VS. OVER-THE-COUNTERMost claims are ONLINE. Only specific cases are allowed at the counter.FILING METHODWHO / CONDITIONONLINE (My.SSS)• ALL Employees, Self-Employed (SE), Voluntary (VM), & Land-based OFWs.• Members 60-64 years old (subject to specific rules below).MANUAL (Counter)• Loans: Outstanding Stock Investment (SILP), Privatization, Vocational Tech, or Educational Loans.• Guardianship: Dependent children under guardianship.• Incapacitated/Incarcerated: Member is in prison, rehab, or under guardianship.• Portability/Bilateral: Applying under Portability Law or International Agreements.• Deceased: Unclaimed benefit of a deceased member.• Adjustments: Re-adjudication of claims.3. SCENARIO GUIDE: MEMBERS AGED 60-64These members are not yet 65 (mandatory technical retirement), so strict conditions apply.A. EMPLOYED MEMBERS (60-64)Check: Did they have contributions in the last 12 months?YES: System sends request to Employer for Online Certification. Member cannot proceed until Employer certifies.NO: No separation cert required. Proceed to submit.B. SELF-EMPLOYED (SE) (60-64)Issue: Member has contributions posted after their declared cessation of business.Options for Member:Correct the Date: Encode correct cessation date.Wait: Refile online after the applicable month of the last posted contribution.Undertaking: Certify that future contributions are "advance payments" and will not be included in the claim calculation.C. VM & LAND-BASED OFW (60-64)Issue: Member has "advance payments" (contributions applicable on/after filing month).Options for Member:Wait: Refile after the month of the last contribution.Confirm Deletion: Confirm that advance contributions will be deleted/handled per SSS policy.4. CRITICAL WARNINGS (Advisory Scripting)"Less than 120 Contributions" AlertIf member has < 120 months: The system will warn them.Option A (Pension Goal): Cancel filing. Continue paying as VM to reach 120 months for Pension.Option B (Lump Sum): Proceed. Member receives Lump Sum only. WARNING: No future pension; only funeral benefit remains.Employer Certification TimerRule: If the employer does not certify within 10 calendar days, the claim EXPIRES automatically.Action: Member must contact employer to act fast, or member must re-file online after expiration.
 
+Here is the accurate transcription of Circular No. 2020-010 and its Annexes, formatted for use as a policy reference.
+
+Republic of the Philippines
+SOCIAL SECURITY SYSTEM East Ave., Diliman, Quezon City Tel. Nos. (632) 920-6401 (632) 920-6446 E-mail: member_relations@sss.gov.ph | Web site: http://www.sss.gov.ph
+
+CIRCULAR NO. 2020-010
+
+TO: ALL SSS MEMBERS SUBJECT: REVISED LIST OF DOCUMENTARY REQUIREMENTS FOR RETIREMENT AND DEATH BENEFITS
+
+In line with the implementation of the Ease of Doing Business and Efficient Government Service Delivery Act of 2018 or Republic Act No. 11032, which aims to streamline the current systems and procedures in government offices, the List of Documentary Requirements for Retirement and Death Benefits are hereby issued to facilitate the effective and immediate processing of retirement and death benefits.
+
+Please be guided accordingly.
+
+17 APR 2020 Date
+
+(Original Signed) AURORA C. IGNACIO President and CEO
+
+ATTACHMENTS:
+
+Annex A - List of Documentary Requirements for Retirement Benefit
+
+Annex B - List of Documentary Requirements for Death Benefit
+
+Annex C - Affidavit of Separation from Employment/Cessation of Self-Employment
+
+(Policy Retirement/Death) Prepared by: RDF Benefits Administration Department
+
+Annex A
+LIST OF DOCUMENTARY REQUIREMENTS FOR RETIREMENT BENEFIT (For Over-the-Counter Filing of Retirement Claim Application) (Present original and submit photocopy of valid identification (ID) cards/documents for authentication purposes and present original/certified true copy and submit photocopy of supporting documents)
+
+A. BASIC DOCUMENTARY REQUIREMENTS
+Retirement Claim Application/Retirement Claim Application under Portability Law.
+
+Member's/Claimant's Photo and Signature Card, if member has not been issued UMID card.
+
+Death certificate of deceased member duly registered with the Local Civil Registry (LCR) or issued by Philippine Statistics Authority (PSA), if without settled funeral benefit.
+
+Single savings account, any of the following:
+
+Passbook
+
+ATM card with name of member and account number
+
+validated initial deposit slip
+
+UMID card enrolled as ATM
+
+accomplished Visa cash card enrolment form
+
+duly signed Bank Certificate/Statement issued within three (3) months prior to filing of claim with the following information:
+
+complete name of member/claimant
+
+savings account number
+
+bank branch
+
+complete bank address
+
+Union Bank of the Philippines Quick card
+
+If ATM card of female member is still under maiden name: Marriage Certificate
+
+If claimant cannot open a savings account or apply for a debit/cash card: A written request for exemption from the Pensioner's Remittance Program stating reason for the exemption.
+
+Note: Upon implementation of the payment of benefit via Philippine Electronic Fund Transfer System and Operations Network (PESONet), savings account of claimant shall be from PESONet participating banks which are SSS accredited.
+
+Claimant's identification (ID) cards/documents (refer to Standard List of ID Cards/Documents).
+
+B. ADDITIONAL DOCUMENTARY REQUIREMENTS
+If with five (5) or more legitimate/illegitimate dependent children:
+
+Birth certificate of dependent child/ren duly registered with the LCR or issued by the PSA, if dependent children are not reported in member's Personal Record (E1/E4/RS1/OW1/NW1) or with discrepancy in information.
+
+If dependent child is born abroad: Birth Certificate issued by foreign government or Report of Birth issued by Philippine Embassy or Consulate General shall be submitted, if applicable.
+
+Marriage certificate of member duly registered with the LCR or issued by the PSA, if legal spouse is not reported in member's Personal Record (E1/E4/RS1/OW1/NW1) or with discrepancy in information.
+
+If married abroad: Marriage Certificate issued by foreign government or Report of Marriage issued by the Philippine Embassy or Consulate General.
+
+Note:
+
+Documents issued in a foreign country should have English translation.
+
+Authentication by the Philippine Embassy or Consulate General is not required if said documents are duly received and signed by the SSS Foreign Representative, Foreign Office.
+
+For retirement claims filed abroad, photocopy of supporting document/s with English translation may be presented and submitted in the absence of the original/certified true copy, to be duly received and signed by the SSS Foreign Representative.
+
+If filed by authorized representative of the claimant/s:
+
+Two (2) valid ID cards/documents of the member and representative; or
+
+Letter of Authority (LOA) signed by the member or Special Power of Attorney (SPA) specifically stating the authority to file and/or sign for and in behalf of the member.
+
+Note: LOA/SPA should have been made or executed within six (6) months if in the Philippines and one (1) year if abroad.
+
+SUPPLEMENTAL LIST OF DOCUMENTARY REQUIREMENTS FOR RETIREMENT BENEFIT
+(Present original and submit photocopy/certified true copy of supporting documents)
+
+1. If member is at least sixty (60) years but below 65 years old:
+
+a) For employed members/Household Helper:
+
+Certificate of separation issued by the last employer or from all employers (if with multiple employers); or
+
+SSS Form Affidavit of Separation from Employment/Cessation of Self-employment with Undertaking, regardless of status of employer.
+
+Note: If member has no contributions for the last twelve (12) months from date of retirement, member shall no longer be required to submit Certificate of separation.
+
+b) For Self-Employed (SE) members:
+
+Certificate of non-renewal for all of member's business permit/license issued by the proper government offices/transfer of ownership e.g. Business Permit and Licensing Office; or
+
+Certificate of cessation of business issued by the duly elected Barangay Official where the business or place of residence was located; or
+
+SSS Form Affidavit of Separation from Employment/Cessation of Self-employment with Undertaking.
+
+c) For member of Cooperative or registered Association (e.g. TODA, Card Inc., market vendors association):
+
+SSS Form Affidavit of Separation from Employment/Cessation of Self-employment with Undertaking; or
+
+Certificate of termination of membership signed by the authorized company representative/s or signatories in the Specimen Signature Card of the Cooperative/Association.
+
+d) For Voluntary Member (VM), including Overseas Filipino Worker (OFW):
+
+Proof of separation from employment/cessation of business/termination of contract/no earnings is not a requirement.
+
+2. If member is an underground/surface mineworker:
+
+Certification from the employer/s that member was an underground/surface mineworker indicating the period of employment and worker's job description; or
+
+Affidavit of two (2) co-employees attesting that member was an underground/surface mineworker indicating the period of employment and worker's job description.
+
+Additional requirements if underground/surface mineworker is at least 55 years old but below 60 years old: Supporting documents stated under Part 1a or b depending on the last coverage status of the member.
+
+3. If member is a racehorse jockey:
+
+Certification that member was employed as racehorse jockey by his employer, who must be duly licensed by the Philippine Racing Commission (PHILRACOM) indicating the period of employment.
+
+4. If member is filing pursuant to an existing Bilateral Social Security Agreement (SSA):
+
+Liaison forms as provided for under the Administrative Agreement of the Bilateral SSA with the following information: Claim application details; and Insurance periods under SS Law of other country.
+
+Photocopies of two (2) valid IDs of member certified by counterpart liaison agencies as provided for under the Bilateral SSA, in lieu of the member's photo and signature card.
+
+5. Additional document if member is applying under the Portability Law:
+
+Certificate of total contributions issued by the GSIS including the period of contributions.
+
+6. Additional document if member is an SSS employee:
+
+Certification issued by Employee Services Department on the SSS employment history of the concerned employee subject to the applicable rules and regulations on outside/part-time employment of SSS employees and Republic Act No. 8282.
+
+7. Additional documents If member is incapacitated and under guardianship:
+
+Photo and Signature Card of guardian, if guardian has not been issued UMID card.
+
+Medical certificate issued by his/her attending physician (with license number and address of clinic), within three (3) months from date of filing of claim for guardianship confirmed/certified by the Medical Specialist of SSS Physical Examination Centers (PECS).
+
+In-trust for savings account.
+
+Affidavit for Guardianship of Incompetent Pensioner, if guardian is the legal spouse.
+
+Application for Representative Payee and Guarantor's Bond Form, if guardian is other than the parents.
+
+8. In the absence of Marriage Certificate:
+
+Certification of non-availability from LCR/PSA or issued by foreign government indicating that marriage records of the office/agency concerned is intact but there is no record of marriage for the requesting party; and
+
+Marriage certificate issued by Parish/Church/Ministry/Congregation/Sect/other religious organizations/LGU/other person authorized to administer the marriage.
+
+If marriage certificate from Parish/Church/etc. is not available:
+
+Certification of non-availability from the Parish/Church/Ministry/Congregation/Sect/other religious organizations; or
+
+Affidavit/Certificate of solemnizing officer stating: Date of marriage, Place of marriage, Reason for non-registration, and Authority to administer marriage (if applicable).
+
+Joint affidavit of two (2) persons who witnessed the marriage together with Birth certificates of at least two children wherein under both documents the names of parents and the date & place of marriage are indicated (if applicable).
+
+9. Additional document if member is married abroad and has previous marriage in the Philippines:
+
+Certificate of Finality of Annulment/Nullity or annotated Marriage Contract/Certificate; or
+
+Certificate of Naturalization prior to marriage abroad and Decree of Divorce after acquiring foreign citizenship, or its equivalent.
+
+10. In the absence of Birth Certificate:
+
+Certification of non-availability from LCR/PSA or issued by foreign government; and
+
+Baptismal/Dedication certificate or its equivalent issued by the Parish/Church/Ministry/Congregation/Sect/other religious organizations (with date of birth of the child and name of parents).
+
+If baptismal/dedication certificate is not available:
+
+Certification of non-availability from the parish/church/ministry/congregation/sect/other religious organizations; and
+
+Any of the following documents where the name of dependent, date of birth and the name of the parents are indicated: School cards/record, Educational/insurance plans/health card record, Employment records of member, Philhealth/GSIS/Pag-IBIG records, Income Tax Return of member, Member's record duly received by SSS prior to May 1997.
+
+Note: Baptismal/Dedication certificates must bear the original signature of the Parish Priest/Head. Dedication certificates must bear the date of birth of the child and the name of parents.
+
+11. Additional document for legally adopted child/ren and birth certificate is without annotation:
+
+Decree of Adoption or Certificate of Finality (Note: Date of adoption should be prior to date of retirement).
+
+12. Additional document for illegitimate child/children:
+
+Any proof of filiation, such as:
+
+Birth certificate duly signed by the father as informant with Affidavit of Acknowledgment duly by the father.
+
+Will.
+
+Statement made before any judicial or quasi-judicial proceedings.
+
+Any authentic writing signed by the father (e.g. letter, diary, school records, etc.).
+
+Joint affidavit of two (2) persons preferably nearest relatives of the deceased member as proof of acknowledgment.
+
+Duly-received membership data record by other government agencies like Philhealth, Pag-IBIG, GSIS, etc.
+
+13. Additional document if dependent child is incapacitated:
+
+Medical certificate issued by the attending physician (with license number and address of clinic), within 3 months from date of filing of claim for dependent's pension confirmed/certified by the Medical Specialist of PECS.
+
+14. Additional documents if dependent child is under guardianship:
+
+In-trust-For account.
+
+Member's/Claimant's Photo and Signature card (for the guardian), in case the guardian has not been issued a UMID card.
+
+Claim for Dependent's Pension Benefit form, if guardian is the parent and legal spouse separated from the member.
+
+Application for Representative Payee and Guarantor's Bond Form, if guardian is other than the parent.
+
+Annex B
+LIST OF DOCUMENTARY REQUIREMENTS FOR DEATH BENEFIT (Present original and submit photocopy of valid identification (ID) cards/documents for authentication purposes and present original/certified true copy and submit photocopy of supporting documents)
+
+A. BASIC DOCUMENTARY REQUIREMENTS
+Death Claim Application Form/Death Claim Application under Portability Law.
+
+Member's/Claimant's Photo and Signature Card, if claimant has not been issued a UMID card.
+
+Death Certificate of deceased member duly registered with the Local Civil Registry (LCR) or issued by the Philippine Statistics Authority (PSA), if without settled funeral benefit.
+
+If member died abroad: Death Certificate of deceased member issued by the Vital Statistics Office/County of Host Country or its equivalent or Report of Death issued by the Philippine Embassy or Consulate General shall be submitted.
+
+Single savings account (Passbook, ATM, etc. - Same conditions as Retirement Benefit).
+
+Claimant's identification (ID) cards/documents.
+
+B. ADDITIONAL DOCUMENTARY REQUIREMENTS
+If filed by Primary Beneficiary/ies (dependent legal spouse and dependent children) and is/are not reported in the deceased member's Personal Record:
+
+Marriage certificate of deceased member duly registered with the LCR or issued by the PSA. If married abroad: Marriage Certificate with English translation or Report of Marriage.
+
+Birth certificate of dependent child/ren duly registered with the LCR or issued by the PSA. If born abroad: Birth Certificate issued by foreign government or Report of Birth.
+
+If filed by Secondary Beneficiary/ies (dependent parents):
+
+Birth Certificate of deceased member duly registered with LCR or issued by the PSA, if parents is/are not reported in the deceased member's Personal Records.
+
+Death Certificate (LCR/PSA) of the following, whichever is applicable:
+
+Spouse, if deceased member is a widow/widower.
+
+Dependent child/ren.
+
+Parent, if one of the parents is already deceased.
+
+Marriage Certificate of parents duly registered with LCR or issued by the PSA, if date of death of member is prior to 24 May 1997.
+
+Affidavit attesting to the parent's dependency for support from the deceased member (Prescribed Form).
+
+Note: If the deceased member died at the age of sixty-five (65) years or above, death certificate of parents are no longer necessary.
+
+If filed by designated beneficiary/ies or Legal Heirs:
+
+Death Certificate (LCR/PSA) of the following, whichever is applicable:
+
+Spouse, if deceased member is a widow/widower.
+
+Dependent child/ren.
+
+Parents (Note: If deceased member died at 65+ years old, death certificate of parents not necessary).
+
+Other designated beneficiary/ies, if filed by designated beneficiary.
+
+Legal heirs, if filed by legal heirs (Note: If deceased member is not yet 65 but parents are at least 65, death certificate of grandparents no longer necessary).
+
+Birth Certificate of the deceased member.
+
+Joint Affidavit (CLD-1.3) preferably by the relatives of the deceased member.
+
+For legal heirs, birth certificate of at least two (2) legal heirs.
+
+Additional documents if filed by authorized representative of the claimant/s:
+
+Two (2) valid ID cards/documents of the claimant and representative.
+
+Letter of Authority (LOA) or Special Power of Attorney (SPA). (Note: LOA/SPA validity is 6 months if in Philippines, 1 year if abroad).
+
+SUPPLEMENTAL LIST OF DOCUMENTARY REQUIREMENTS FOR DEATH BENEFIT
+(Present original and submit photocopy/certified true copy of supporting documents)
+
+1. In the absence of the Death Certificate:
+
+a. Certification of non-availability issued by the PSA/LCR or foreign government; and
+
+b. Any one (1) of the following: Certification of death issued by parish/church, Certification of burial issued by cemetery administrator, Certification of cremation.
+
+2. In the absence of Marriage Certificate:
+
+Certification of non-availability from PSA/LCR; and
+
+Certificate of marriage issued by parish/church/ministry/etc. or Alien Certificate of Registration showing name of spouse.
+
+In the absence of certificate of marriage: Certification of non-availability from parish/church/etc; and Affidavit/Certificate of solemnizing officer or Joint Affidavit of two (2) disinterested persons who witnessed the marriage and (if with children) birth certificate of at least two (2) children.
+
+3. In the absence of Birth Certificate:
+
+Same requirements as Retirement Benefit (Certification of non-availability + Baptismal/Dedication or Secondary proofs).
+
+4. Additional document if deceased member is married abroad and has previous marriage in the Philippines:
+
+Same as Retirement Benefit (Annulment, Nullity, or Divorce after foreign citizenship).
+
+5. Additional document if spouse has been separated in fact/legally separated:
+
+a. Joint affidavit of two (2) persons (preferably relatives) stating reason and fact of dependency, and that surviving spouse did not give ground for separation; or
+
+b. Affidavit of surviving spouse with undertaking stating he/she has no known relative of the member or not in good terms with them; or
+
+c. Court declaration that member-spouse should continue to support surviving spouse.
+
+6. Additional document for legally adopted children:
+
+Decree of Adoption and Certificate of Finality of Judgment (Date of adoption prior to date of death).
+
+7. Additional document if dependent child is incapacitated:
+
+Medical certificate issued by attending physician within three (3) months from date of filing, confirmed by SSS Medical Specialist.
+
+8. Additional document if dependent child is under guardianship:
+
+In-Trust for savings account; Photo/Sig card of guardian; Application for Representative Payee/Guarantor's Bond (if guardian not legal spouse); Claim for Dependent's Pension form (if guardian is parent but separated from member).
+
+9. If dependent child is illegitimate and not acknowledged in birth certificate:
+
+Any proof of filiation (Will, Statement in judicial proceedings, Authentic writing, Joint affidavit of relatives, Membership records in other agencies).
+
+10. Additional document for claimant other than primary beneficiary, and the surviving spouse has abandoned the deceased or cohabited/remarried:
+
+Joint affidavit of two (2) persons preferably nearest relatives stating the reason and the fact of the spouse' dependency for support upon the deceased member.
+
+11. If claimant is filing pursuant to an existing Bilateral Social Security Agreement (SSA):
+
+Liaison forms (claim details, insurance periods); and Photocopies of two (2) valid IDs of claimant certified by counterpart liaison agencies.
+
+Annex C
+AFFIDAVIT OF SEPARATION FROM EMPLOYMENT/ CESSATION OF SELF-EMPLOYMENT WITH UNDERTAKING (re SSS Retirement Benefit)
+
+Republic of the Philippines ) Province/City/Municipality of ____ ) S.S.
+
+I, (Name), a Filipino, of legal age, single/married, with residence/postal address at (Address), after having been sworn in accordance with law, hereby depose and state, that:
+
+I am a bona fide member of the Social Security System (SSS) with assigned SS Number/Common Reference Number (Number);
+
+I was separated from my last employer/s (Employer Name) with office address/es at (Address) on (Date); or has ceased to be engaged in the business of (Business) /practice of profession as (Profession) with office address at (Address) on (Date) and was never again re-employed/re-engaged in self-employment;
+
+I cannot secure a certification and/or proofs from my last employment/self-employment because (Reason);
+
+I am aware of the nature, consequences and incurring liabilities (criminal/civil/administrative) for any falsity, deceit, fraud, misrepresentation or non-disclosure made in connection with my claim/application for retirement benefits under the SS Law and other applicable laws, rules and regulations;
+
+I hereby undertake to inform/notify the SSS on the fact of my re-employment/re-engagement in self-employment after availing of retirement benefits; and
+
+I am executing this affidavit to attest to the truth and veracity of the foregoing statements and to support my claim/application for retirement benefits.
+
 
 [DOCUMENT: CI2022-020b (1).pdf]
 
