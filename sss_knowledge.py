@@ -1317,6 +1317,93 @@ Unclaimed benefit of deceased member.
 
 Here is the accurate transcription of Circular No. 2023-009 and its Annex A, formatted for use as a policy reference.Republic of the PhilippinesSOCIAL SECURITY SYSTEMEast Ave., Diliman, Quezon CityTel. Nos. (632) 8920-6401 (632) 8920-6446E-mail: member_relations@sss.gov.ph | Web site: http://www.sss.gov.phCIRCULAR NO. 2023-009TO: ALL SSS MEMBERS, BENEFICIARIES AND CLAIMANTSSUBJECT: REVISED GUIDELINES ON THE SOCIAL SECURITY (SS) FUNERAL BENEFIT PROGRAMPursuant to Social Security Commission (SSC) Resolution No. 700-s.2022 dated 28 October 2022 approving the revised guidelines on the Social Security (SS) Funeral Benefit Program, and in accordance with Republic Act (RA) No. 11199 or the Social Security Act of 2018, the following policies are hereby issued:A. CoverageAll funeral benefit claimants (surviving legal spouse, child/ren, parent/s or any other natural person), who paid for the funeral expenses upon the death of a qualified member, a permanent total disability pensioner or a retirement pensioner, shall be covered under this Guidelines.B. Amount of funeral benefitIf the deceased member or pensioner has paid at least thirty-six (36) monthly contributions up to the month of death, the funeral benefit shall be a variable amount ranging from a minimum of P20,000.00 to a maximum of P60,000.00, computed as follows:Formula:$$P20,000.00 + (0.5\% \times \text{number of paid contributions} \times \text{AMSC})$$but not to exceed P60,000.00Wherein:Number of paid contributions is the total number of contributions paid up to the month of death; andAverage Monthly Salary Credit (AMSC) is the higher of:The result obtained by dividing the sum of the last sixty (60) monthly salary credits immediately preceding the semester of contingency by sixty (60); orThe result obtained by dividing the sum of all the monthly salary credits prior to the semester of contingency by the number of monthly contributions paid in the same period.If the deceased member has paid at least one (1) but less than thirty-six (36) monthly contributions up to the month of death, the funeral benefit shall be a fixed amount of P12,000.00.C. Order of priority of claimantsThe funeral benefit shall be payable to a claimant in accordance with the following order of priority, as applicable:Surviving legal spouse; orChild/ren, parent/s or any other natural person who can present proof of payment, provided that:a. The surviving legal spouse did not pay for the funeral expenses or cannot be located;b. The legal spouse is deceased; orc. The deceased member is single.D. Proof of payment of funeral expensesThe funeral benefit shall be a reimbursement of the funeral expenses as indicated in the proof of payment, but not to exceed the computed funeral benefit due.Funeral expenses shall only be limited to the following:a. Embalming services;b. Burial transfer services and permits;c. Funeral services for the dead including church service fee or its equivalent if from other religions;d. Cremation or interment services;e. Purchase or rent of coffin;f. Purchase or rent of niche/cemetery/memorial lot/columbarium; andg. Payment for memorial/funeral insurance plan.The surviving legal spouse-claimant may submit the following requirements, in lieu of Official Receipt as proof of his/her payment of funeral expenses for the deceased spouse:a. Marriage Certificate issued by any of the following authorities: LCR, MCR, PSA, Foreign vital statistics office (with English translation), NCIP, or Shari'a Circuit Clerk of Court; andb. Duly notarized affidavit, or online certification, stating that he/she paid for the funeral expenses.For any claimant other than the surviving legal spouse, the following conditions shall apply:a. The proof of payment must be an Official Receipt issued under the name of the claimant and indicating the name of the deceased member or pensioner;b. Certification of availment of memorial/funeral insurance plan or any other acceptable funeral expense paid by the member or pensioner prior to his/her death may be submitted as supporting document by the child/ren, parent/s or legal heir/s only; andc. The above-mentioned proof of payment shall be submitted together with the following:i. Duly notarized waiver in favor of the claimant duly signed by the surviving legal spouse; orii. Duly notarized affidavit as attested by two (2) disinterested persons, stating that the surviving legal spouse did not pay for the funeral expenses or cannot be located.E. Payment of funeral benefitThe claimant who will first file a claim and complies with all the requirements as enumerated in this Guidelines and other applicable policies shall be paid the funeral benefit.If there are two (2) or more claimants simultaneously filing for the funeral benefit, the payment shall be on a pro-rated basis.If there remains a balance from the funeral benefit due after the payment to the first claimant, any succeeding claimant/s shall also be paid but not to exceed the remaining balance.F. Prescriptive periodApplications for funeral benefit claim shall be filed within ten (10) years from the month of death of the member or pensioner, subject to the terms and conditions as may be determined by the SSS.G. Other conditionsAny claimant who was proven to be responsible for the death of the member or pensioner shall not be qualified to the funeral benefit, or shall be liable to return the settled benefit proceeds.The claimant shall certify that the information provided in his/her funeral benefit claim application are true, correct and accurate. The claimant, including any person/s involved, shall be held liable under all circumstances for any false information, misrepresentation and fraud in accordance with Section 28 of RA No. 11199 and other applicable laws.H. Online Filing of Funeral Benefit Claim through the My.SSS Portal(please refer to Annex A)All other existing Circulars, implementing rules and guidelines not contrary to or inconsistent with the provisions hereof shall remain valid and in effect.This Circular shall take effect immediately following its publication in a newspaper of general circulation and the registration and filing of three (3) copies of the published Circular with the Office of the National Administrative Register.Please be guided accordingly.18 OCT 2023Date(Signed)ROLANDO LEDESMA MACASAETPresident and CEOANNEX AONLINE FILING OF FUNERAL BENEFIT CLAIM THROUGH THE MY.SSS PORTALA. Pre-requisites for Online Filing:The claimant must:Register in the My.SSS Portal;Update contact information;Enroll a disbursement account through the Disbursement Account Enrollment Module (DAEM) in the My.SSS Portal; andPrepare and scan all applicable supporting documents in images or pdf file formats with maximum file size of 3MB per document.B. Steps on the Online Filing:The claimant shall:Log-in to the My.SSS Portal.Click "Apply for Funeral Benefit" under the "BENEFITS" Tab.Read the important reminders and ensure accomplishment of the instructions then click "Proceed".Encode all the required information of the deceased SSS member or pensioner and click "Proceed".Note: The system shall validate the deceased member or pensioner's eligibility to funeral benefit, upon encoding the required information, and the computation of the amount of funeral benefit.Select the applicable information for the following:a. Civil status of the deceased member or pensioner;b. Relationship with the deceased member or pensioner; andc. Preferred disbursement account enrolled through DAEM.Upload the following supporting documents based on the civil status of the deceased member or pensioner:a. If the deceased member or pensioner is SINGLE:Proof to establish SSS membership of the deceased member or pensioner;Death Certificate of the deceased member or pensioner;Proof of payment of funeral expenses; andCertificate of No Marriage Record (CENOMAR) of the deceased member or pensioner.b. If the deceased member or pensioner is MARRIED and the claimant is:i. The surviving legal spouse:Proof to establish SSS membership of the deceased member or pensioner;Death certificate of the deceased member or pensioner;Marriage Certificate; andProof of payment of funeral expenses, if available.ii. Other than the legal spouse:Proof to establish SSS membership of the deceased member or pensioner;Death Certificate of the deceased member or pensioner;Proof of payment of funeral expenses; andAny of the following, whichever is applicable:Duly notarized waiver in favor of the claimant duly signed by the surviving legal spouse;Duly notarized affidavit as attested by two (2) disinterested persons, stating that the surviving legal spouse did not pay for the funeral expenses or cannot be located; orDeath Certificate of the legal spouse including Marriage Certificate with the deceased member or pensioner.Note: For cases that require over-the-counter filing, as may be determined by the SSS, the above-mentioned supporting documents shall be submitted together with the following:SSS Funeral Benefit Claim Application Form;Valid Identification Cards/Documents;Proof of Disbursement Account; andDuly notarized affidavit stating that he/she paid for the funeral expenses (if claimant is the surviving legal spouse and proof of payment of funeral expenses is not available).Read the Certification and click "Submit" to agree and proceed. Note: An additional Certification with Undertaking shall be confirmed if the claimant is the Surviving Legal Spouse.Check e-mail notification on the following: Successful submission; Assignment of claim to the concerned branch; and Status of claim.View the status of the submitted funeral benefit claim in the My.SSS Portal or SSS Mobile App.
 
+SSS GINGOOG: FUNERAL BENEFIT TRIAGE FLOW
+Reference: Circular No. 2023-009
+
+STEP 1: IDENTIFY THE CLAIMANT
+Ask: "Who are you in relation to the deceased member?"
+
+A. "I AM THE LEGAL SPOUSE"
+
+Check: Do you have the Marriage Certificate? (LCR/PSA).
+
+Check: Did you pay for the funeral expenses?
+
+YES, I have the Receipt:
+
+✅ ELIGIBLE. Submit OR + Marriage Cert.
+
+YES, but I lost/don't have the Receipt:
+
+✅ ELIGIBLE. Submit Notarized Affidavit of Payment + Marriage Cert.
+
+NO, someone else paid:
+
+🛑 STOP. You cannot claim reimbursement if you did not pay. The payer must file.
+
+B. "I AM NOT THE SPOUSE" (Child, Parent, Sibling, Friend)
+
+Proceed to STEP 2 immediately.
+
+STEP 2: NON-SPOUSE ELIGIBILITY CHECK
+Ask: "What is the civil status of the deceased?"
+
+SCENARIO 1: DECEASED WAS SINGLE / WIDOWED
+
+Check: Do you have the CENOMAR (if single) or Spouse’s Death Certificate (if widowed)?.
+
+Check: Do you have the Official Receipt (OR) in YOUR NAME?
+
+YES: ✅ ELIGIBLE.
+
+NO (OR is in deceased's name or another person's name): 🛑 STOP. You must present proof you bore the cost.
+
+SCENARIO 2: DECEASED WAS MARRIED (Spouse is alive)
+
+Critical Rule: The Legal Spouse has absolute priority unless disqualified.
+
+Ask: "Why is the Legal Spouse not filing?"
+
+Reason A: "Spouse Waived their right."
+
+Requirement: Duly notarized Waiver signed by the spouse in favor of claimant.
+
+Plus: Official Receipt in Claimant's name.
+
+✅ ELIGIBLE.
+
+Reason B: "Spouse didn't pay" OR "Spouse cannot be located."
+
+Requirement: Duly notarized Affidavit attested by two (2) disinterested persons stating this fact.
+
+Plus: Official Receipt in Claimant's name.
+
+✅ ELIGIBLE.
+
+Reason C: "Spouse is separated/estranged but didn't sign a waiver."
+
+🛑 STOP/WARNING. Without a Waiver or the Affidavit mentioned above, the claim will likely be denied in favor of the Legal Spouse.
+
+STEP 3: THE "OFFICIAL RECEIPT" QUALITY CHECK
+Apply to ALL Non-Spouse Claimants. Do not issue a number if this fails.
+
+Is it an Official Receipt (OR)?
+
+Temporary Receipts, Sales Invoices, or Quotations are often rejected. Ensure it is a valid proof of payment.
+
+Is the Claimant's Name on the Receipt?
+
+Non-spouse claimants CANNOT use an Affidavit of Payment in lieu of receipts. Only the Legal Spouse has that privilege.
+
+If Receipt is in Deceased's Name: Generally accepted if claimant is a qualified beneficiary, but scrutinized strictly for non-relatives.
+
+Summary of "Show-Stoppers" (Reject at PACD)
+❌ Non-spouse claimant with NO Official Receipt (claims "I just paid cash/lost receipt"). Reject.
+
+❌ Non-spouse claimant when a Legal Spouse exists, but NO Waiver and NO Affidavit of Separation/Non-payment. Reject.
+
+❌ Claimant applying for Funeral Benefit > 10 years after death. Reject (Prescribed).
+
 
 
 
